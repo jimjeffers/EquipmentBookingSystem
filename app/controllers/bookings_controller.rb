@@ -1,4 +1,6 @@
 class BookingsController < ApplicationController
+  layout 'main'
+  
   # GET /bookings
   # GET /bookings.xml
   def index

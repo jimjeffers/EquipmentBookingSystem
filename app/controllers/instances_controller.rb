@@ -1,4 +1,6 @@
 class InstancesController < ApplicationController
+  layout 'main'
+  
   # GET /instances
   # GET /instances.xml
   def index

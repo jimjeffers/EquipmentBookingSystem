@@ -1,4 +1,6 @@
 class ItemsController < ApplicationController
+  layout 'main'
+  
   # GET /items
   # GET /items.xml
   def index
