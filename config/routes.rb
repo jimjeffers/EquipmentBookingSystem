@@ -1,4 +1,12 @@
-ActionController::Routing::Routes.draw do |map|  
+ActionController::Routing::Routes.draw do |map|
+  map.resources :categories
+
+  map.resources :bookings
+
+  map.resources :instances
+
+  map.resources :items
+  
   # Authentication routing.
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'

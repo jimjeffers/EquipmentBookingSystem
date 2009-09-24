@@ -1,0 +1,12 @@
+<h1>Editing booking</h1>
+
+<% form_for(@booking) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @booking %> |
+<%= link_to 'Back', bookings_path %>

@@ -1,0 +1,19 @@
+<% form_tag session_path do -%>
+<ul class="form">
+  <li>
+  <%= label_tag 'login' %>
+  <%= text_field_tag 'login', @login %>
+  </li>
+  <li>
+    <%= label_tag 'password' %>
+    <%= password_field_tag 'password', nil %>
+  </li>
+  <!-- Uncomment this if you want this functionality
+  <li class="remember_me"><%= label_tag 'remember_me', 'Remember me' %>
+  <%= check_box_tag 'remember_me', '1', @remember_me %></li>
+  -->
+  <li>
+    <%= submit_tag 'Log in' %>
+  </li>
+</ul>
+<% end -%>
