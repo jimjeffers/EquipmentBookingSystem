@@ -81,3 +81,338 @@ Migrating to CreateRoles (20090924073336)
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_roles_users_on_role_id')[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-24 18:06:03) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #7 of app/views/layouts/main.html.erb:
+4:   <head>
+5:     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+6:     <title>EquipmentBooking - <%= controller.controller_name %> - <%= controller.action_name %></title>
+7:     <%= stylesheet_tag "reset" %>
+8:     <%= stylesheet_tag "system" %>
+9:     <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
+10:   </head>
+
+    app/views/layouts/main.html.erb:7:in `stylesheet_tag'
+    app/views/layouts/main.html.erb:7
+    app/controllers/items_controller.rb:9:in `index'
+
+Rendered rescues/_trace (113.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-24 18:11:37) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+
+ActionView::TemplateError (undefined method `has_key?' for "session/login_form":String) on line #14 of app/views/layouts/main.html.erb:
+11:   <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
+12:     <div class="header">
+13:       <h1 id="uq_equipment_booking">UQ Equipment Booking</h1>
+14:       <%= render_partial 'session/login_form' %>
+15:     </div>
+16:     <% if flash[:notice] %>
+17:     <div id="notice">
+
+    app/views/layouts/main.html.erb:14
+    app/controllers/items_controller.rb:9:in `index'
+
+Rendered rescues/_trace (39.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-24 18:13:01) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+
+ActionView::TemplateError (Missing template session/_login_form.erb in view path app/views) on line #14 of app/views/layouts/main.html.erb:
+11:   <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
+12:     <div class="header">
+13:       <h1 id="uq_equipment_booking">UQ Equipment Booking</h1>
+14:       <%= render :partial => 'session/login_form' %>
+15:     </div>
+16:     <% if flash[:notice] %>
+17:     <div id="notice">
+
+    app/views/layouts/main.html.erb:14
+    app/controllers/items_controller.rb:9:in `index'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-24 18:13:44) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.3ms)
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-09-24 18:14:06) [GET]
+Rendering template within layouts/main
+Rendering items/new
+Rendered sessions/_login_form (1.6ms)
+Completed in 89ms (View: 10, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-09-24 18:19:17) [GET]
+Rendering template within layouts/main
+Rendering items/new
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" [0m
+
+ActionView::TemplateError (undefined method `post' for #<Item:0x103433f38>) on line #16 of app/views/items/new.html.erb:
+13:     </li>
+14:     <li>
+15:       <%= f.label :category, "Category" %>
+16:       <%= f.collection_select :post, :category_id, Category.all, {:prompt => true} %>
+17:     </li>
+18:     <li>
+19:       <%= f.submit 'Create' %>
+
+    app/views/items/new.html.erb:16
+    app/views/items/new.html.erb:3
+    app/controllers/items_controller.rb:31:in `new'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-09-24 18:19:24) [GET]
+Rendering template within layouts/main
+Rendering items/new
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" [0m
+
+ActionView::TemplateError (undefined method `map' for :category_id:Symbol) on line #16 of app/views/items/new.html.erb:
+13:     </li>
+14:     <li>
+15:       <%= f.label :category, "Category" %>
+16:       <%= f.collection_select :category, :category_id, Category.all, {:prompt => true} %>
+17:     </li>
+18:     <li>
+19:       <%= f.submit 'Create' %>
+
+    app/views/items/new.html.erb:16
+    app/views/items/new.html.erb:3
+    app/controllers/items_controller.rb:31:in `new'
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-09-24 18:19:36) [GET]
+Rendering template within layouts/main
+Rendering items/new
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" [0m
+
+ActionView::TemplateError (wrong number of arguments (3 for 4)) on line #16 of app/views/items/new.html.erb:
+13:     </li>
+14:     <li>
+15:       <%= f.label :category, "Category" %>
+16:       <%= f.collection_select :category, Category.all, {:prompt => true} %>
+17:     </li>
+18:     <li>
+19:       <%= f.submit 'Create' %>
+
+    app/views/items/new.html.erb:16:in `collection_select'
+    app/views/items/new.html.erb:16
+    app/views/items/new.html.erb:3
+    app/controllers/items_controller.rb:31:in `new'
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-09-24 18:20:57) [GET]
+Rendering template within layouts/main
+Rendering items/new
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendered sessions/_login_form (1.6ms)
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-09-27 14:20:05) [GET]
+Rendering sessions/new
+Rendered sessions/_login_form (15.3ms)
+Completed in 68ms (View: 66, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-09-27 14:20:18) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"7apAHGljFHVHZRN928hcSm6RX6c5gCfCsHbBWud3jh8=", "login"=>"jim", "password"=>"jeffers"}
+  [4;36;1mUser Load (9.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'jim') LIMIT 1[0m
+Failed login for 'jim' from 127.0.0.1 at Sun Sep 27 04:20:18 UTC 2009
+Rendering sessions/new
+Rendered sessions/_login_form (1.9ms)
+Completed in 85ms (View: 3, DB: 9) | 200 OK [http://localhost/session]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:20:42) [GET]
+  [4;35;1mCategory Load (17.9ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Completed in 147ms (View: 97, DB: 18) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:21:42) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:21:45) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:22:00) [GET]
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:22:10) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.6ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:22:11) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:22:17) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:23:34) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:24:06) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.6ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:24:17) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Completed in 77ms (View: 3, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:24:38) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (3.8ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:24:56) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.6ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:25:24) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:25:56) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:26:10) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-09-27 14:26:38) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"7apAHGljFHVHZRN928hcSm6RX6c5gCfCsHbBWud3jh8=", "login"=>"jimjeffers", "password"=>"944turbo"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'jimjeffers') LIMIT 1[0m
+Failed login for 'jimjeffers' from 127.0.0.1 at Sun Sep 27 04:26:38 UTC 2009
+Rendering sessions/new
+Rendered sessions/_login_form (1.9ms)
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:28:17) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:28:31) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.6ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2009-09-27 14:30:04) [GET]
+Rendering template within layouts/main
+Rendering categories/new
+Rendered sessions/_login_form (1.9ms)
+Completed in 80ms (View: 73, DB: 0) | 200 OK [http://localhost/categories/new]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-09-27 14:30:06) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/categories]

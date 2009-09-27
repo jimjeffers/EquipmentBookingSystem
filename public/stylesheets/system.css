@@ -32,7 +32,7 @@ General comments/License Statement if any.
       background: #fff;
       color: #000;
       font: normal normal normal 100%/1.5em Arial, sans-serif;
-      padding: 20px;
+      padding: 5px;
    }
    
    p {
@@ -62,6 +62,33 @@ General comments/License Statement if any.
    
 /* =HEADER
    ------------------------------------------------------ */
+   div.header {
+      background: #000;
+      color: #fff;
+      padding: 1em 0.5em;
+      position: relative;
+   }
    
+   div.header form {
+      border-left: 5px solid #fff;
+      bottom: 0;
+      padding: 1em 0.5em;
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+   
+   div.header form li,
+   div.header form input,
+   div.header form label {
+      display: inline-block;
+      font-size: 0.875em;
+   }
+   
+   div.header form input,
+   div.header form label {
+      border: none;
+      padding: 4px;
+   }
    
    
