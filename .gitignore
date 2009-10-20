@@ -1,4 +1,4 @@
-tmp/
-cache/
-log/
+tmp/*
+cache/*
+log/*
 config/database.yml
