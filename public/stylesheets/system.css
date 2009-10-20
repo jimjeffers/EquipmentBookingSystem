@@ -31,8 +31,8 @@ General comments/License Statement if any.
    body {
       background: #fff;
       color: #000;
-      font: normal normal normal 100%/1.5em Arial, sans-serif;
-      padding: 5px;
+      font: normal normal normal 100%/1.5em Helvetica, Arial, sans-serif;
+      min-width: 960px;
    }
    
    p {
@@ -41,7 +41,10 @@ General comments/License Statement if any.
       margin: 0.25em;
    }
    
-   h1,h2,h3,h4 {
+   h1,
+   h2,
+   h3,
+   h4 {
       font-size: 1.5em;
       font-weight: bold;
       line-height: 1.25em;
@@ -62,33 +65,90 @@ General comments/License Statement if any.
    
 /* =HEADER
    ------------------------------------------------------ */
-   div.header {
+   div#header {
       background: #000;
       color: #fff;
       padding: 1em 0.5em;
       position: relative;
    }
    
-   div.header form {
-      border-left: 5px solid #fff;
-      bottom: 0;
-      padding: 1em 0.5em;
+   div#login form li,
+   div#login form input[type="text"],
+   div#login form input[type="password"],
+   div#login form input[type="submit"],
+   div#login form label {
+      border-radius: 5px;
+      display: block;
+      float: left;
+      font-size: 0.875em;
+      
+      -o-border-radius:5px;
+      -icab-border-radius:5px;
+      -khtml-border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+      -moz-border-radius:5px;
+   }
+   
+   div#login form label,
+   div#login form input[type="submit"] {
+      text-transform: lowercase;
+   }
+   
+   div#login form input[type="text"],
+   div#login form input[type="password"],
+   div#login form input[type="submit"] {
+      background: #666;
+      color: #fff;
+      font-size: 0.75em;
+      font-weight: bold;
+   }
+   
+   div#login form input[type="submit"] {
+      background: #87B314;
+      color: #000;
+   }
+   
+   div#login form input,
+   div#login form label {
+      border: none;
+      padding: 2px 4px;
+   }
+   
+   div#login {
+      background: #000;
+      border-bottom: 4px solid #87B314;
+      color: #fff;
+      left: 0;
       position: absolute;
       top: 0;
-      right: 0;
+      width: 100%;
    }
    
-   div.header form li,
-   div.header form input,
-   div.header form label {
-      display: inline-block;
-      font-size: 0.875em;
+   form#primary_login h2 {
+      color: #87B314;
+      font-size: 12px;
+      margin-left: -90px;
+      position: absolute;
+      left: 50%;
+      top: 7px;
    }
    
-   div.header form input,
-   div.header form label {
-      border: none;
-      padding: 4px;
+   form#primary_login ul.form {
+      margin: 0 auto;
+      padding-left: 510px;
+      width: 450px;
    }
    
+   div#header {
+      top: 100px;
+   }
+
+/* =PROGRESSIVE ENHANCEMENT
+   ------------------------------------------------------ */
+   .cssgradients div#header {
+      background: #8432A4 -webkit-gradient(linear, left top, left bottom, 
+               from(rgba(100,35,128, 1)), 
+               to(rgba(132,50,164, 1)));
+   }
    

@@ -1,10 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :categories
-
   map.resources :bookings
-
   map.resources :instances
-
   map.resources :items
   
   # Authentication routing.

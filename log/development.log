@@ -416,3 +416,474 @@ Rendering template within layouts/main
 Rendering categories/index
 Rendered sessions/_login_form (1.8ms)
 Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:40:33) [GET]
+  [4;36;1mItem Load (22.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (18.4ms)
+Completed in 333ms (View: 238, DB: 23) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:42:24) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (3.3ms)
+Completed in 27ms (View: 20, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:42:44) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.6ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:45:15) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.6ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:45:27) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:46:07) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.5ms)
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:46:13) [GET]
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:46:58) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.1ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:49:37) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (4.6ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:50:08) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (3.7ms)
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:57:25) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (3.0ms)
+Completed in 89ms (View: 82, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:57:49) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.5ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:58:14) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:58:38) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:59:13) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 20:59:46) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.8ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:00:46) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:01:21) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:01:26) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.1ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:02:32) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 100ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:03:14) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:03:26) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.1ms)
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:03:53) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (4.5ms)
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:03:57) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.1ms)
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:04:01) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:04:38) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.4ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:04:56) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:05:21) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:05:26) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 90ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:05:29) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:05:36) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (3.2ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:06:37) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.3ms)
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 10.211.55.3 at 2009-10-09 21:08:36) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.6ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://10.211.55.2/items]
+
+
+Processing ItemsController#index (for 10.211.55.3 at 2009-10-09 21:09:02) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://10.211.55.2/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-09 21:09:25) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.5ms)
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-11 15:06:59) [GET]
+  [4;35;1mItem Load (63.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (36.6ms)
+Completed in 1037ms (View: 452, DB: 63) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-11 15:07:51) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 1837ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-11 15:20:05) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 60ms (View: 53, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-11 15:20:44) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 10:49:08) [GET]
+  [4;36;1mItem Load (61.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (21.6ms)
+Completed in 731ms (View: 443, DB: 61) | 200 OK [http://localhost/items]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."name" = 'Test') LIMIT 1[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:42:08) [GET]
+  [4;35;1mItem Load (14.1ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 109ms (View: 27, DB: 14) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:43:00) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 76ms (View: 3, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:43:49) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:43:58) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:44:20) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:45:05) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 77ms (View: 72, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:45:10) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:47:11) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:54:09) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:54:28) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Completed in 88ms (View: 4, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-15 14:54:31) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/items]
+  [4;36;1mSQL (11.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "bookings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "instance_id" integer, "aasm_state" varchar(255), "start_date" datetime, "end_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "category_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "instances" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_id" integer, "part_number" varchar(255), "aasm_state" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "category_id" integer, "name" varchar(255), "instances_count" integer, "description" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "roles_users" ("role_id" integer, "user_id" integer) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE INDEX "index_roles_users_on_role_id" ON "roles_users" ("role_id")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE INDEX "index_roles_users_on_user_id" ON "roles_users" ("user_id")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "student_id" varchar(255)) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_login" ON "users" ("login")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090924073336')[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090924065636')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090924065644')[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090924065701')[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090924065735')[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090924072300')[0m
