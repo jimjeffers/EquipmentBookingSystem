@@ -1,11 +1,11 @@
 <% form_tag session_path, {:id => id} do -%>
 <h2>Student Login</h2>
 <ul class="form">
-  <li>
+  <li class="login">
   <%= label_tag 'login' %>
   <%= text_field_tag 'login', @login %>
   </li>
-  <li>
+  <li class="password">
     <%= label_tag 'password' %>
     <%= password_field_tag 'password', nil %>
   </li>
@@ -13,7 +13,7 @@
   <li class="remember_me"><%= label_tag 'remember_me', 'Remember me' %>
   <%= check_box_tag 'remember_me', '1', @remember_me %></li>
   -->
-  <li>
+  <li class="submit">
     <%= submit_tag 'Log in' %>
   </li>
 </ul>

@@ -33,6 +33,7 @@ General comments/License Statement if any.
       color: #000;
       font: normal normal normal 100%/1.5em Helvetica, Arial, sans-serif;
       min-width: 960px;
+      position: relative;
    }
    
    p {
@@ -66,10 +67,63 @@ General comments/License Statement if any.
 /* =HEADER
    ------------------------------------------------------ */
    div#header {
-      background: #000;
+      background: #8432A4;
       color: #fff;
-      padding: 1em 0.5em;
+      height: 80px;
+      left: 0;
+      position: absolute;
+      top: 34px;
+      width: 100%;
+   }
+   
+   h1#uq_equipment_booking,
+   div#header h2#logo {
+      font-size: 1.1em;
+      font-weight: normal;
+      height: 60px;
+      margin-left: -337px;
+      left: 50%;
+      line-height: 1.25em;
+      padding-top: 20px;
+      position: absolute;
+      top: 0;
+      width: 125px;
+      border-left: 1px solid #fff;
+   }
+   
+   h1#uq_equipment_booking {
+      padding-left: 10px;
+   }
+   
+   div#header h2#logo {
+      border-left: none;
+      border-right: 1px solid #000;
+      margin-left: -480px;
+      width: 142px;
+   }
+
+/* =LOGIN_FORM
+   ------------------------------------------------------ */
+   div#login form ul.form {
+      height: 30px;
       position: relative;
+      width: 500px;
+   }
+   
+   div#login form ul.form li.submit,
+   div#login form ul.form li.password,
+   div#login form ul.form li.login {
+      position: absolute;
+      right: 0;
+      top: 5px;
+   }
+   
+   div#login form ul.form li.password {
+      right: 50px;
+   }
+   
+   div#login form ul.form li.login {
+      right: 280px;
    }
    
    div#login form li,
@@ -87,7 +141,11 @@ General comments/License Statement if any.
       -khtml-border-radius:5px;
       -moz-border-radius:5px;
       -webkit-border-radius:5px;
-      -moz-border-radius:5px;
+   }
+   
+   div#login form label {
+      display: block;
+      line-height: 1.3em;
    }
    
    div#login form label,
@@ -136,19 +194,256 @@ General comments/License Statement if any.
    
    form#primary_login ul.form {
       margin: 0 auto;
-      padding-left: 510px;
+      padding-left: 460px;
       width: 450px;
    }
+
+/* =PRIMARY_NAVIGATION
+   ------------------------------------------------------ */
+   div#navigation_container {
+      background: #2A0E36;
+      left: 0;
+      position: absolute;
+      top: 114px;
+      width: 100%;
+   }
    
-   div#header {
-      top: 100px;
+   ul#primary_navigation {
+      margin: 0 auto;
+      width: 960px;
+      height: 40px;
+   }
+   
+   ul#primary_navigation li {
+      float: left;
+      margin: 5px 15px 0 0;
+   }
+   
+   ul#primary_navigation a {
+      border-radius-topleft: 10px;
+      border-radius-topright: 10px;
+      color: #fff;
+      display: block;
+      font-size: 0.785em;
+      line-height: 1.5em;
+      padding: 7px 10px 8px 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      
+      -o-border-radius-topleft: 10px;
+      -icab-border-radius-topleft: 10px;
+      -khtml-border-radius-topleft: 10px;
+      -moz-border-radius-topleft: 10px;
+      -webkit-border-top-left-radius: 10px; 
+      
+      -o-border-radius-topright: 10px;
+      -icab-border-radius-topright: 10px;
+      -khtml-border-radius-topright: 10px;
+      -moz-border-radius-topright: 10px;
+      -webkit-border-top-right-radius: 10px;
+   }
+   
+   span.reservation_count {
+      background: #5F4A68;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      padding: 0 5px;
+      
+      -o-border-radius:5px;
+      -icab-border-radius:5px;
+      -khtml-border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+   }
+   
+   ul#primary_navigation a:hover {
+      background: #87B314;
+      text-shadow: 1px 1px 1px #000;
+   }
+   
+   #items ul#primary_navigation li.equipment a,
+   #items ul#primary_navigation li.equipment a:hover {
+      background: #fff;
+      color: #88B415;
+      font-size: 0.875em;
+      font-weight: bold;
+      margin-top: 2px;
+      padding: 10px 10px 2px 10px;
+      text-shadow: none;
    }
 
-/* =PROGRESSIVE ENHANCEMENT
+/* =PRIMARY_SEARCH_FORM
+   ------------------------------------------------------ */
+   #primary_search_form {
+      border: 4px solid #642380;
+      margin-right: -480px;
+      padding-right: 90px;
+      position: absolute;
+      right: 50%;
+      top: 65px;
+   }
+   
+   #primary_search_form li {
+      display: block;
+      float: left;
+   }
+   
+   #primary_search_form,
+   #primary_search_form label {
+      background: #642380;
+      border-radius: 5px;
+      
+      -o-border-radius:5px;
+      -icab-border-radius:5px;
+      -khtml-border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+   }
+   
+   #primary_search_form label {
+      border-radius-topleft: 10px;
+      border-radius-topright: 10px;
+      color: #fff;
+      font-size: 0.875em;
+      left: 10px;
+      line-height: 1.25em;
+      padding: 4px 10px;
+      position: absolute;
+      top: -26px;
+      
+      -o-border-radius-topleft: 10px;
+      -icab-border-radius-topleft: 10px;
+      -khtml-border-radius-topleft: 10px;
+      -moz-border-radius-topleft: 10px;
+      -webkit-border-top-left-radius: 10px; 
+      
+      -o-border-radius-topright: 10px;
+      -icab-border-radius-topright: 10px;
+      -khtml-border-radius-topright: 10px;
+      -moz-border-radius-topright: 10px;
+      -webkit-border-top-right-radius: 10px;
+   }
+   
+   #primary_search_form input[type="text"] {
+      background: #fff url(../images/search_icon.png) no-repeat 5px 3px;
+      border: none;
+      border-radius-topleft: 5px;
+      border-radius-bottomleft: 5px;
+      display: block;
+      font-size: 1em;
+      height: 20px;
+      line-height: 1em;
+      padding: 2px 4px 4px 30px;
+      width: 398px;
+      
+      -o-border-radius-topleft: 5px;
+      -icab-border-radius-topleft: 5px;
+      -khtml-border-radius-topleft: 5px;
+      -moz-border-radius-topleft: 5px;
+      -webkit-border-top-left-radius: 5px; 
+      
+      -o-border-radius-bottomleft: 5px;
+      -icab-border-radius-bottomleft: 5px;
+      -khtml-border-radius-bottomleft: 5px;
+      -moz-border-radius-bottomleft: 5px;
+      -webkit-border-bottom-left-radius: 5px;
+   }
+   
+   #primary_search_form input[type="submit"] {
+      background: #88B415;
+      border: none;
+      border-radius-topleft: 5px;
+      border-radius-bottomleft: 5px;
+      color: #000;
+      display: block;
+      font-size: 1em;
+      font-weight: bold;
+      height: 26px;
+      line-height: 1em;
+      padding: 2px 10px;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0px;
+      right: 0px;
+      width: 90px;
+      
+      -o-border-radius-topright: 5px;
+      -icab-border-radius-topright: 5px;
+      -khtml-border-radius-topright: 5px;
+      -moz-border-radius-topright: 5px;
+      -webkit-border-top-right-radius: 5px; 
+      
+      -o-border-radius-bottomright: 5px;
+      -icab-border-radius-bottomright: 5px;
+      -khtml-border-radius-bottomright: 5px;
+      -moz-border-radius-bottomright: 5px;
+      -webkit-border-bottom-right-radius: 5px;
+   }
+
+/* =CONTENT
+   ------------------------------------------------------ */
+   div#content {
+      margin: 0 auto;
+      padding-top: 100px;
+      width: 960px;
+   }
+
+/* =PROGRESSIVE ENHANCEMENT (rgba)
+   ------------------------------------------------------ */
+   .rgba div#header {
+      background: rgba(100,35,128, 1);
+   }
+   
+   .rgba h1#uq_equipment_booking {
+      border-left: 1px solid rgba(255,255,255,0.15);
+   }
+   
+   .rgba div#header h2#logo {
+      border-right: 1px solid rgba(0,0,0,0.15);
+   }
+   
+   .rgba span.reservation_count {
+      background: rgba(255,255,255,.25);
+   }
+   
+/* =PROGRESSIVE ENHANCEMENT (CSS Gradients)
    ------------------------------------------------------ */
    .cssgradients div#header {
       background: #8432A4 -webkit-gradient(linear, left top, left bottom, 
                from(rgba(100,35,128, 1)), 
                to(rgba(132,50,164, 1)));
+   }
+   
+   .cssgradients ul#primary_navigation a:hover {
+      background: #87B314 -webkit-gradient(linear, left top, left bottom, 
+               from(#64840E), 
+               to(#87B314));
+   }
+
+
+/* =GRID_TO_BE_DELETED_FOR_PRODUCTION
+   ------------------------------------------------------ */
+   #grid {
+      background: rgba(255,255,255,0.1);
+      height: 100%;
+      left: 50%;
+      margin-left: -480px;
+      position: fixed;
+      top: 0;
+      width: 960px;
+   }
+
+   #grid li {
+      background: rgba(255,0,0,.25);
+      display: block;
+      height: 100%;
+      width: 40px;
+      float: left;
+      margin-right: 20px;
+   }
+
+   #grid li:last {
+      margin-right: 0;
    }
    

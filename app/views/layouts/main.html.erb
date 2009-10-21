@@ -10,18 +10,31 @@
     <script src="/javascripts/modernizr-1.0.min.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
-    <div id="header">
+    <div id="header" class="header">
       <h1 id="uq_equipment_booking">Equipment Rentals</h1>
       <h2 id="logo"><a href="/"><img src="/images/uq_logo.gif" width="132" height="38" alt="UQ Logo"/></a></h2>
     </div>
     <div id="login">
       <%= render :partial => 'sessions/login_form', :locals => {:id => "primary_login"} %>
     </div>
-    <ul class="primary_navigation">
-      <li class="equipment"><a href="#">Find Equipment</a></li>
-      <li class="reservations"><a href="#">My Reservations</a></li>
-      <li class="help"><a href="#">Help &amp; Guides</a></li>
-    </ul>
+    <div id="primary_search_form" class="search_form">
+      <% form_tag('/search') do %>
+        <ul class="form">
+          <li>
+            <%= label_tag :search, "Search Equipment Library:" %>
+            <%= text_field_tag :search, "projectors, camera, laptop case, etc..." %>
+          </li>
+          <li><%= submit_tag "Search" %></li>
+        </ul>
+      <% end %>
+    </div>
+    <div id="navigation_container">
+      <ul id="primary_navigation" class="navigation">
+        <li class="equipment"><a href="#">Find Equipment</a></li>
+        <li class="reservations"><a href="#">My Reservations <span class="reservation_count">2</span></a></li>
+        <li class="help"><a href="#">Help &amp; Guides</a></li>
+      </ul>
+    </div>
     <% if flash[:notice] %>
     <div id="notice">
       <%= flash[:notice] %>
@@ -35,6 +48,30 @@
     <div id="content">
       <%= yield %>
     </div>
+    <!-- Delete this grid for production -->
+    <ul id="grid">
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+    </ul>
     <script src="/javascripts/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/site.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/dev.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
