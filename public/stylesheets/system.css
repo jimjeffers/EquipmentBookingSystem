@@ -273,6 +273,10 @@ General comments/License Statement if any.
       text-shadow: none;
    }
    
+   #items ul#primary_navigation li.equipment .sub_navigation {
+      top: -9999px;
+   }
+   
    ul#primary_navigation li.checkout {
       margin-right: -480px;
       position: absolute;
