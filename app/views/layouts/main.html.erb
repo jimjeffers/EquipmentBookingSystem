@@ -18,21 +18,14 @@
       <%= render :partial => 'sessions/login_form', :locals => {:id => "primary_login"} %>
     </div>
     <div id="primary_search_form" class="search_form">
-      <% form_tag('/search') do %>
-        <ul class="form">
-          <li>
-            <%= label_tag :search, "Search Equipment Library:" %>
-            <%= text_field_tag :search, "projectors, camera, laptop case, etc..." %>
-          </li>
-          <li><%= submit_tag "Search" %></li>
-        </ul>
-      <% end %>
+      <%= render :partial => 'layouts/search_form', :locals => {:search_label => "Search Equipment Library:"} %>
     </div>
     <div id="navigation_container">
       <ul id="primary_navigation" class="navigation">
         <li class="equipment"><a href="#">Find Equipment</a></li>
         <li class="reservations"><a href="#">My Reservations <span class="reservation_count">2</span></a></li>
         <li class="help"><a href="#">Help &amp; Guides</a></li>
+        <li class="checkout"><a href="#">0 items in your cart</a></li>
       </ul>
     </div>
     <% if flash[:notice] %>
@@ -47,6 +40,41 @@
     <% end %>
     <div id="content">
       <%= yield %>
+    </div>
+    <div id="additional_content" class="footer">
+      <div id="secondary_search_form" class="search_form">
+        <%= render :partial => 'layouts/search_form', :locals => {:search_label => "Couldn’t find what you were looking for on this page?"} %>
+      </div>
+      <div id="inline_sitemap">
+        <ul class="find_equipment">
+          <li class="section_title"><h2><a href="#">Find Equipment</a></h2></li>
+          <li><a href="#">Search &amp; Browse</a></li>
+        </ul>
+        <ul class="my_reservations">
+          <li class="section_title"><h2><a href="#">My Reservations</a></h2></li>
+          <li><a href="#">Manage My Reserved Items</a></li>
+          <li><a href="#">Items I Currently Have Checked Out</a></li>
+          <li><a href="#">Report Damaged/Lost Items</a></li>
+        </ul>
+        <ul class="help_and_guides">
+          <li class="section_title"><h2><a href="#">Help and Guides</a></h2></li>
+          <li><a href="#">How do I file a damage report?</a></li>
+          <li><a href="#">Where can I pick up my items?</a></li>
+          <li><a href="#">How many items am I allowed to checkout?</a></li>
+          <li><a href="#">How do I pay my overdue fees?</a></li>
+          <li><a href="#">Why does it say my account is pending approval?</a></li>
+          <li class="more"><a href="#">See more questions and answers...</a></li>
+      </div>
+      <ul id="contact_information">
+        <li class="logo"><a href="/"><img src="/images/uq_logo.gif" width="132" height="38" alt="UQ Logo"/></a></li>
+        <li class="address">Brisbane St Lucia, QLD 4072</li>
+        <li class="phone">+61 7 3365 1111</li>
+        <li class="locales">
+          Other Campuses: <a href="#">UQ Ipswich</a>,
+          <a href="#">UQ Gatton</a>, <a href="#">UQ Herston</a>
+        </li>
+        <li class="copyright">&copy; 2009 The University of Queensland</li>
+      </ul>
     </div>
     <!-- Delete this grid for production -->
     <ul id="grid">

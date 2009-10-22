@@ -1,0 +1,9 @@
+<% form_tag('/search') do %>
+        <ul class="form">
+          <li>
+            <%= label_tag :search, search_label %>
+            <%= text_field_tag :search, "projectors, camera, laptop case, etc..." %>
+          </li>
+          <li><%= submit_tag "Search" %></li>
+        </ul>
+      <% end %>

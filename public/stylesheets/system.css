@@ -49,7 +49,6 @@ General comments/License Statement if any.
       font-size: 1.5em;
       font-weight: bold;
       line-height: 1.25em;
-      margin: 0 1.5em;
    }
    
    h2 {
@@ -88,7 +87,7 @@ General comments/License Statement if any.
       position: absolute;
       top: 0;
       width: 125px;
-      border-left: 1px solid #fff;
+      border-left: 1px solid #A365BB;
    }
    
    h1#uq_equipment_booking {
@@ -97,7 +96,7 @@ General comments/License Statement if any.
    
    div#header h2#logo {
       border-left: none;
-      border-right: 1px solid #000;
+      border-right: 1px solid #64257C;
       margin-left: -480px;
       width: 142px;
    }
@@ -272,25 +271,41 @@ General comments/License Statement if any.
       padding: 10px 10px 2px 10px;
       text-shadow: none;
    }
-
+   
+   ul#primary_navigation li.checkout {
+      margin-right: -480px;
+      position: absolute;
+      right: 50%;
+      
+   }
+   
+   ul#primary_navigation li.checkout a,
+   ul#primary_navigation li.checkout a:hover {
+      background: transparent url(../images/cart_inactive.png) no-repeat 0 7px;
+      color: #95879B;
+      display: block;
+      padding: 6px 4px 5px 35px;
+      text-shadow: none;
+      text-transform: lowercase;
+   }
 /* =PRIMARY_SEARCH_FORM
    ------------------------------------------------------ */
-   #primary_search_form {
+   .search_form {
       border: 4px solid #642380;
       margin-right: -480px;
       padding-right: 90px;
       position: absolute;
       right: 50%;
-      top: 65px;
+      top: 70px;
    }
    
-   #primary_search_form li {
+   .search_form li {
       display: block;
       float: left;
    }
    
-   #primary_search_form,
-   #primary_search_form label {
+   .search_form,
+   .search_form label {
       background: #642380;
       border-radius: 5px;
       
@@ -301,7 +316,7 @@ General comments/License Statement if any.
       -webkit-border-radius:5px;
    }
    
-   #primary_search_form label {
+   .search_form label {
       border-radius-topleft: 10px;
       border-radius-topright: 10px;
       color: #fff;
@@ -325,8 +340,8 @@ General comments/License Statement if any.
       -webkit-border-top-right-radius: 10px;
    }
    
-   #primary_search_form input[type="text"] {
-      background: #fff url(../images/search_icon.png) no-repeat 5px 3px;
+   .search_form input[type="text"] {
+      background: #fff url(../images/search_icon.png) no-repeat 6px 4px;
       border: none;
       border-radius-topleft: 5px;
       border-radius-bottomleft: 5px;
@@ -350,7 +365,11 @@ General comments/License Statement if any.
       -webkit-border-bottom-left-radius: 5px;
    }
    
-   #primary_search_form input[type="submit"] {
+   .search_form input[type="text"].fresh {
+      color: #999;
+   }
+   
+   .search_form input[type="submit"] {
       background: #88B415;
       border: none;
       border-radius-topleft: 5px;
@@ -381,6 +400,25 @@ General comments/License Statement if any.
       -webkit-border-bottom-right-radius: 5px;
    }
 
+/* =SECONDARY_SEARCH_FORM
+   ------------------------------------------------------ */
+   #secondary_search_form {
+      top: 45px;
+      width: 620px;
+   }
+   
+   #secondary_search_form label {
+      background: transparent;
+      font-size: 1.1em;
+      left: -10px;
+      line-height: 1.25em;
+      top: -35px;
+   }
+   
+   #secondary_search_form input[type="text"] {
+      width: 588px;
+   }
+
 /* =CONTENT
    ------------------------------------------------------ */
    div#content {
@@ -389,6 +427,103 @@ General comments/License Statement if any.
       width: 960px;
    }
 
+/* =ADDITIONAL_CONTENT
+   ------------------------------------------------------ */
+   div#additional_content {
+      background: #8432A4;
+      color: #fff;
+      position: relative;
+      min-height: 300px;
+   }
+   
+   div#additional_content #contact_information {
+      border-right: 1px dotted #fff;
+      font-size: 0.7em;
+      left: 50%;
+      line-height: 1.25em;
+      margin-left: -480px;
+      min-height: 220px;
+      padding-right: 10px;
+      position: absolute;
+      top: 20px;
+      width: 220px;
+   }
+   
+   div#additional_content #contact_information a {
+      border-bottom: 1px dotted #fff;
+      color: #fff;
+      display: inline-block;
+      text-decoration: none;
+   }
+   
+   div#additional_content #contact_information li.logo {
+      padding-bottom: 10px;
+   }
+   
+   div#additional_content #contact_information li.logo a {
+      border-bottom: none;
+   }
+   
+   div#additional_content #contact_information li.locales {
+      padding: 10px 0;
+   }
+   
+   div#additional_content #inline_sitemap {
+      font-size: 0.7em;
+      line-height: 1.25em;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 100px 0 30px 240px;
+      width: 720px;
+   }
+   
+   div#additional_content #inline_sitemap ul {
+      float: left;
+      padding-right: 20px;
+   }
+   
+   div#additional_content #inline_sitemap ul:last-child {
+      padding-right: 0;
+   }
+   
+   div#additional_content #inline_sitemap ul.find_equipment {
+      width: 160px;
+   }
+   
+   div#additional_content #inline_sitemap ul.my_reservations {
+      width: 220px;
+   }
+   
+   div#additional_content #inline_sitemap ul.help_and_quides {
+      width: 280px;
+   }
+   
+   div#additional_content #inline_sitemap li {
+      background: url(../images/arrow_icon.gif) no-repeat 0 5px;
+      padding: 2px 2px 2px 12px;
+   }
+   
+   div#additional_content #inline_sitemap li.more a {
+      font-weight: bold;
+   }
+   
+   div#additional_content #inline_sitemap li a {
+      color: #fff;
+   }
+   
+   div#additional_content #inline_sitemap li.section_title {
+      background: none;
+      padding: 2px 0;
+   }
+   
+   div#additional_content #inline_sitemap .section_title h2 a {
+      color: #EAB8F8;
+      font-size: 0.875em;
+      font-weight: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+   }
+   
 /* =PROGRESSIVE ENHANCEMENT (rgba)
    ------------------------------------------------------ */
    .rgba div#header {
@@ -407,9 +542,23 @@ General comments/License Statement if any.
       background: rgba(255,255,255,.25);
    }
    
+   .rgba div#additional_content #contact_information a {
+      border-bottom: 1px dotted rgba(255,255,255,0.25);
+   }
+   
+   .rgba div#additional_content #contact_information {
+      border-right: 1px dotted rgba(255,255,255,0.25);
+   }
+   
 /* =PROGRESSIVE ENHANCEMENT (CSS Gradients)
    ------------------------------------------------------ */
    .cssgradients div#header {
+      background: #8432A4 -webkit-gradient(linear, left top, left bottom, 
+               from(rgba(132,50,164, 1)), 
+               to(rgba(100,35,128, 1)));
+   }
+   
+   .cssgradients div#additional_content {
       background: #8432A4 -webkit-gradient(linear, left top, left bottom, 
                from(rgba(100,35,128, 1)), 
                to(rgba(132,50,164, 1)));
