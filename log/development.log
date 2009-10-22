@@ -4508,3 +4508,213 @@ Rendered sessions/_login_form (1.8ms)
 Rendered layouts/_search_form (1.3ms)
 Rendered layouts/_search_form (1.2ms)
 Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:00:30) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:01:04) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:01:43) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:02:50) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:03:31) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:03:47) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:04:19) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.7ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:04:22) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 82ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:05:46) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:06:02) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:06:26) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.2ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:06:58) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:07:14) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.5ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:07:20) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (3.0ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:08:18) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:08:29) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.2ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:09:20) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.2ms)
+Rendered layouts/_search_form (2.7ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:09:44) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 92ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:09:55) [GET]
+  [4;36;1mItem Load (1.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (3.3ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 17ms (View: 9, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 12:10:09) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 12:11:34) [GET]
+  [4;36;1mCategory Load (14.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 276ms (View: 137, DB: 14) | 200 OK [http://localhost/categories]

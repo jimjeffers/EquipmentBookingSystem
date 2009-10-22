@@ -340,6 +340,14 @@ General comments/License Statement if any.
       -webkit-border-radius:2px;
    }
    
+   .sub_navigation li span.count {
+      display: block;
+      float: left;
+      font-size: 1.25em;
+      line-height: 1.25em;
+      padding-right: 10px;
+   }
+   
    .sub_navigation > li ol {
       margin-left: 20px;
    }
@@ -356,7 +364,7 @@ General comments/License Statement if any.
    
    .sub_navigation li.more {
       padding: 10px 0 0 0;
-   } 
+   }
    
    .sub_navigation > li.help_categories {
       width: 160px;
@@ -365,6 +373,21 @@ General comments/License Statement if any.
    .sub_navigation > li.most_asked_questions {
       padding-right: 0;
       width: 300px;
+   }
+   
+   .reservations .sub_navigation,
+   .reservations .sub_navigation li {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+   }
+   
+   .reservations .sub_navigation li a {
+      margin-left: 15px;
+   }
+   
+   .reservations .sub_navigation ul {
+      padding: 0 10px;
    }
    
 /* =PRIMARY_SEARCH_FORM
