@@ -4718,3 +4718,652 @@ Rendered sessions/_login_form (1.9ms)
 Rendered layouts/_search_form (1.3ms)
 Rendered layouts/_search_form (1.4ms)
 Completed in 276ms (View: 137, DB: 14) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 12:15:05) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 12:16:24) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered sessions/_login_form (1.6ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 12:17:17) [GET]
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 92ms (View: 87, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 13:42:54) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 13:56:56) [GET]
+  [4;35;1mItem Load (9.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 71ms (View: 56, DB: 10) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 14:30:36) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (4.3ms)
+Rendered layouts/_search_form (3.1ms)
+Rendered layouts/_search_form (2.2ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 140ms (View: 66, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 14:31:49) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.2ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 395ms (View: 389, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 15:46:06) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 32ms (View: 27, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 16:06:54) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 98ms (View: 25, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 20:16:48) [GET]
+  [4;36;1mItem Load (14.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 52ms (View: 32, DB: 14) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 20:19:24) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 45ms (View: 40, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:32:35) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 91ms (View: 37, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:32:55) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:35:05) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 32ms (View: 26, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:36:30) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 23:47:33) [GET]
+  [4;36;1mItem Load (13.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.9ms)
+Rendered layouts/_search_form (3.0ms)
+Rendered layouts/_search_form (16.5ms)
+Rendered layouts/_search_form (2.8ms)
+Completed in 193ms (View: 109, DB: 14) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:47:35) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (2.2ms)
+Completed in 154ms (View: 33, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:48:57) [GET]
+  [4;36;1mCategory Load (0.9ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 23:49:21) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 23:50:01) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:50:26) [GET]
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:50:37) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:50:42) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 23:51:24) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 23:53:03) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 23:53:20) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 23:53:36) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.3ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 23:53:50) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 93ms (View: 9, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:54:47) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-22 23:54:58) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_form (4.0ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (2.1ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:55:23) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 86ms (View: 80, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:57:49) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:57:55) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.4ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:58:00) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (3.3ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:58:47) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-22 23:58:56) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:05:08) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (3.0ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_form (3.9ms)
+Completed in 27ms (View: 21, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:05:39) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:06:34) [GET]
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:06:51) [GET]
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:07:18) [GET]
+  [4;35;1mCategory Load (1.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.4ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (2.3ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:08:05) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:10:37) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:10:57) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (2.0ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:11:24) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (2.2ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:11:50) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (2.0ms)
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:12:57) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (2.2ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:13:01) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.2ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:13:23) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:13:50) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 94ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:13:57) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (2.4ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:14:38) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.3ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:15:36) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 97ms (View: 16, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:15:39) [GET]
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.4ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (2.1ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:15:56) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:16:35) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:16:50) [GET]
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:17:20) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 00:17:45) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 81ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]

@@ -22,7 +22,53 @@
     </div>
     <div id="navigation_container">
       <ul id="primary_navigation" class="navigation">
-        <li class="equipment"><a href="#">Find Equipment</a></li>
+        <li class="equipment"><a href="#">Find Equipment</a>
+          <ul class="sub_navigation">
+            <li class="search_form">
+              <%= render :partial => 'layouts/search_form', :locals => {:search_label => "Search Equipment"} %>
+            </li>
+            <li class="section_title">Browse Equipment</li>
+            <li class="categories">
+              <ul class="category_list">
+                <li><a href="#">Cameras</a>
+                  <ul>
+                    <li><a href="#">Compact</a></li>
+                    <li><a href="#">Video</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Cameras</a>
+                  <ul>
+                    <li><a href="#">SLR</a></li>
+                    <li><a href="#">Compact</a></li>
+                    <li><a href="#">Video</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Cameras</a>
+                  <ul>
+                    <li><a href="#">SLR</a></li>
+                    <li><a href="#">Digital</a></li>
+                    <li><a href="#">Compact</a></li>
+                    <li><a href="#">Video</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Cameras</a>
+                  <ul>
+                    <li><a href="#">SLR</a></li>
+                    <li><a href="#">Digital</a></li>
+                    <li><a href="#">Compact</a></li>
+                    <li><a href="#">Video</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Cameras</a>
+                  <ul>
+                    <li><a href="#">SLR</a></li>
+                    <li><a href="#">Video</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li class="reservations"><a href="#">My Reservations <span class="reservation_count">2</span></a>
           <ul class="sub_navigation">
             <li>

@@ -294,7 +294,9 @@ General comments/License Statement if any.
    ------------------------------------------------------ */
    .sub_navigation {
       background: #87B314;
-      border-radius: 5px;
+      border-radius-topright: 10px;
+      border-radius-bottomleft: 10px;
+      border-radius-bottomright: 10px;
       box-shadow: 2px 2px 2px #000;
       display: none;
       left: 0;
@@ -304,11 +306,23 @@ General comments/License Statement if any.
       width: 480px;
       z-index: 1;
       
-      -o-border-radius:5px;
-      -icab-border-radius:5px;
-      -khtml-border-radius:5px;
-      -moz-border-radius:5px;
-      -webkit-border-radius:5px;
+      -o-border-radius-bottomleft: 10px;
+      -icab-border-radius-bottomleft: 10px;
+      -khtml-border-radius-bottomleft: 10px;
+      -moz-border-radius-bottomleft: 10px;
+      -webkit-border-bottom-left-radius: 10px; 
+      
+      -o-border-radius-bottomright: 10px;
+      -icab-border-radius-bottomright: 10px;
+      -khtml-border-radius-bottomright: 10px;
+      -moz-border-radius-bottomright: 10px;
+      -webkit-border-bottom-right-radius: 10px;
+      
+      -o-border-radius-topright: 10px;
+      -icab-border-radius-topright: 10px;
+      -khtml-border-radius-topright: 10px;
+      -moz-border-radius-topright: 10px;
+      -webkit-border-top-right-radius: 10px;
       
       -o-box-shadow: 2px 2px 2px #000;
       -icab-box-shadow: 2px 2px 2px #000;
@@ -377,9 +391,16 @@ General comments/License Statement if any.
    
    .reservations .sub_navigation,
    .reservations .sub_navigation li {
+      border-radius-topright: 0;
       padding-left: 0;
       padding-right: 0;
       width: 100%;
+      
+      -o-border-radius-topright: 0;
+      -icab-border-radius-topright: 0;
+      -khtml-border-radius-topright: 0;
+      -moz-border-radius-topright: 0;
+      -webkit-border-top-right-radius: 0;
    }
    
    .reservations .sub_navigation li a {
@@ -388,6 +409,39 @@ General comments/License Statement if any.
    
    .reservations .sub_navigation ul {
       padding: 0 10px;
+   }
+   
+   .equipment .sub_navigation {
+      padding-top: 80px;
+   }
+   
+   .equipment .sub_navigation .category_list > li {
+      float: left;
+      width: 140px;
+   }
+   
+   .equipment .sub_navigation .category_list > li li {
+      display: inline;
+   }
+   
+   .equipment .sub_navigation .category_list > li li a {
+      display: inline;
+      font-weight: normal;
+      font-size: 0.875em;
+      line-height: 1em;
+      padding: 1px;
+   }
+   
+   .equipment .sub_navigation .category_list > li > ul {
+      padding: 0 5px;
+   }
+   
+   .equipment .sub_navigation .category_list > li li:after {
+      content: ", ";
+   }
+   
+   .equipment .sub_navigation .category_list > li li:last-child:after {
+      content: "";
    }
    
 /* =PRIMARY_SEARCH_FORM
@@ -502,6 +556,32 @@ General comments/License Statement if any.
       -webkit-border-bottom-right-radius: 5px;
    }
 
+/* =EQUIPMENT_DROPDOWN_SEARCHFORM
+   ------------------------------------------------------ */   
+   .equipment .sub_navigation .search_form {
+      border-color: #000;
+      left: 10px;
+      margin: 0;
+      top: 30px;
+      width: 452px;
+   }
+   
+   .equipment .sub_navigation .search_form label {
+      background: transparent;
+      color: #000;
+      font-size: 1em;
+      left: -2px;
+      line-height: 1.5em;
+      padding: 0;
+      text-transform: uppercase;
+   }
+   
+   .equipment .search_form input[type="text"],
+   .equipment .search_form input[type="submit"] {
+      font-size: 1.25em;
+      line-height: 1.5em;
+   }
+   
 /* =SECONDARY_SEARCH_FORM
    ------------------------------------------------------ */
    #secondary_search_form {
