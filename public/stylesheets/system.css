@@ -213,12 +213,13 @@ General comments/License Statement if any.
       height: 40px;
    }
    
-   ul#primary_navigation li {
+   ul#primary_navigation > li {
       float: left;
       margin: 5px 15px 0 0;
+      position: relative;
    }
    
-   ul#primary_navigation a {
+   ul#primary_navigation > li > a {
       border-radius-topleft: 10px;
       border-radius-topright: 10px;
       color: #fff;
@@ -256,7 +257,7 @@ General comments/License Statement if any.
       -webkit-border-radius:5px;
    }
    
-   ul#primary_navigation a:hover {
+   ul#primary_navigation .active > a {
       background: #87B314;
       text-shadow: 1px 1px 1px #000;
    }
@@ -276,7 +277,6 @@ General comments/License Statement if any.
       margin-right: -480px;
       position: absolute;
       right: 50%;
-      
    }
    
    ul#primary_navigation li.checkout a,
@@ -288,6 +288,85 @@ General comments/License Statement if any.
       text-shadow: none;
       text-transform: lowercase;
    }
+   
+
+/* =SUB_NAVIGATION
+   ------------------------------------------------------ */
+   .sub_navigation {
+      background: #87B314;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px #000;
+      display: none;
+      left: 0;
+      padding: 10px;
+      position: absolute;
+      top: 30px;
+      width: 480px;
+      z-index: 1;
+      
+      -o-border-radius:5px;
+      -icab-border-radius:5px;
+      -khtml-border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+      
+      -o-box-shadow: 2px 2px 2px #000;
+      -icab-box-shadow: 2px 2px 2px #000;
+      -khtml-box-shadow: 2px 2px 2px #000;
+      -moz-box-shadow: 2px 2px 2px #000;
+      -webkit-box-shadow: 2px 2px 2px #000;
+   }
+   
+   .sub_navigation > li {
+      font-size: 0.75em;
+      float: left;
+      line-height: 1.5em;
+      padding-right: 20px;
+   }
+   
+   .sub_navigation > li > ul a,
+   .sub_navigation > li > ol a {
+      border-radius: 2px;
+      color: #fff;
+      display: block;
+      font-weight: bold;
+      padding: 1px 5px;
+      text-shadow: 1px 1px 0px #000;
+      
+      -o-border-radius:2px;
+      -icab-border-radius:2px;
+      -khtml-border-radius:2px;
+      -moz-border-radius:2px;
+      -webkit-border-radius:2px;
+   }
+   
+   .sub_navigation > li ol {
+      margin-left: 20px;
+   }
+   
+   .sub_navigation > li ol,
+   .sub_navigation > li ol li {
+      list-style: decimal outside;
+   }
+   
+   .sub_navigation li.section_title {
+      text-transform: uppercase;
+      padding: 0 0 10px 0;
+   }
+   
+   .sub_navigation li.more {
+      padding: 10px 0 0 0;
+   } 
+   
+   .sub_navigation > li.help_categories {
+      width: 160px;
+   }
+   
+   .sub_navigation > li.most_asked_questions {
+      padding-right: 0;
+      width: 300px;
+   }
+   
 /* =PRIMARY_SEARCH_FORM
    ------------------------------------------------------ */
    .search_form {
@@ -526,10 +605,6 @@ General comments/License Statement if any.
    
 /* =PROGRESSIVE ENHANCEMENT (rgba)
    ------------------------------------------------------ */
-   .rgba div#header {
-      background: rgba(100,35,128, 1);
-   }
-   
    .rgba h1#uq_equipment_booking {
       border-left: 1px solid rgba(255,255,255,0.15);
    }
@@ -550,6 +625,18 @@ General comments/License Statement if any.
       border-right: 1px dotted rgba(255,255,255,0.25);
    }
    
+   .rgba .sub_navigation > li > ul a,
+   .rgba .sub_navigation > li > ol a {
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 1px 1px 0px rgba(0,0,0,.35);
+   }
+   
+   .rgba .sub_navigation > li > ul a:hover,
+   .rgba .sub_navigation > li > ol a:hover {
+      background: rgba(0,0,0,.15);
+   }
+   
 /* =PROGRESSIVE ENHANCEMENT (CSS Gradients)
    ------------------------------------------------------ */
    .cssgradients div#header {
@@ -564,12 +651,23 @@ General comments/License Statement if any.
                to(rgba(132,50,164, 1)));
    }
    
-   .cssgradients ul#primary_navigation a:hover {
+   .cssgradients ul#primary_navigation .active > a {
       background: #87B314 -webkit-gradient(linear, left top, left bottom, 
                from(#64840E), 
                to(#87B314));
    }
+   
+   .cssgradients ul#primary_navigation .sub_navigation {
+      background: #87B314 -webkit-gradient(linear, left top, left bottom, 
+               from(#87B314), 
+               to(#64840E));
+   }
 
+/* =PROGRESSIVE ENHANCEMENT (CSS Transistions)
+   ------------------------------------------------------ */
+   .sub_navigation a {
+      -webkit-transition: background 0.5s ease-out;
+   }
 
 /* =GRID_TO_BE_DELETED_FOR_PRODUCTION
    ------------------------------------------------------ */
