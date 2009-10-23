@@ -16,6 +16,12 @@ $(document).ready(function() {
       }
    });
    
+   // Bind jQuery UI
+   $('.datepicker').datepicker();
+   $('.datepicker').datepicker('option', 'duration', 'slow');
+   $('.datepicker').datepicker('option', 'numberOfMonths', 2);
+   
+   
    // Easy dropdown navigation with timeouts.
    $('.sub_navigation').each(function() {
           var menu = $(this);

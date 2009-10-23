@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="/stylesheets/reset.css" type="text/css" media="screen" charset="utf-8"/>
     <link rel="stylesheet" href="/stylesheets/system.css" type="text/css" media="screen" charset="utf-8"/>
     <link rel="stylesheet" href="/stylesheets/help.css" type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/stylesheets/uq-theme/jquery-ui-1.7.2.custom.css" type="text/css" media="screen" charset="utf-8"/>
     <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
     <script src="/javascripts/modernizr-1.0.min.js" type="text/javascript" charset="utf-8"></script>
   </head>
-  <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
+  <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %> uq-theme">
     <div id="header" class="header">
       <h1 id="uq_equipment_booking">Equipment Rentals</h1>
       <h2 id="logo"><a href="/"><img src="/images/uq_logo.gif" width="132" height="38" alt="UQ Logo"/></a></h2>
@@ -182,6 +183,7 @@
        <li>&nbsp;</li>
     </ul>
     <script src="/javascripts/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/jquery-ui-1.7.2.custom.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascripts/site.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascripts/dev.js" type="text/javascript" charset="utf-8"></script>
   </body>

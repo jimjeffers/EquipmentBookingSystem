@@ -850,6 +850,13 @@ General comments/License Statement if any.
       text-decoration: none;
    }
    
+/* =JQUERY_UI (date_picker)
+   ------------------------------------------------------ */
+   #ui-datepicker-div {
+      font-size: 0.75em;
+      line-height: 1em;
+   }
+   
 /* =PROGRESSIVE ENHANCEMENT (rgba)
    ------------------------------------------------------ */
    .rgba h1#uq_equipment_booking {

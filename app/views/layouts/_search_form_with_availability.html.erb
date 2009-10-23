@@ -1,3 +1,16 @@
 <% form_tag('/search') do %>
   <%= render :partial => 'layouts/search_field', :locals => {:search_label => search_label} %>
+  <fieldset>
+    <legend>Optional</legend>
+    <ul class="form">
+      <li>
+        <%= label_tag :available_from, "Pickup On" %>
+        <%= text_field_tag :available_from, "", :class => 'datepicker' %>
+      </li>
+      <li>
+        <%= label_tag :available_until, "Return On" %>
+        <%= text_field_tag :available_until, "", :class => 'datepicker' %>
+      </li>
+    </ul>
+  </fieldset>
 <% end %>
