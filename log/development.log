@@ -5444,3 +5444,1841 @@ Rendered layouts/_search_form (1.2ms)
 Rendered layouts/_search_form (1.2ms)
 Rendered layouts/_search_form (1.2ms)
 Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 07:56:41) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-10-23 10:40:41) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/main
+Rendering items/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 10:41:28) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-23 10:45:07) [GET]
+
+ActionController::RoutingError (No route matches "/categorie" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 10:45:09) [GET]
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.2ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 12:59:46) [GET]
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (1.2ms)
+Rendered layouts/_search_form (77.1ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 203ms (View: 198, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:00:59) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:04:28) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (1.0ms)
+Rendered layouts/_search_form (1.9ms)
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:04:34) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 90ms (View: 83, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:04:57) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.5ms)
+Rendered layouts/_search_field (0.8ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.8ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:05:04) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.4ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.2ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:05:57) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.1ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.8ms)
+Completed in 89ms (View: 83, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:06:01) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:06:48) [GET]
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.4ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (2.1ms)
+Rendered layouts/_search_field (2.5ms)
+Rendered layouts/_search_form (3.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:08:23) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 80ms (View: 74, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:09:50) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.1ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.1ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.8ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:10:04) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.3ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (2.1ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:10:52) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 80ms (View: 75, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:12:20) [GET]
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:12:23) [GET]
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.2ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (2.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:12:30) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (68.7ms)
+Rendered layouts/_search_form (69.8ms)
+Rendered layouts/_search_field (0.9ms)
+Rendered layouts/_search_form (1.9ms)
+Completed in 83ms (View: 77, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:13:00) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.6ms)
+Rendered layouts/_search_field (1.0ms)
+Rendered layouts/_search_form (2.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:13:11) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.1ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (3.9ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:13:14) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (68.8ms)
+Rendered layouts/_search_form (69.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 83ms (View: 77, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:13:24) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.1ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:13:48) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.8ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:14:01) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 84ms (View: 79, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:51:18) [GET]
+  [4;36;1mCategory Load (20.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (12.9ms)
+Rendered layouts/_search_field (1.2ms)
+Rendered layouts/_search_form (6.2ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 191ms (View: 124, DB: 21) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:51:43) [GET]
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:52:03) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:52:51) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (1.1ms)
+Rendered layouts/_search_form (2.1ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:53:04) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:53:16) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 13:54:06) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:00:15) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (2.6ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:01:44) [GET]
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:01:45) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (2.1ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.9ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:02:27) [GET]
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:03:01) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:03:13) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:03:40) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:03:55) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:03:59) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:04:18) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:04:22) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:04:28) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_field (1.2ms)
+Rendered layouts/_search_form (2.2ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.1ms)
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:04:30) [GET]
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:04:36) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:04:38) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (2.3ms)
+Rendered layouts/_search_form (3.2ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:04:46) [GET]
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:05:02) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:05:06) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:05:11) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:05:17) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:05:20) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (1.8ms)
+Rendered layouts/_search_form (2.9ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (1.0ms)
+Rendered layouts/_search_form (2.0ms)
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:05:28) [GET]
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:05:33) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.2ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:05:41) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.9ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:05:42) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:06:25) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-23 14:06:30) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"6HQSmPubFW+nQCmbrTEN9iZ7sjyb8DOVwbSEccBwa0M=", "login"=>"", "password"=>""}
+Failed login for '' from 127.0.0.1 at Fri Oct 23 04:06:30 UTC 2009
+Rendering sessions/new
+Rendered sessions/_login_form (2.7ms)
+Completed in 57ms (View: 8, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:06:32) [GET]
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:06:45) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 83ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:13:16) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (1.2ms)
+Rendered layouts/_search_form (3.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:15:31) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.1ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:15:40) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 87ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:16:00) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_field (2.3ms)
+Rendered layouts/_search_form (3.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.8ms)
+Rendered layouts/_search_form (2.3ms)
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:20:30) [GET]
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:21:35) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:43:41) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.8ms)
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:44:11) [GET]
+  [4;36;1mCategory Load (1.2ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:44:52) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.9ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:47:20) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.1ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (3.3ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:47:25) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.2ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.8ms)
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:48:10) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:48:23) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 28ms (View: 21, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:53:53) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:54:13) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:54:41) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.8ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:54:43) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.1ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:55:08) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:55:42) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.4ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:55:48) [GET]
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:55:57) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:56:08) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.9ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:56:24) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:56:25) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:56:33) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:57:07) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:57:12) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (2.1ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:57:17) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_field (1.0ms)
+Rendered layouts/_search_form (3.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:57:28) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (3.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:57:52) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.8ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:58:02) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.1ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (3.2ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 14:58:24) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (2.3ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (3.4ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:00:47) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.0ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:01:19) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:03:10) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.8ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:05:04) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:05:32) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:06:00) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.9ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:06:08) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:08:24) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.1ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.9ms)
+Completed in 21ms (View: 16, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:08:33) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (68.0ms)
+Completed in 80ms (View: 75, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:08:50) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:10:13) [GET]
+  [4;35;1mCategory Load (1.1ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (2.1ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:11:16) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.7ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (68.1ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 81ms (View: 75, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:14:02) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:15:15) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:15:33) [GET]
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (69.4ms)
+Rendered layouts/_search_form (70.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 83ms (View: 78, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:15:55) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:16:04) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:16:17) [GET]
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (69.4ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 81ms (View: 76, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:16:21) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:16:39) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.9ms)
+Rendered layouts/_search_form (1.8ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:16:46) [GET]
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 80ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:17:33) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:17:44) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.3ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:18:04) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 79ms (View: 9, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:20:32) [GET]
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:21:01) [GET]
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-10-23 15:23:56) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/main
+Rendering categories/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 85ms (View: 15, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-23 15:24:02) [GET]
+
+ActionController::RoutingError (No route matches "/equipment" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-23 15:24:04) [GET]
+
+ActionController::RoutingError (No route matches "/equipment/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EquipmentController#index (for 127.0.0.1 at 2009-10-23 15:24:22) [GET]
+Rendering template within layouts/main
+Rendering equipment/index
+Rendered sessions/_login_form (2.5ms)
+Rendered layouts/_search_field (1.2ms)
+Rendered layouts/_search_form (5.9ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 47ms (View: 45, DB: 0) | 200 OK [http://localhost/equipment/]
+
+
+Processing EquipmentController#index (for 127.0.0.1 at 2009-10-23 15:26:34) [GET]
+Rendering template within layouts/main
+Rendering equipment/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/equipment/]
+
+
+Processing EquipmentController#index (for 127.0.0.1 at 2009-10-23 15:29:09) [GET]
+Rendering template within layouts/main
+Rendering equipment/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/equipment/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-23 15:29:14) [GET]
+
+ActionController::RoutingError (No route matches "/help/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-23 15:29:53) [GET]
+
+ActionController::RoutingError (No route matches "/help/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HelpController#index (for 127.0.0.1 at 2009-10-23 15:30:05) [GET]
+Rendering template within layouts/main
+Rendering help/index
+Rendered sessions/_login_form (2.9ms)
+Rendered layouts/_search_field (1.1ms)
+Rendered layouts/_search_form (5.9ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 46ms (View: 44, DB: 0) | 200 OK [http://localhost/help/]
+
+
+Processing ReservationsController#index (for 127.0.0.1 at 2009-10-23 15:30:15) [GET]
+Rendering reservations/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/reservations/]
+
+
+Processing ReservationsController#index (for 127.0.0.1 at 2009-10-23 15:31:44) [GET]
+Rendering template within layouts/main
+Rendering reservations/index
+Rendered sessions/_login_form (1.8ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.7ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/reservations/]
+
+
+Processing EquipmentController#index (for 127.0.0.1 at 2009-10-23 16:07:28) [GET]
+Rendering template within layouts/main
+Rendering equipment/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/equipment/]
+
+
+Processing EquipmentController#index (for 127.0.0.1 at 2009-10-23 19:05:05) [GET]
+Rendering template within layouts/main
+Rendering equipment/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/equipment/]
+
+
+Processing ReservationsController#index (for 127.0.0.1 at 2009-10-23 19:05:06) [GET]
+Rendering template within layouts/main
+Rendering reservations/index
+Rendered sessions/_login_form (1.7ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.6ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.6ms)
+Rendered layouts/_search_form (1.5ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/reservations]
+
+
+Processing HelpController#index (for 127.0.0.1 at 2009-10-23 19:05:08) [GET]
+Rendering template within layouts/main
+Rendering help/index
+Rendered sessions/_login_form (2.4ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.5ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (2.0ms)
+Rendered layouts/_search_field (0.5ms)
+Rendered layouts/_search_form (1.4ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/help]
