@@ -7,8 +7,14 @@
 
 $(document).ready(function() {
    // Search Form
-   var search_form = $('.search_field input[type="text"]').addClass('fresh');
+   var search_form = $('.search_field input[type="text"]').addClass('fresh')
    var search_form_default = "projectors, camera, laptop case, etc...";
+   search_form.each(function(index) {
+      var current = $(this);
+      if(current.val() == "") { 
+         current.val(search_form_default); 
+      }
+   });
    search_form.focus(function() {
       var current_field = $(this).removeClass('fresh');
       if(current_field.val() == search_form_default) {

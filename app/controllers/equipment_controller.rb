@@ -3,6 +3,17 @@ class EquipmentController < ApplicationController
   
   # Displays homepage for the equipment booking system.
   def index
-    
+  end
+  
+  # Displays a category.
+  def browse
+  end
+  
+  # Presents a search result view.
+  def search
+  end
+  
+  # Displays an instance
+  def item
   end
 end
