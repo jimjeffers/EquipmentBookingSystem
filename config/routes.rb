@@ -25,4 +25,5 @@ ActionController::Routing::Routes.draw do |map|
   # Default routing.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+  map.conntect '/', :controller => 'equipment'
 end
