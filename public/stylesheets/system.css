@@ -483,7 +483,11 @@ General comments/License Statement if any.
       border: 4px solid #2A0E36;
    }
    
-   #primary_search_form:hover label {
+   #primary_search_form:hover label,
+   #search_module ul.search_field_set:hover,
+   #search_module ul > li.search_field_date:hover,
+   #search_module ul > li.search_field_availability_submit:hover,
+   #search_module ul li:hover label {
       background: #2A0E36;
    }
    
@@ -493,7 +497,11 @@ General comments/License Statement if any.
    }
    
    .search_form,
-   .search_form label {
+   .search_form label,
+   #search_module label,
+   #search_module ul.search_field_set,
+   #search_module ul > li.search_field_date,
+   #search_module ul > li.search_field_availability_submit {
       background: #642380;
       border-radius: 5px;
       
@@ -504,7 +512,8 @@ General comments/License Statement if any.
       -webkit-border-radius:5px;
    }
    
-   .search_form label {
+   .search_form label,
+   #search_module label {
       border-radius-topleft: 10px;
       border-radius-topright: 10px;
       color: #fff;
@@ -528,7 +537,8 @@ General comments/License Statement if any.
       -webkit-border-top-right-radius: 10px;
    }
    
-   .search_form input[type="text"] {
+   .search_form input[type="text"],
+   #search_module ul > li input[type="text"] {
       background: #fff url(../images/search_icon.png) no-repeat 6px 4px;
       border: none;
       border-radius-topleft: 5px;
@@ -553,11 +563,13 @@ General comments/License Statement if any.
       -webkit-border-bottom-left-radius: 5px;
    }
    
-   .search_form input[type="text"].fresh {
+   .search_form input[type="text"].fresh,
+   #search_module ul > li.search_field input[type="text"].fresh {
       color: #999;
    }
    
-   .search_form input[type="submit"] {
+   .search_form input[type="submit"],
+   #search_module ul > li input[type="submit"] {
       background: #88B415;
       border: none;
       border-radius-topleft: 5px;
@@ -632,11 +644,113 @@ General comments/License Statement if any.
    #secondary_search_form input[type="text"] {
       width: 588px;
    }
+   
+   #search_module ul.search_field_set > li input[type="submit"] {
+      right: 4px;
+      top: 4px;
+   }
 
+/* =SEARCH_MODULE
+   ------------------------------------------------------ */
+   #search_module ul {
+      position: relative;
+   }
+   
+   #search_module ul > li.search_field label {
+      display: none;
+   }
+   
+   #search_module ul.search_field_set,
+   #search_module ul > li.search_field_date,
+   #search_module ul > li.search_field_availability_submit {
+      position: relative;
+      padding: 4px;
+   }
+   
+   #search_module fieldset {
+      border-top: 2px solid #ccc;
+      padding-top: 40px;
+      margin-top: 20px;
+      position: relative;
+   }
+   
+   #search_module fieldset legend {
+      background: #fff;
+      color: #ccc;
+      display: block;
+      font-size: 0.75em;
+      font-weight: bold;
+      line-height: 1.25em;
+      margin: 0 auto;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100px;
+   }
+   
+   #search_module ul.search_field_set > li input[type="text"] {
+      background: #fff url(../images/search_icon_big.png) no-repeat 5px 4px;
+      padding-left: 35px;
+      width: 260px;
+   }
+   
+   #search_module ul.search_field_set > li input[type="submit"] {
+      height: 40px;
+   }
+   
+   #search_module ul li label {
+      top: -22px;
+   }
+   
+   #search_module ul.search_field_set > li input {
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
+   
+   #search_module ul > li.search_field_date {
+      float: left;
+   }
+   
+   #search_module ul > li.search_field_date.from {
+      margin-bottom: 10px;
+      margin-right: 10px;
+   }
+   
+   #search_module ul > li.search_field_availability_submit {
+      clear: both;
+   }
+   
+   #search_module ul > li input[type="text"].datepicker {
+      background: #fff url(../images/calendar.png) no-repeat 121px center;
+      padding: 8px 40px 8px 2px;
+      width: 115px;
+   }
+   
+   #search_module ul > li.search_field_availability_submit input[type="submit"] {
+      height: 40px;
+      left: auto;
+      padding: 5px 0;
+      position: relative;
+      top: auto;
+      width: 332px;
+
+   }
+   
+   #search_module ul > li input[type="text"].datepicker,
+   #search_module ul > li.search_field_availability_submit input[type="submit"] {
+      border-radius: 5px;
+            
+      -o-border-radius:5px;
+      -icab-border-radius:5px;
+      -khtml-border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+   }
+   
 /* =CONTENT
    ------------------------------------------------------ */
    div#content {
       margin: 0 auto;
+      min-height: 370px;
       padding-top: 170px;
       width: 960px;
    }
@@ -665,12 +779,12 @@ General comments/License Statement if any.
    }
    
    #catalogue_module {
-      margin: 0 20px;
-      width: 280px;
+      margin: 0 80px;
+      width: 220px;
    }
    
    #quick_tips_module {
-      width: 280px;
+      width: 220px;
    }
    
    #catalogue_module ul.category_list ul,
@@ -924,7 +1038,11 @@ General comments/License Statement if any.
 /* =PROGRESSIVE ENHANCEMENT (CSS Transistions)
    ------------------------------------------------------ */
    .csstransitions .sub_navigation a,
-   .csstransitions #primary_search_form label {
+   .csstransitions #primary_search_form label,
+   .csstransitions ul.search_field_set,
+   .csstransitions #search_module ul > li.search_field_date,
+   .csstransitions #search_module ul > li.search_field_availability_submit,
+   .csstransitions #search_module ul li label {
       -webkit-transition: background 0.5s ease-out;
    }
    

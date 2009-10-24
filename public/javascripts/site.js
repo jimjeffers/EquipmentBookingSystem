@@ -7,8 +7,8 @@
 
 $(document).ready(function() {
    // Search Form
-   var search_form = $('.search_form input[type="text"]').addClass('fresh');
-   var search_form_default = search_form.val();
+   var search_form = $('.search_field input[type="text"]').addClass('fresh');
+   var search_form_default = "projectors, camera, laptop case, etc...";
    search_form.focus(function() {
       var current_field = $(this).removeClass('fresh');
       if(current_field.val() == search_form_default) {
@@ -16,10 +16,22 @@ $(document).ready(function() {
       }
    });
    
-   // Bind jQuery UI
-   $('.datepicker').datepicker();
-   $('.datepicker').datepicker('option', 'duration', 'slow');
-   $('.datepicker').datepicker('option', 'numberOfMonths', 2);
+   // Bind jQuery UI Datepicker
+   $('.datepicker').datepicker({
+      beforeShow: function(input) { 
+         var from = $('#available_from');
+         var until = $('#available_until');
+         var current = $(input);
+         if(current.attr('id') == "available_from" && until.val()) {
+            from.datepicker('option', 'maxDate', until.datepicker('getDate'));
+         } else if(current.attr('id') == "available_until" && from.val()) {
+            until.datepicker('option', 'minDate', from.datepicker('getDate'));
+         }
+      },
+      minDate: new Date(),
+      duration: 'slow',
+      numberOfMonths: 2,
+   });
    
    
    // Easy dropdown navigation with timeouts.

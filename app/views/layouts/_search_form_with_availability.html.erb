@@ -3,13 +3,16 @@
   <fieldset>
     <legend>Optional</legend>
     <ul class="form">
-      <li>
+      <li class="search_field_date from">
         <%= label_tag :available_from, "Pickup On" %>
         <%= text_field_tag :available_from, "", :class => 'datepicker' %>
       </li>
-      <li>
+      <li class="search_field_date until">
         <%= label_tag :available_until, "Return On" %>
         <%= text_field_tag :available_until, "", :class => 'datepicker' %>
+      </li>
+      <li class="search_field_availability_submit">
+         <%= submit_tag "Search For Available Items" %>
       </li>
     </ul>
   </fieldset>
