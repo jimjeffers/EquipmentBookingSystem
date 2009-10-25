@@ -1,0 +1,67 @@
+<% form_tag('/equipment/search') do %>
+  <div id="search_results_phrase" class="search_form">
+      <%= render :partial => 'layouts/search_field', :locals => {:search_label => 'You Searched For:'} %>
+      <ul class="related_phrases">
+        <li class="section_title">You might also want to try... </li>
+        <li><a href="#">Powershot 450</a></li>
+        <li><a href="#">Cannon 50-D</a></li>
+        <li><a href="#">Cannon EOS-450</a></li>
+        <li><a href="#">Rebel XTi</a></li>
+      </ul>
+  </div>
+
+  <div id="search_module" class="module">
+      <fieldset>
+        <legend>Refine Search</legend>
+        <ul class="form">
+          <%= render :partial => 'layouts/availability_fields' %>
+          <li class="category_refinements">
+            <ul class="category_checklist">
+              <li>
+                <span class="count">10</span>
+                <%= label_tag :cameras, "Cameras" %>
+                <%= check_box_tag :cameras %>
+                <ul>
+                  <li>
+                    <span class="count">7</span>
+                    <%= label_tag :slrs, "SLRs" %>
+                    <%= check_box_tag :slrs %>
+                  </li>
+                  <li>
+                    <span class="count">3</span>
+                    <%= label_tag :point_and_shoot, "Point and Shoot" %>
+                    <%= check_box_tag :point_and_shoot %>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="count">6</span>
+                <%= label_tag :memory, "Memory/Data" %>
+                <%= check_box_tag :memory %>
+                <ul>
+                  <li>
+                    <span class="count">2</span>
+                    <%= label_tag :compact_flash, "Compact Flash" %>
+                    <%= check_box_tag :slrs %>
+                  </li>
+                  <li>
+                    <span class="count">3</span>
+                    <%= label_tag :sd, "SD" %>
+                    <%= check_box_tag :sd %>
+                  </li>
+                  <li>
+                    <span class="count">1</span>
+                    <%= label_tag :microsd, "microSD" %>
+                    <%= check_box_tag :microsd %>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="search_field_availability_submit">
+             <%= submit_tag "Search For Available Items" %>
+          </li>
+        </ul>
+      </fieldset>
+  </div>
+<% end %>
