@@ -1,0 +1,41 @@
+<ul id="breadcrumb">
+  <li><a href="#">Equipment</a></li>
+  <li><a href="#">Technology</a></li>
+  <li><a href="#">Cameras</a></li>
+</ul>
+<% form_tag('/equipment/search') do %>
+  <div id="search_module" class="module">
+      <fieldset>
+        <legend>Explore Cameras</legend>
+        <ul class="form">
+          <%= render :partial => 'layouts/availability_fields' %>
+          <li class="category_refinements">
+            <ul class="category_faceting">
+              <li>
+                <span class="count">10</span>
+                <a href="#" class="current">Cameras</a>
+                <ul>
+                  <li>
+                    <span class="count">7</span>
+                    <a href="#">SLRs</a>
+                  </li>
+                  <li>
+                    <span class="count">3</span>
+                    <a href="#">Point &amp; Shoot</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="search_field_availability_submit">
+             <%= submit_tag "Refine Search Results" %>
+          </li>
+        </ul>
+      </fieldset>
+  </div>
+<% end %>
+
+<div id="search_results">
+  <h2>10 Items in "Cameras" Category</h2>
+  <%= render :partial => 'item_list' %>
+</div>

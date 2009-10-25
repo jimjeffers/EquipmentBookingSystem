@@ -7,6 +7,7 @@ class EquipmentController < ApplicationController
   
   # Displays a category.
   def browse
+    @page_class = 'search_results browse'
   end
   
   # Presents a search result view.

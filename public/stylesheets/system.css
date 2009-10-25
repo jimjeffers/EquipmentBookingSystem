@@ -777,6 +777,11 @@ General comments/License Statement if any.
       padding-top: 100px;
    }
    
+   .search_results.browse #search_module,
+   .search_results.browse #search_results {
+      padding-top: 0px;
+   }
+   
    ul.related_phrases {
       bottom: -30px;
       left: 5px;
@@ -804,7 +809,9 @@ General comments/License Statement if any.
    
    #search_module .category_checklist label,
    #search_module .category_checklist label:hover,
-   #search_module ul li:hover .category_checklist label {
+   #search_module ul li:hover .category_checklist label,
+   #search_module .category_faceting a,
+   #breadcrumb > li > a {
       background: transparent;
       color: #86B213;
       left: auto;
@@ -813,16 +820,20 @@ General comments/License Statement if any.
    }
    
    #search_module .category_checklist label:hover,
-   #search_module ul li:hover .category_checklist label:hover {
+   #search_module ul li:hover .category_checklist label:hover,
+   #search_module .category_faceting a:hover,
+   #breadcrumb > li > a:hover {
       color: #6C8829;
    }
    
-   #search_module .category_checklist li {
+   #search_module .category_checklist li,
+   #search_module .category_faceting li {
       position: relative;
       padding: 2px 0;
    }
    
-   #search_module .category_checklist > li {
+   #search_module .category_checklist > li,
+   #search_module .category_faceting > li {
       margin-top: 10px;
    }
    
@@ -834,28 +845,39 @@ General comments/License Statement if any.
    }
    
    #search_module .category_checklist > li > span.count,
-   #search_module .category_checklist > li > label {
+   #search_module .category_checklist > li > label,
+   #search_module .category_faceting > li > span.count,
+   #search_module .category_faceting > li > a {
       font-size: 1em;
       font-weight: bold;
       line-height: 1.25em;
    }
    
-   .category_checklist > li label:hover {
+   .category_checklist > li label:hover,
+   .category_faceting > li a:hover {
       text-decoration: underline;
    }
    
-   #search_module .category_checklist > li > ul > li {
+   #search_module .category_checklist > li > ul > li,
+   #search_module .category_faceting > li > ul > li {
       font-size: 0.875em;
       line-height: 1.25em;
    }
    
-   #search_module .category_checklist span.count {
+   #search_module .category_checklist span.count,
+   #search_module .category_faceting span.count {
       color: #999;
       display:block;
       float: left;
       padding-right: 10px;
       text-align: right;
       width: 30px;
+   }
+   
+   #search_module .category_faceting a.current {
+      background: rgba(0,0,0,.1) url(../images/background_angle_edge.gif) no-repeat right center;
+      color: #000;
+      display: block;
    }
    
    .search_results #search_results {
@@ -1062,6 +1084,55 @@ General comments/License Statement if any.
       display: block;
       font-weight: bold;
       padding: 10px 0;
+   }
+
+/* =BREADCRUMBS
+   ------------------------------------------------------ */
+   #breadcrumb {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 5px;
+      overflow: auto;
+      padding: 5px 0;
+   }
+   
+   #breadcrumb > li {
+      background: url(../images/arrow_icon.gif) no-repeat right center;
+      display: block;
+      float: left;
+      font-size: 0.875em;
+      line-height: 1.5em;
+      padding: 0 15px 0 5px;
+   }
+   
+   #breadcrumb > li:last-child,
+   #breadcrumb > li:last-child a {
+      background: none;
+      color: #999;
+      padding-right: 0;
+      text-decoration: none;
+   }
+   
+   #breadcrumb > li:last-child a:hover {
+      color: #666;
+   }
+   
+   #breadcrumb > li:first-child {
+      padding-left: 0;
+   }
+   
+   #breadcrumb > li.return {
+      background: url(../images/arrow_icon_left.gif) no-repeat left center;
+      border-right: 1px dotted #ddd;
+      margin-right: 10px;
+      padding-left: 15px;
+   }
+   
+   #breadcrumb > li.return a {
+      color: #5F2079;
+   }
+   
+   #breadcrumb > li.return a:hover {
+      color: #2A0E36;
    }
    
 /* =ADDITIONAL_CONTENT
