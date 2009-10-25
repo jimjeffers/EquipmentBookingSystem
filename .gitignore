@@ -2,4 +2,5 @@ tmp/*
 cache/*
 log/*
 config/database.yml
+config/deploy.rb
 db/*.sqlite3
