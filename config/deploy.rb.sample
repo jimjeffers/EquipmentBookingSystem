@@ -1,0 +1,35 @@
+set :keep_releases,       5
+set :application,         "grabthatapp.com"
+set :user,                "<REPLACE WITH ACTUAL USERNAME>"
+set :password,            "<REPLACE WITH ACTUAL PASSWORD>"
+set :deploy_to,           "/data/apps/#{application}"
+set :runner,              "chronparty"
+set :repository,          "git://github.com/jimjeffers/EquipmentBookingSystem.git"
+set :scm,                 "git"
+set :branch,              "master"
+set :deploy_via,          :remote_cache
+set :port,                30000
+
+role :app, application
+role :web, application
+role :db, application , :primary => true
+
+desc "Link shared files"
+task :before_symlink do
+run "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+run "rm -rf #{release_path}/log/"
+run "ln -nfs #{shared_path}/log #{release_path}/log"
+run "rm -rf #{release_path}/tmp/"
+run "ln -nfs #{shared_path}/tmp #{release_path}/tmp"
+end
+
+
+[:start, :restart, :stop].each do |action|
+  desc "Restarts passenger."
+  deploy.task action do
+    sudo "touch #{shared_path}/tmp/restart.txt"
+  end
+end
+
+after "deploy", "deploy:cleanup"
+after "deploy:migrations" , "deploy:cleanup"
