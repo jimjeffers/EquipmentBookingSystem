@@ -11,9 +11,10 @@ class EquipmentController < ApplicationController
   
   # Presents a search result view.
   def search
+    @page_class = 'search_results'
   end
   
-  # Displays an instance
+  # Displays an instance.
   def item
   end
 end
