@@ -47,8 +47,6 @@ $(document).ready(function() {
    
    // Search Refinements
    
-   
-   
    // Easy dropdown navigation with timeouts.
    $('.sub_navigation').each(function() {
           var menu = $(this);

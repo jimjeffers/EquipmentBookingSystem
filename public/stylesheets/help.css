@@ -1,0 +1,166 @@
+/*   
+Theme Name: EquipmentBookingSystem
+Theme URI: URL
+Description: A rendition of the equipment booking system for UQ.
+Author: Jim Jeffers
+Author URI: http://jimjeffers.com
+Version: 1.0
+.
+General comments/License Statement if any.
+.
+*/
+/*  KEEP OUR CSS CLEAN
+    Some guidelines to follow:
+    1. Break code down into sections.
+    2. Keep your rules alphabetically sorted.
+    3. Only put one selector per line for a block of rules that apply to multiple selectors.
+    4. Indent your rules, only one rule per line.
+        
+        example:
+        
+        element#id,
+        element.class {
+            rule1: value;
+            rule2: value;
+            top: value;
+        }
+*/
+
+
+/* =CONTENT
+   ------------------------------------------------------ */
+   div#content {
+      margin: 0 auto;
+      padding-top: 170px;
+      width: 960px;
+   }
+   
+   div#content h1,
+   div#content h2 {
+      color: #86B213;
+      font-size: 2.5em;
+      line-height: 1.5em;
+   }
+   
+   div#content h2 {
+      color: #5F2079;
+      font-size: 1.5em;
+      padding: 10px 0;
+   }
+   div#content h3 {
+	  color: #5F2079;
+      font-size: 0.875em;
+      line-height: 1.5em;
+      display: block;
+      font-weight: bold;
+
+   }
+
+   div#content p {
+	  font-size: 0.825em;
+      line-height: 1.5em;
+      display: block;
+      padding: 0 0 10px 0;
+   }
+
+/* =HELP_MAIN
+   ------------------------------------------------------ */
+   #content .module {
+      float: left;
+   }
+   
+   #question_module {
+      width: 340px;
+   }
+   
+   #answer_module {
+      margin: 0 20px;
+      width: 580px;
+	
+   }
+   
+   #question_module ul.category_list ul,
+   #question_module ul.category_list li {
+      line-height: 1em;
+   }
+   
+   
+   #question_module ul.category_list > li > a,
+   #answer_module a {
+      color: #86B213;
+      font-size: 0.875em;
+      line-height: 1.25em;
+   }
+   
+   #question_module ul.category_list > li > a:hover,
+   #answer_module a:hover {
+      color: #6C8829;
+   }
+   
+   #answer_module ol.accordian > li > h3 a,
+   #answer_module ol.accordian > li > h3 a:hover  {
+      color: #000;
+   }
+   
+   #question_module ul.category_list > li {
+      padding-bottom: 10px;
+   }
+   
+   #question_module ul.category_list > li > ul > li {
+      display: inline;
+      font-size: 0.75em;
+      line-height: 1.25em;
+   }
+   
+   #question_module {
+      color: #ccc;
+   }
+   
+   #question_module ul.category_list > li > ul > li a {
+      color: #999;
+   }
+   
+   #question_module ul.category_list > li > ul > li a:hover {
+      color: #333;
+   }
+   
+   #question_module ul.category_list > li > ul > li:after {
+      content: ", ";
+   }
+   
+   #question_module ul.category_list > li > ul > li:last-child:after {
+      content: "";
+   }
+
+   #question_module a.more {
+      color: #86B213;
+      font-size: 0.875em;
+      line-height: 2em;
+      display: block;
+      font-weight: bold;
+      padding: 30px 0px 10px 0;
+   }
+   
+   #answer_module ol {
+      color: #999;
+      font-size: 0.75em;
+      line-height: 1.5em;
+      list-style: decimal outside;
+      margin-left: 20px;
+   }
+   
+   #answer_module ol li:hover {
+      color: #000;
+   }
+   
+   #answer_module ol li {
+      padding: 2px 0;
+   }
+   
+   #answer_module ol li a {
+      font-size: 1.05em;
+      line-height: 1.05em;
+   }
+   
+
+   
