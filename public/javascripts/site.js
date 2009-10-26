@@ -39,6 +39,12 @@ $(document).ready(function() {
       numberOfMonths: 2,
    });
    
+   // Hide items that are only present for non-JS users.
+   $('#ui-datepicker-div, .non_interactive').hide();
+   
+   // Search Refinements
+   
+   
    
    // Easy dropdown navigation with timeouts.
    $('.sub_navigation').each(function() {
