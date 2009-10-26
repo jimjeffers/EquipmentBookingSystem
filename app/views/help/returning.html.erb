@@ -1,74 +1,11 @@
 <h1>Help and Guides</h1>
 
 <div id="question_module" class="module">
-	<h2>Help Categories</h2>
-	<ul class="category_list">
-    	<li><a href="../help">Requesting Items</a></li>
-    	<li><a href="returning">Returning Items</a></li>
-    	<li><a href="account">Account Management</a></li>
-	</ul>
-	
-	<a href="contact" class="more">Still have questions? Contact Us.</a>
-	
-	<input type="button" value="Email" onClick="parent.location='mailto:help@equipmentbooking.uq.edu.au?subject=Help%20Question'">
-	
-	<button type="button"> Message </button> 
+  <%= render :partial => 'help_category_nav' %>
 </div>
 
-
 <div id="answer_module" class="module">
-<h2>Frequently Asked Questions</h2>
-	<ol>
-		<div id="accordion">
-			<div class="question">
-				<li><a href="#">How do I file a damage report?</a></li>
-			
-				<div class="answer">
-					<p> If you have damaged a borrowed item in anyway then you must lodge a damage report. This can be done through the "My Reservations" section by selecting the damaged item and clicking the damage report button. A form will then appear. Complete this form and submit the report. An administration officer will contact you if further action is required.  		
-					</p>
-				</div>
-			</div>
-			
-			<div class="question">
-				<li><a href="#">Where can I pick up my items?</a></li>
-					
-				<div class="answer">
-					<p> Answer</p>
-				</div>
-			</div>
-			
-			<div class="question">
-	  			<li><a href="#">How many items am I allowed to checkout?</a></li>
-				
-				<div class="answer">
-					<p> Answer</p>
-				</div>
-			</div>
-			
-			<div class="question">
-				<li><a href="#">How do I pay my overdue fees?</a></li>
-				
-				<div class="answer">
-					<p> Answer</p>
-				</div>
-			</div>
-			
-			<div class="question">
-				<li><a href="#">Why does it say my account is pending approval?</a></li>
-
-				<div class="answer">
-					<p> Answer</p>
-				</div>
-			</div>
-			
-			<div class="question">
-	  			<li><a href="#">Why do you need it that way?</a></li>
-				
-				<div class="answer">
-					<p> Answer</p>
-				</div>
-			</div>
-		</div>
-	</ol>
+  <h2>Returning Items</h2>
+  <%= render :partial => 'question_accordian' %>
 </div>
 
