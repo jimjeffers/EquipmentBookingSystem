@@ -38,6 +38,9 @@ $(document).ready(function() {
       duration: 'slow',
       numberOfMonths: 2,
    });
+
+   // Setup accordians
+   $('.accordian').accordion();
    
    // Hide items that are only present for non-JS users.
    $('#ui-datepicker-div, .non_interactive').hide();
