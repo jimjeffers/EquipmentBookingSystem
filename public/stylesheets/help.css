@@ -79,11 +79,11 @@ General comments/License Statement if any.
 	
    }
    
-   
    #question_module ul.category_list ul,
    #question_module ul.category_list li {
       line-height: 1em;
    }
+   
    
    #question_module ul.category_list > li > a,
    #answer_module a {
@@ -95,6 +95,11 @@ General comments/License Statement if any.
    #question_module ul.category_list > li > a:hover,
    #answer_module a:hover {
       color: #6C8829;
+   }
+   
+   #answer_module ol.accordian > li > h3 a,
+   #answer_module ol.accordian > li > h3 a:hover  {
+      color: #000;
    }
    
    #question_module ul.category_list > li {
@@ -123,7 +128,7 @@ General comments/License Statement if any.
       content: ", ";
    }
    
-   #quesiton_module ul.category_list > li > ul > li:last-child:after {
+   #question_module ul.category_list > li > ul > li:last-child:after {
       content: "";
    }
 

@@ -38,7 +38,9 @@ $(document).ready(function() {
       duration: 'slow',
       numberOfMonths: 2,
    });
-   
+
+   // Setup accordians
+   $('.accordian').accordion();
    
    // Easy dropdown navigation with timeouts.
    $('.sub_navigation').each(function() {
