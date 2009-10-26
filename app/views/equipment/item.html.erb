@@ -9,11 +9,11 @@
   <h2>Canon EOS 50-D Digital SLR Camera</h2>
   <div id="add_to_cart" class="cart_item_module">
     <% form_tag('/equipment/add_to_cart') do %>
-      <h3>Add to Cart</h3>
+      <h3>Book This Item</h3>
       <ul class="form">
         <%= render :partial => 'layouts/availability_fields' %>
         <li class="search_field_availability_submit">
-           <%= submit_tag "Search For Available Items" %>
+           <%= submit_tag "Add To Cart" %>
         </li>
       </ul>
     <% end %>
@@ -31,11 +31,47 @@
   
   <h3>Suggested Complimentary Items:</h3>
   <ul class="inline_item_list">
-    <li></li>
+      <!-- item_1: Gorillapod -->
+      <li id="item_1" class="item">
+        <h4 class="item_name"><a href="item">Tripod</a></h4>
+        <a href="item" class="item_photo"><img src="/images/samples/sample_tripod_2.jpg" width="115" height="115" alt="Gorillapod"/></a>
+        <h5 class="add_to_cart"><a href="#">Add to Cart</a></h5>
+        <h5 class="view_details"><a href="item">View Details</a></h5>
+      </li>
+
+      <!-- item_2: Tripod -->
+      <li id="item_2" class="item">
+        <h4 class="item_name"><a href="item">Tripod</a></h4>
+        <a href="item#" class="item_photo"><img src="/images/samples/sample_tripod.jpg" width="115" height="115" alt="Tripod"/></a>
+        <h5 class="add_to_cart"><a href="#">Add to Cart</a></h5>
+        <h5 class="view_details"><a href="item">View Details</a></h5>
+      </li>
   </ul>
   
   <h3>Similar Alternative Items:</h3>
   <ul class="inline_item_list">
-    <li></li>
+      <!-- item_1: EOS 50-D -->
+      <li id="item_1" class="item">
+        <h4 class="item_name"><a href="item">Cannon 50-D</a></h4>
+        <a href="item" class="item_photo"><img src="/images/samples/sample_50d.jpg" width="115" height="115" alt="Cannon EOS 50-D"/></a>
+        <h5 class="add_to_cart"><a href="#">Add to Cart</a></h5>
+        <h5 class="view_details"><a href="item">View Details</a></h5>
+      </li>
+
+      <!-- item_2: EOS 450 xTI -->
+      <li id="item_2" class="item">
+        <h4 class="item_name"><a href="item">Cannon 450 Rebel</a></h4>
+        <a href="item#" class="item_photo"><img src="/images/samples/sample_rebel.jpg" width="115" height="115" alt="Cannon EOS 50-D"/></a>
+        <h5 class="add_to_cart"><a href="#">Add to Cart</a></h5>
+        <h5 class="view_details"><a href="item">View Details</a></h5>
+      </li>
+
+      <!-- item_3: EOS 50-D -->
+      <li id="item_3" class="item">
+        <h4 class="item_name"><a href="item">Cannon 50-D</a></h4>
+        <a href="item" class="item_photo"><img src="/images/samples/sample_powershot.jpg" width="115" height="115" alt="Cannon EOS 50-D"/></a>
+        <h5 class="add_to_cart"><a href="item">Add to Cart</a></h5>
+        <h5 class="view_details"><a href="item">View Details</a></h5>
+      </li>
   </ul>
 </div>
