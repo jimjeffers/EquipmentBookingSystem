@@ -1,4 +1,7 @@
 class Item < ActiveRecord::Base
+  # Plugins
+  acts_as_taggable
+  
   # Relationships
   has_many :instances
   belongs_to :category

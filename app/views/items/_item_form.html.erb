@@ -10,3 +10,7 @@
   <%= f.label :category_id, "Primary Category" %>
   <%= f.collection_select :category_id, Category.all, :id, :name, {:prompt => true} %>
 </li>
+<li>
+  <%= f.label :tag_list, "Tags (separated by commas!)" %>
+  <%= f.text_area :tag_list, :class => "short" %>
+</li>
