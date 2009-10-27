@@ -1,0 +1,12 @@
+<li>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </li>
+    <li>
+      <%= f.label :answer %>
+      <%= f.text_area :answer %>
+    </li>
+    <li>
+      <%= f.label :section_id, "Section" %>
+      <%= f.collection_select :section_id, Section.all, :id, :name, {:prompt => true} %>
+    </li>

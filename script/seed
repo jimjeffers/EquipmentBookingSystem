@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../config/environment'
+
+# Account Setup
+["admin", "kiosk", "teacher", "student"].each do |name|
+  if (user = User.find_by_login(name)).nil?
+    user = User.create!(  
+      :login => name, 
+      :email => "#{name}@example.com", 
+      :password => "#{name}#{name}", 
+      :password_confirmation => "#{name}#{name}", 
+      :name => "#{name.capitalize} Example"
+    )
+  end
+  role = Role.find_or_create_by_name(name.to_s)
+  user.roles << role
+end
