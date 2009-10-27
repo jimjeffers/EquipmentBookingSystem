@@ -9,4 +9,6 @@ class Category < ActiveRecord::Base
   
   # Scopes
   default_scope :order => 'position ASC, created_at DESC'
+  named_scope :root_level, :conditions => ['category_id IS ?',nil]
+  
 end

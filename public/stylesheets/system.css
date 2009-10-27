@@ -578,7 +578,8 @@ General comments/License Statement if any.
    #search_module ul > li input[type="text"],
    .cart_item_module ul > li input[type="text"],
    .admin #content ul.form > li input[type="text"],
-   .admin #content ul.form > li textarea {
+   .admin #content ul.form > li textarea,
+   .admin #content ul.form > li select {
       background: #fff url(../images/search_icon.png) no-repeat 6px 4px;
       border: none;
       border-radius-topleft: 5px;
@@ -1242,6 +1243,14 @@ General comments/License Statement if any.
       font-size: 1.5em;
       padding: 10px 0;
    }
+   
+   div#content h1 .item_name {
+      color: #555;
+      display: block;
+      font-size: 0.875em;
+      font-weight: normal;
+      line-height: 1em;
+   }
 
 /* =FIND_EQUIPMENT_MAIN
    ------------------------------------------------------ */
@@ -1650,9 +1659,21 @@ General comments/License Statement if any.
       clear: both;
    }
    
+   .sorted_list .sorted_list {
+      padding: 0 0 0 40px;
+      margin: 0;
+   }
+   
+   .sorted_list .sorted_list .category_name {
+      font-size: 0.875em;
+   }
+   
+   .sorted_list .sorted_list li {
+      border-bottom: none;
+   }
+   
    .admin .sorted_list {
-      margin-top: 15px;
-      padding-top: 15px;
+      padding-bottom: 15px;
    }
    
    .admin #content ul.form {
@@ -1660,11 +1681,6 @@ General comments/License Statement if any.
       overflow: auto;
    }
    
-   .admin #content ul.form > li label {
-      display: inline-block;
-      min-width: 200px;
-   }
-
 /* =ADMIN_FORMS
    ------------------------------------------------------ */
    .admin #content ul.form > li {
@@ -1676,8 +1692,9 @@ General comments/License Statement if any.
    }
    
    .admin #content ul.form > li input[type="text"],
-   .admin #content ul.form > li textarea {
-      background: #fff;
+   .admin #content ul.form > li input[type="submit"],
+   .admin #content ul.form > li textarea,
+   .admin #content ul.form > li select {
       border-radius: 3px;
       padding: 2px 4px;
       
@@ -1686,6 +1703,17 @@ General comments/License Statement if any.
       -khtml-border-radius:3px;
       -moz-border-radius:3px;
       -webkit-border-radius:3px;
+   }
+   
+   .admin #content ul.form > li input[type="text"],
+   .admin #content ul.form > li textarea,
+   .admin #content ul.form > li select {
+      background: #fff;
+   }
+   
+   .admin #content ul.form > li select {
+      height: 30px;
+      padding: 4px 4px;
    }
    
    .admin #content ul.form > li textarea {
@@ -1699,8 +1727,40 @@ General comments/License Statement if any.
    }
    
    .admin #content ul.form > li input[type="submit"] {
-      min-width: 200px;
       width: auto;
+   }
+
+/* =FORM_ERRORS
+   ------------------------------------------------------ */
+   #content .errorExplanation h2,
+   #content .errorExplanation {
+      color: #900;
+   }
+   
+   #content .errorExplanation p {
+      font-size: 1.15em;
+      line-height: 1.5em;
+   }
+   
+   #content .errorExplanation ul {
+      margin-left: 20px;
+   }
+   
+   #content .errorExplanation li {
+      font-size: 0.875em;
+      line-height: 1.5em;
+      list-style: square inside;
+   }
+   
+   
+   .admin #content ul.form > li div.fieldWithErrors label {
+      background: #900;
+   }
+   
+   .admin #content ul.form > li div.fieldWithErrors input {
+      background: #fcc;
+      color: #900;
+      font-weight: bold;
    }
    
 /* =SORTED_LISTS
@@ -1715,7 +1775,7 @@ General comments/License Statement if any.
    .sorted_list .drag {
       display: block;
       font-size: 0.875em;
-      left: 716px;
+      right: 167px;
       line-height: 1.25em;
       position: absolute;
       top: 0;

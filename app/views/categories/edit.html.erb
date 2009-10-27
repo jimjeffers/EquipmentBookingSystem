@@ -1,5 +1,5 @@
 <h4 class="primary_action guided"><%= link_to 'Or Return to Category Index', categories_path %></h4>
-<h1>Editing Category</h1>
+<h1>Editing Category: <span class="item_name"><%= @category.name %></span></h1>
 
 <% form_for(@category) do |f| %>
   <%= f.error_messages %>
@@ -10,6 +10,3 @@
     </li>
   </ul>
 <% end %>
-
-<%= link_to 'Show', @category %> |
-<%= link_to 'Back', categories_path %>

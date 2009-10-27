@@ -2,14 +2,17 @@
 <h4 class="primary_action"><%= link_to 'Create a New Question', new_question_path %></h4>
 <h1>Listing Questions</h1>
 
-<ul class="sorted_list" id="questions">
-  <% @questions.each do |question| %>
-    <li id="question_<%= question.id %>">
-      <ul>
-        <li><%= link_to question.name, edit_question_path(question) %></li>
-        <li class="primary_action guided"><%= link_to 'Delete', question, :confirm => 'Are you sure?', :method => :delete %></li>
-        <%= render :partial => 'shared/sort_handle' %>
-      </ul>
-    </li>
-  <% end %>
-</ul>
+<% Section.all.each do |section| %>
+  <h2><%= section.name %></h2>
+  <ul class="sorted_list" id="questions">
+    <% section.questions.each do |question| %>
+      <li id="question_<%= question.id %>">
+        <ul>
+          <li><%= link_to question.name, edit_question_path(question) %></li>
+          <li class="primary_action guided"><%= link_to 'Delete', question, :confirm => 'Are you sure?', :method => :delete %></li>
+          <%= render :partial => 'shared/sort_handle' %>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
