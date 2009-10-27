@@ -47,6 +47,35 @@ $(document).ready(function() {
    
    // Search Refinements
    
+   // Lightbox
+   function showLightBox() {
+      if($('#lightbox').length < 1) {
+         $('body').append('<div id="lightbox"><a href="#" id="lightbox-close">close</a><div id="lightbox-content"></div>');
+         $('#lightbox-close').click(function() {
+            hideLightBox();
+            return false;
+         });
+      }
+      if($('#lightbox-background').length < 1) {
+         $('body').append('<div id="lightbox-background"></div>');
+         $('#lightbox-background').click(function() {
+            hideLightBox();
+            return false;
+         });
+      }
+      $('#lightbox, #lightbox-background').show();
+   }
+   
+   function hideLightBox() {
+      $('#lightbox, #lightbox-background').hide('fast');
+   }
+   
+   // Bind lightbox.
+   $('#add_to_cart form').submit(function() {
+      showLightBox();
+      return false;
+   });
+   
    // Easy dropdown navigation with timeouts.
    $('.sub_navigation').each(function() {
           var menu = $(this);
