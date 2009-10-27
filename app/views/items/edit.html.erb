@@ -1,7 +1,7 @@
 <h4 class="primary_action guided"><%= link_to 'Or Return to Items Index', items_path %></h4>
 <h1>Editing Item: <span class="item_name"><%= @item.name %></span></h1>
 
-<% form_for :item, @item, :url => item_path(@item), :html => { :multipart => true } do |f| %>
+<% form_for @item, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
   <ul class="form">
     <%= render :partial => 'item_form', :locals => {:f => f} %>
