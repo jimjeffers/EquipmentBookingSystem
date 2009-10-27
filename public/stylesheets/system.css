@@ -1455,7 +1455,8 @@ General comments/License Statement if any.
    }
    
    div#lightbox-content,
-   div#lightbox #lightbox-close {
+   div#lightbox #lightbox-close,
+   #lightbox-load {
       border-radius: 6px;
       
       -o-border-radius:6px;
@@ -1463,6 +1464,26 @@ General comments/License Statement if any.
       -khtml-border-radius:6px;
       -moz-border-radius:6px;
       -webkit-border-radius:6px;
+   }
+   
+   #lightbox-load {
+      background: #fff url(../images/indicators/ajax-loader-bw-trans.gif) no-repeat 10px center;
+      box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+      color: #000;
+      font-size: 0.75em;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: -15px;
+      line-height: 1.25em;
+      padding: 4px 4px 4px 30px;
+      position: absolute;
+      top: 50%;
+      
+      -o-box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+      -icab-box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+      -khtml-box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+      -moz-box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+      -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,.5);
    }
    
    div#lightbox #lightbox-close {
@@ -1538,6 +1559,10 @@ General comments/License Statement if any.
    
    .rgba div#lightbox-background {
       background-color: rgba(0,0,0,.5);
+   }
+   
+   .rgba #lightbox-load {
+      border: 1px solid rgba(0,0,0,.1);
    }
    
 /* =PROGRESSIVE ENHANCEMENT (CSS Gradients)

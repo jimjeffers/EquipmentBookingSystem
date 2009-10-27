@@ -17,5 +17,17 @@ class EquipmentController < ApplicationController
   
   # Displays an instance.
   def item
+    respond_to do |format| 
+      format.html 
+      format.js { render :partial => 'cart_form' }
+    end
+  end
+  
+  # Adds submitted item to cart.
+  def add_to_cart
+    respond_to do |format| 
+      format.html 
+      format.text { render :partial => 'success' }
+    end
   end
 end

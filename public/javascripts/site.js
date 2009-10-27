@@ -50,7 +50,7 @@ $(document).ready(function() {
    // Lightbox
    function showLightBox() {
       if($('#lightbox').length < 1) {
-         $('body').append('<div id="lightbox"><a href="#" id="lightbox-close">close</a><div id="lightbox-content"></div>');
+         $('body').append('<div id="lightbox"><a href="#" id="lightbox-close">close</a><h2 id="lightbox-load">Just one moment please...</h2><div id="lightbox-content"></div>');
          $('#lightbox-close').click(function() {
             hideLightBox();
             return false;
@@ -63,6 +63,8 @@ $(document).ready(function() {
             return false;
          });
       }
+      $('#lightbox-load').show();
+      $('#lightbox-content').html('');
       $('#lightbox, #lightbox-background').show();
    }
    
@@ -70,11 +72,27 @@ $(document).ready(function() {
       $('#lightbox, #lightbox-background').hide('fast');
    }
    
+   function intoLightBox(content) {
+      setTimeout(function(){
+         $('#lightbox-load').hide('fast');
+         $('#lightbox-content').html(content);
+      }, 350);
+   }
+   
    // Bind lightbox.
    $('#add_to_cart form').submit(function() {
       showLightBox();
+      var form = $(this);
+      //form.find('input[type="submit"]').hide();
+      $.post(this.action, form.serializeArray(),
+         function(data) {
+            intoLightBox(data);
+         },
+      "text");
+      
       return false;
    });
+   
    
    // Easy dropdown navigation with timeouts.
    $('.sub_navigation').each(function() {
