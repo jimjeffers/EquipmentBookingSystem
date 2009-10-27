@@ -19,7 +19,7 @@ class EquipmentController < ApplicationController
   def item
     respond_to do |format| 
       format.html 
-      format.js { render :partial => 'cart_form' }
+      format.text { render :partial => 'quick_cart.html' }
     end
   end
   

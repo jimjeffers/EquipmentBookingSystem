@@ -8,19 +8,7 @@
 <div id="item_details">
   <h2>Canon EOS 50-D Digital SLR Camera</h2>
   <div id="add_to_cart" class="cart_item_module">
-    <% form_tag('/equipment/add_to_cart') do %>
-      <h3>Book This Item</h3>
-      <ul class="form">
-        <%= render :partial => 'layouts/availability_fields' %>
-        <li class="search_field_quantity search_field_date">
-          <%= label_tag :available_quantity, "Quantity" %>
-          <%= select_tag :available_quantity, (0..4).to_a.map { |i| "<option value=\"#{i}\">#{i}</option>" }.join('') %>
-        </li>
-        <li class="search_field_availability_submit">
-          <%= submit_tag "Add To Cart" %>
-        </li>
-      </ul>
-    <% end %>
+    <%= render :partial => 'add_item_form' %>
   </div>
   <img src="/images/samples/big_sample_50d.jpg" width="280" height="280" alt="Big Sample 50-d" class="item_image_detail"/>
   <h3>Description:</h3>

@@ -15,6 +15,7 @@ $(document).ready(function() {
          current.val(search_form_default); 
       }
    });
+   
    search_form.focus(function() {
       var current_field = $(this).removeClass('fresh');
       if(current_field.val() == search_form_default) {
@@ -23,22 +24,35 @@ $(document).ready(function() {
    });
    
    // Bind jQuery UI Datepicker
-   $('.datepicker').datepicker({
-      beforeShow: function(input) { 
-         var from = $('#available_from');
-         var until = $('#available_until');
-         var current = $(input);
-         if(current.attr('id') == "available_from" && until.val()) {
-            from.datepicker('option', 'maxDate', until.datepicker('getDate'));
-         } else if(current.attr('id') == "available_until" && from.val()) {
-            until.datepicker('option', 'minDate', from.datepicker('getDate'));
-         }
-      },
-      minDate: new Date(),
-      duration: 'slow',
-      numberOfMonths: 2,
-   });
-
+   function bindDatePicker(selector) {
+      $(selector).find('.datepicker').datepicker({
+         beforeShow: function(input) { 
+            var from = $('input[name="available_from"]');
+            var until = $('input[name="available_until"]');
+            var current = $(input);
+            if(current.attr('name') == "available_from" && until.val()) {
+               from.datepicker('option', 'maxDate', until.datepicker('getDate'));
+            } else if(current.attr('name') == "available_until" && from.val()) {
+               until.datepicker('option', 'minDate', from.datepicker('getDate'));
+            }
+         },
+         onSelect: function(dateText, inst) {
+            var current = $(inst);
+            if(current.attr('id').match(/from/)) {
+               $.cookie("available_from", dateText);
+            } else if(current.attr('id').match(/until/)) {
+               $.cookie("available_until", dateText);
+            }
+         },
+         minDate: new Date(),
+         duration: 'slow',
+         numberOfMonths: 2,
+      });
+      $('input[name$="available_from"]').val($.cookie("available_from"));
+      $('input[name$="available_until"]').val($.cookie("available_until"));
+   }
+   bindDatePicker('body');
+   
    // Setup accordians
    $('.accordian').accordion();
    
@@ -63,36 +77,56 @@ $(document).ready(function() {
             return false;
          });
       }
+      $('#lightbox, #lightbox-background').show();
       $('#lightbox-load').show();
       $('#lightbox-content').html('');
-      $('#lightbox, #lightbox-background').show();
+      centerLightBox();
    }
    
    function hideLightBox() {
       $('#lightbox, #lightbox-background').hide('fast');
+      return false;
    }
    
    function intoLightBox(content) {
+      showLightBox();
       setTimeout(function(){
          $('#lightbox-load').hide('fast');
          $('#lightbox-content').html(content);
+         $('#lightbox-content .lightbox-close').click(hideLightBox);
+         bindDatePicker('#lightbox-content');
+         bindCartForm('#lightbox-content');
+         centerLightBox();
       }, 350);
    }
    
-   // Bind lightbox.
-   $('#add_to_cart form').submit(function() {
-      showLightBox();
-      var form = $(this);
-      //form.find('input[type="submit"]').hide();
-      $.post(this.action, form.serializeArray(),
+   function centerLightBox() {
+      $('#lightbox').css('margin-top',-($('#lightbox').height()/2));
+   }
+   
+   // Bind lightbox to cart form.
+   function bindCartForm(selector) {
+      $(selector).find('#add_to_cart form, .cart_form form').submit(function() {
+         var form = $(this);
+         $.post(this.action, form.serializeArray(),
+            function(data) {
+               intoLightBox(data);
+            },
+         "text");
+
+         return false;
+      });
+   }
+   bindCartForm('body');
+   
+   $('a.interactive').click(function() {
+      $.post(this.href, '',
          function(data) {
             intoLightBox(data);
          },
       "text");
-      
       return false;
    });
-   
    
    // Easy dropdown navigation with timeouts.
    $('.sub_navigation').each(function() {

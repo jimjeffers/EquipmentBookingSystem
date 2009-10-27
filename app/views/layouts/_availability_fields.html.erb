@@ -1,8 +1,9 @@
+<% prefix = '' unless prefix %>
 <li class="search_field_date from">
-  <%= label_tag :available_from, "Pickup On" %>
-  <%= text_field_tag :available_from, "", :class => 'datepicker' %>
+  <%= label_tag "available_from", "Pickup On" %>
+  <%= text_field_tag :available_from, "", :class => 'datepicker', :id => [prefix,"available_from"].join("_") %>
 </li>
 <li class="search_field_date until">
   <%= label_tag :available_until, "Return On" %>
-  <%= text_field_tag :available_until, "", :class => 'datepicker' %>
+  <%= text_field_tag :available_until, "", :class => 'datepicker', :id => [prefix,"available_until"].join("_") %>
 </li>
