@@ -208,6 +208,30 @@ General comments/License Statement if any.
       padding-left: 460px;
       width: 450px;
    }
+   
+   h2#logged_in {
+      color: #fff;
+      font-size: 0.75em;
+      font-weight: normal;
+      height: 10px;
+      line-height: 1.25em;
+      margin: 0 auto;
+      padding: 10px 0;
+      text-align: right;
+      width: 960px;
+   }
+   
+   h2#logged_in .current_user_name {
+      color: #999;
+   }
+   
+   h2#logged_in a {
+      color: #87B314;
+      display: inline-block;
+      font-weight: bold;
+      padding-left: 20px;
+      text-transform: lowercase;
+   }
 
 /* =PRIMARY_NAVIGATION
    ------------------------------------------------------ */
@@ -1633,7 +1657,8 @@ General comments/License Statement if any.
       padding-top: 90px;
    }
    
-   .admin #login .return {
+   .admin #login .return,
+   #login .manage_link {
       color: #fff;
       display: block;
       font-size: 0.75em;
@@ -1647,7 +1672,8 @@ General comments/License Statement if any.
       z-index: 100;
    }
    
-   .admin #login .return:before {
+   .admin #login .return:before,
+   #login .manage_link:before {
       content: "<< ";
    }
    

@@ -1,12 +1,13 @@
 class SectionsController < ApplicationController
   layout 'admin'
+  before_filter :login_required
   before_filter :set_template
-  
+
   # GET /sections
   # GET /sections.xml
   def index
     @sections = Section.all
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @sections }
@@ -17,7 +18,7 @@ class SectionsController < ApplicationController
   # GET /sections/1.xml
   def show
     @section = Section.find(params[:id])
-
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @section }
@@ -28,7 +29,7 @@ class SectionsController < ApplicationController
   # GET /sections/new.xml
   def new
     @section = Section.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @section }
@@ -44,7 +45,7 @@ class SectionsController < ApplicationController
   # POST /sections.xml
   def create
     @section = Section.new(params[:section])
-
+    
     respond_to do |format|
       if @section.save
         flash[:notice] = 'Section was successfully created.'
@@ -61,7 +62,7 @@ class SectionsController < ApplicationController
   # PUT /sections/1.xml
   def update
     @section = Section.find(params[:id])
-
+    
     respond_to do |format|
       if @section.update_attributes(params[:section])
         flash[:notice] = 'Section was successfully updated.'
@@ -79,7 +80,7 @@ class SectionsController < ApplicationController
   def destroy
     @section = Section.find(params[:id])
     @section.destroy
-
+    
     respond_to do |format|
       format.html { redirect_to(sections_url) }
       format.xml  { head :ok }

@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   layout 'admin'
+  before_filter :login_required
   
   # GET /items
   # GET /items.xml

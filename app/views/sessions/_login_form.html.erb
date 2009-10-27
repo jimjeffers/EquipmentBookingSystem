@@ -1,20 +1,24 @@
-<% form_tag session_path, {:id => id} do -%>
-<h2>Student Login</h2>
-<ul class="form">
-  <li class="login">
-  <%= label_tag 'login' %>
-  <%= text_field_tag 'login', @login %>
-  </li>
-  <li class="password">
-    <%= label_tag 'password' %>
-    <%= password_field_tag 'password', nil %>
-  </li>
-  <!-- Uncomment this if you want this functionality
-  <li class="remember_me"><%= label_tag 'remember_me', 'Remember me' %>
-  <%= check_box_tag 'remember_me', '1', @remember_me %></li>
-  -->
-  <li class="submit">
-    <%= submit_tag 'Log in' %>
-  </li>
-</ul>
-<% end -%>
+<% unless current_user %>
+  <% form_tag session_path, {:id => id} do -%>
+  <h2>Student Login</h2>
+  <ul class="form">
+    <li class="login">
+    <%= label_tag 'login' %>
+    <%= text_field_tag 'login', @login %>
+    </li>
+    <li class="password">
+      <%= label_tag 'password' %>
+      <%= password_field_tag 'password', nil %>
+    </li>
+    <!-- Uncomment this if you want this functionality
+    <li class="remember_me"><%= label_tag 'remember_me', 'Remember me' %>
+    <%= check_box_tag 'remember_me', '1', @remember_me %></li>
+    -->
+    <li class="submit">
+      <%= submit_tag 'Log in' %>
+    </li>
+  </ul>
+  <% end -%>
+<% else %>
+  <h2 id="logged_in">Currently logged in as <span class="current_user_name"><%= current_user.name %></span> <%= link_to 'Sign  out', logout_path %></h2>
+<% end %>

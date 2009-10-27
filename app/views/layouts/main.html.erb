@@ -17,6 +17,9 @@
       <h2 id="logo"><a href="/"><img src="/images/uq_logo.gif" width="132" height="38" alt="UQ Logo"/></a></h2>
     </div>
     <div id="login">
+      <% if current_user and current_user.has_any_roles([:kiosk,:admin]) %>
+        <a href="/bookings" class="manage_link">Manage Site</a>
+      <% end %>
       <%= render :partial => 'sessions/login_form', :locals => {:id => "primary_login"} %>
     </div>
     <div id="primary_search_form" class="search_form">
