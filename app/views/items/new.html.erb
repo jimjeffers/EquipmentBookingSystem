@@ -1,11 +1,12 @@
-<h1>New item</h1>
+<h4 class="primary_action guided"><%= link_to 'Or Return to Items Index', items_path %></h4>
+<h1>New Item</h1>
 
 <% form_for(@item) do |f| %>
   <%= f.error_messages %>
   <ul class="form">
     <%= render :partial => 'item_form', :locals => {:f => f} %>
     <li>
-      <%= f.submit 'Create' %>
+      <%= f.submit 'Create New Item' %>
     </li>
   </ul>
 <% end %>

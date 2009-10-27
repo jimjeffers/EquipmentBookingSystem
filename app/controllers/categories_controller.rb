@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
-  layout 'main'
+  layout 'admin'
+  before_filter :set_template
   
   # GET /categories
   # GET /categories.xml
@@ -83,5 +84,22 @@ class CategoriesController < ApplicationController
       format.html { redirect_to(categories_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  # XHR /categories/update_order
+  # Updates the order of the categories supplied in a post request.
+  def update_order
+    params[:category].each_with_index do |id,index|
+      Category.find(id).update_attribute(:position,index)
+    end
+    respond_to do |format|
+      format.js { render :partial => 'shared/update_order_success.html' }
+    end
+  end
+  
+  protected
+  # Sets the page ID.
+  def set_template
+    @page_id = "items"
   end
 end

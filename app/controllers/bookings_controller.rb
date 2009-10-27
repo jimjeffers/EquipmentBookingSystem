@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  layout 'main'
+  layout 'admin'
   
   # GET /bookings
   # GET /bookings.xml

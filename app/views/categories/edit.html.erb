@@ -1,11 +1,14 @@
-<h1>Editing category</h1>
+<h4 class="primary_action guided"><%= link_to 'Or Return to Category Index', categories_path %></h4>
+<h1>Editing Category</h1>
 
 <% form_for(@category) do |f| %>
   <%= f.error_messages %>
-
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
+  <ul class="form">
+    <%= render :partial => 'category_form', :locals => {:f => f} %>
+    <li>
+      <%= f.submit 'Update' %>
+    </li>
+  </ul>
 <% end %>
 
 <%= link_to 'Show', @category %> |

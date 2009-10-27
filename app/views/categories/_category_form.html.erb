@@ -1,0 +1,8 @@
+<li>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+</li>
+<li>
+  <%= f.label :category_id, "Parent Category (optional)" %>
+  <%= f.collection_select :category_id, Category.all, :id, :name, {:prompt => true} %>
+</li>

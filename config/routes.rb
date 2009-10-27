@@ -1,8 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :questions
+  map.resources :sections
   map.resources :categories
   map.resources :bookings
   map.resources :instances
   map.resources :items
+  
+  map.categories_update_order '/categories/update_order', :controller => 'categories', :action => 'update_order'
+  map.sections_update_order '/sections/update_order', :controller => 'sections', :action => 'update_order'
+  map.items_update_order '/items/update_order', :controller => 'items', :action => 'update_order'
+  map.questions_update_order '/questions/update_order', :controller => 'questions', :action => 'update_order'
   
   # Authentication routing.
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'

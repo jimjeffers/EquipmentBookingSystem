@@ -279,7 +279,15 @@ General comments/License Statement if any.
    #reservations ul#primary_navigation li.reservations a,
    #reservations ul#primary_navigation li.reservations a:hover,
    #help ul#primary_navigation li.help a,
-   #help ul#primary_navigation li.help a:hover {
+   #help ul#primary_navigation li.help a:hover,
+   #items ul#primary_navigation li.items a,
+   #items ul#primary_navigation li.items a:hover,
+   #bookings ul#primary_navigation li.bookings a,
+   #bookings ul#primary_navigation li.bookings a:hover,
+   #users ul#primary_navigation li.users a,
+   #users ul#primary_navigation li.users a:hover,
+   #questions ul#primary_navigation li.questions a,
+   #questions ul#primary_navigation li.questions a:hover {
       background: #fff;
       color: #88B415;
       font-size: 0.875em;
@@ -291,7 +299,11 @@ General comments/License Statement if any.
    
    #equipment ul#primary_navigation li.equipment .sub_navigation,
    #reservations ul#primary_navigation li.reservations .sub_navigation,
-   #help ul#primary_navigation li.help .sub_navigation {
+   #help ul#primary_navigation li.help .sub_navigation,
+   #items ul#primary_navigation li.items .sub_navigation,
+   #bookings ul#primary_navigation li.bookings .sub_navigation,
+   #users ul#primary_navigation li.users .sub_navigation,
+   #questions ul#primary_navigation li.questions .sub_navigation {
       top: -9999px;
    }
    
@@ -503,7 +515,9 @@ General comments/License Statement if any.
    .cart_item_module label,
    .cart_item_module li.search_field_date,
    li.search_field_availability_submit,
-   .inline_item_list .add_to_cart {
+   .inline_item_list .add_to_cart,
+   .admin #content ul.form > li label,
+   .admin #content ul.form > li {
       background: #642380;
       border-radius: 5px;
       
@@ -527,13 +541,16 @@ General comments/License Statement if any.
    .primary_action,
    .cart_item_module li.search_field_date:hover,
    .cart_item_module li:hover label,
-   .cart_item_module .search_field_availability_submit:hover {
+   .cart_item_module .search_field_availability_submit:hover,
+   .admin #content ul.form > li:hover label,
+   .admin #content ul.form > li:hover {
       background: #2A0E36;
    }
    
    .search_form label,
    #search_module label,
-   .cart_item_module label {
+   .cart_item_module label,
+   .admin #content ul.form > li label {
       border-radius-topleft: 10px;
       border-radius-topright: 10px;
       color: #fff;
@@ -559,7 +576,9 @@ General comments/License Statement if any.
    
    .search_form input[type="text"],
    #search_module ul > li input[type="text"],
-   .cart_item_module ul > li input[type="text"] {
+   .cart_item_module ul > li input[type="text"],
+   .admin #content ul.form > li input[type="text"],
+   .admin #content ul.form > li textarea {
       background: #fff url(../images/search_icon.png) no-repeat 6px 4px;
       border: none;
       border-radius-topleft: 5px;
@@ -591,7 +610,8 @@ General comments/License Statement if any.
    
    .search_form input[type="submit"],
    #search_module ul > li input[type="submit"],
-   .cart_item_module ul > li input[type="submit"] {
+   .cart_item_module ul > li input[type="submit"],
+   .admin #content ul.form > li input[type="submit"] {
       background: #88B415;
       border: none;
       border-radius-topleft: 5px;
@@ -724,7 +744,9 @@ General comments/License Statement if any.
       height: 40px;
    }
    
-   #search_module ul li label {
+   #search_module ul li label,
+   .cart_item_module li label,
+   .admin #content ul.form > li label {
       top: -22px;
    }
    
@@ -1103,7 +1125,8 @@ General comments/License Statement if any.
       position: absolute;
    }
    
-   .cart_item_module ul > li input[type="submit"] {
+   .cart_item_module ul > li input[type="submit"],
+   .admin #content ul.form > li input[type="submit"] {
       height: 40px;
       left: auto;
       padding: 10px 0;
@@ -1568,6 +1591,158 @@ General comments/License Statement if any.
       width: 360px;
    }
    
+   div#lightbox-content .success_message {
+      background: transparent;
+      color: #86B213;
+      font-size: 1.5em;
+      padding: 80px;
+      text-align: center;
+      text-shadow: 1px 1px 0px #ccc;
+   }
+   
+   div#lightbox-content .success_message span {
+      color: #000;
+      font-weight: normal;
+   }
+
+/* =ADMIN
+   ------------------------------------------------------ */
+   .admin h4.primary_action {
+      float: right;
+      margin-left: 5px;
+   }
+   
+   .admin #navigation_container {
+      top: 34px;
+   }
+   
+   .admin .search_form {
+      top: 110px;
+   }
+   
+   .admin div#content {
+      padding-top: 90px;
+   }
+   
+   .admin #login .return {
+      color: #fff;
+      display: block;
+      font-size: 0.75em;
+      font-weight: bold;
+      line-height: 1em;
+      left: 50%;
+      margin-left: -480px;
+      padding: 8px;
+      position: absolute;
+      text-decoration: none;
+      z-index: 100;
+   }
+   
+   .admin #login .return:before {
+      content: "<< ";
+   }
+   
+   .admin .sub_navigation {
+      width: auto;
+   }
+   
+   .sorted_list {
+      clear: both;
+   }
+   
+   .admin .sorted_list {
+      margin-top: 15px;
+      padding-top: 15px;
+   }
+   
+   .admin #content ul.form {
+      clear: both;
+      overflow: auto;
+   }
+   
+   .admin #content ul.form > li label {
+      display: inline-block;
+      min-width: 200px;
+   }
+
+/* =ADMIN_FORMS
+   ------------------------------------------------------ */
+   .admin #content ul.form > li {
+      clear: both;
+      float: left;
+      margin: 35px 0 5px 0;
+      padding: 4px;
+      position: relative;
+   }
+   
+   .admin #content ul.form > li input[type="text"],
+   .admin #content ul.form > li textarea {
+      background: #fff;
+      border-radius: 3px;
+      padding: 2px 4px;
+      
+      -o-border-radius:3px;
+      -icab-border-radius:3px;
+      -khtml-border-radius:3px;
+      -moz-border-radius:3px;
+      -webkit-border-radius:3px;
+   }
+   
+   .admin #content ul.form > li textarea {
+      font-size: 1.35em;
+      line-height: 1.5em;
+      height: 300px;
+   }
+   
+   .admin #content ul.form > li textarea.short {
+      height: 150px;
+   }
+   
+   .admin #content ul.form > li input[type="submit"] {
+      min-width: 200px;
+      width: auto;
+   }
+   
+/* =SORTED_LISTS
+   ------------------------------------------------------ */
+   .sorted_list > li {
+      border-bottom: 1px dotted #ccc;
+      display: block;
+      padding: 6px 0;
+      position: relative;
+   }
+   
+   .sorted_list .drag {
+      display: block;
+      font-size: 0.875em;
+      left: 716px;
+      line-height: 1.25em;
+      position: absolute;
+      top: 0;
+   }
+   
+   .sorted_list .drag a {
+      color: #ccc;
+      display: block;
+      padding: 10px 0;
+   }
+   
+   .sorted_list .drag a:hover {
+      color: #666;
+   }
+   
+   .sorted_list li .primary_action {
+      float: none;
+      font-size: 0.75em;
+      position: absolute;
+      right: 0;
+      top: 4px;
+   }
+   
+   .sorted_list .ui-icon {
+      float: left;
+   }
+   
 /* =JQUERY_UI (date_picker)
    ------------------------------------------------------ */
    #ui-datepicker-div {
@@ -1609,6 +1784,14 @@ General comments/License Statement if any.
    .rgba .sub_navigation > li > ol a {
       color: #fff;
       font-weight: bold;
+      text-shadow: 1px 1px 0px rgba(0,0,0,.35);
+   }
+   
+   .rgba div#lightbox-content .success_message {
+      text-shadow: 1px 1px 0px rgba(0,0,0,.85);
+   }
+   
+   .rgba div#lightbox-content .success_message span {
       text-shadow: 1px 1px 0px rgba(0,0,0,.35);
    }
    

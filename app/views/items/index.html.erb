@@ -1,18 +1,16 @@
-<h1>Listing items</h1>
+<h4 class="primary_action guided"><%= link_to 'Or Just Manage Categories', categories_path %></h4>
+<h4 class="primary_action"><%= link_to 'Create a New Item', new_item_path %></h4>
+<h1>Listing Items</h1>
 
-<table>
-  <tr>
-  </tr>
-
-<% @items.each do |item| %>
-  <tr>
-    <td><%= link_to 'Show', item %></td>
-    <td><%= link_to 'Edit', edit_item_path(item) %></td>
-    <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New item', new_item_path %>
+<ol class="item_list">
+  <% @items.each do |item| %>
+    <!-- item_<%= item.id %>: <%= item.name %> -->
+    <li id="item_<%= item.id %>" class="item">
+      <%= render :partial => 'equipment/item_detail' %>
+      <ul class="action_list">
+        <li class="primary_action"><%= link_to 'Edit', edit_item_path(item) %></li>
+        <li class="primary_action delete"><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></li>
+      </ul>
+    </li>
+  <% end %>
+</ol>

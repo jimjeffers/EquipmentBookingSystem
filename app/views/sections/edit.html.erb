@@ -1,0 +1,14 @@
+<h1>Editing Section: <%= @section.name %></h1>
+
+<% form_for(@section) do |f| %>
+  <%= f.error_messages %>
+  <ul class="form">
+    <%= render :partial => 'section_form', :locals => {:f => f} %>
+    <li>
+      <%= f.submit 'Update' %>
+    </li>
+  </ul>
+<% end %>
+
+<%= link_to 'Show', @section %> |
+<%= link_to 'Back', sections_path %>

@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   layout 'main'
   
+  def index
+    render :layout => 'admin'
+  end
+  
   # render new.rhtml
   def new
     @user = User.new

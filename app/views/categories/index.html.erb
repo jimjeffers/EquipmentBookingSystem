@@ -1,18 +1,15 @@
-<h1>Listing categories</h1>
+<h4 class="primary_action guided"><%= link_to 'Or Return to Managing Items', items_path %></h4>
+<h4 class="primary_action"><%= link_to 'Create a New category', new_category_path %></h4>
+<h1>Listing Categories</h1>
 
-<table>
-  <tr>
-  </tr>
-
-<% @categories.each do |category| %>
-  <tr>
-    <td><%= link_to 'Show', category %></td>
-    <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New category', new_category_path %>
+<ul class="sorted_list" id="categories">
+  <% @categories.each do |category| %>
+    <li id="category_<%= category.id %>">
+      <ul>
+        <li><%= link_to category.name, edit_category_path(category) %></li>
+        <li class="primary_action guided"><%= link_to 'Delete', category, :confirm => 'Are you sure?', :method => :delete %></li>
+        <%= render :partial => 'shared/sort_handle' %>
+      </ul>
+    </li>
+  <% end %>
+</ul>

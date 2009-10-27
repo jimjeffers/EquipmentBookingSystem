@@ -130,37 +130,53 @@ $(document).ready(function() {
    
    // Easy dropdown navigation with timeouts.
    $('.sub_navigation').each(function() {
-          var menu = $(this);
-          menu.hide();
-          var parent = $(menu.parent().get(0));
-          var timeout = false; 
-          parent.hover(function(){
-             if(!timeout && !menu.is(':visible')) {
-                timeout = setTimeout(function(){
-                   menu.show();
-                   parent.addClass('active');
-                   timeout = false;
-                }, 350);
-             } else {
-                if(timeout) {
-                   clearTimeout(timeout);
-                }
+       var menu = $(this);
+       menu.hide();
+       var parent = $(menu.parent().get(0));
+       var timeout = false; 
+       parent.hover(function(){
+          if(!timeout && !menu.is(':visible')) {
+             timeout = setTimeout(function(){
+                menu.show();
+                parent.addClass('active');
                 timeout = false;
+             }, 350);
+          } else {
+             if(timeout) {
+                clearTimeout(timeout);
              }
-          },
-          function(){
-             if(!timeout && menu.is(':visible')) {
-                 timeout = setTimeout(function(){
-                    menu.hide();
-                    parent.removeClass('active');
-                    timeout = false;
-                 }, 350);
-              } else {
-                 if(timeout) {
-                    clearTimeout(timeout);
-                 }
+             timeout = false;
+          }
+       },
+       function(){
+          if(!timeout && menu.is(':visible')) {
+              timeout = setTimeout(function(){
+                 menu.hide();
+                 parent.removeClass('active');
                  timeout = false;
+              }, 350);
+           } else {
+              if(timeout) {
+                 clearTimeout(timeout);
               }
-          });
-      });
+              timeout = false;
+           }
+       });
+   });
+   
+   // Add list sorting for admin.
+   $(".sorted_list").sortable({
+      handle: '.drag',
+      update: function(event, ui) {
+         showLightBox();
+         var current = $(event.target);
+         console.log(current.sortable('serialize'));
+         $.post('/'+current.attr('id')+'/update_order', current.sortable('serialize'),
+            function(data) {
+               intoLightBox(data);
+            },
+         "text");
+      }
+   });
+   $(".sorted_list").disableSelection();
 });

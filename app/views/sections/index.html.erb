@@ -1,0 +1,15 @@
+<h4 class="primary_action guided"><%= link_to 'Return to Questions', questions_path %></h4>
+<h4 class="primary_action"><%= link_to 'New section', new_section_path %></h4>
+<h1>Listing Sections</h1>
+
+<ul class="sorted_list" id="sections">
+  <% @sections.each do |section| %>
+    <li id="section_<%= section.id %>">
+      <ul>
+        <li><%= link_to section.name, edit_section_path(section) %></li>
+        <li class="primary_action guided"><%= link_to 'Delete', section, :confirm => 'Are you sure?', :method => :delete %></li>
+        <%= render :partial => 'shared/sort_handle' %>
+      </ul>
+    </li>
+  <% end %>
+</ul>
