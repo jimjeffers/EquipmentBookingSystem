@@ -1,7 +1,9 @@
 <!-- item_<%= item.id %>: <%= item.name %> -->
 <li id="item_<%= item.id %>" class="item">
   <h3 class="item_name"><%= link_to item.name, edit_item_path(item) %></h3>
-  <a href="#" class="item_photo"><img src="/images/samples/sample_sd2.jpg" width="115" height="115" alt="Cannon EOS 50-D"/></a>
+  <a href="#" class="item_photo">
+    <%= image_tag item.image.url(:thumb), :alt => item.name %>
+  </a>
   <h4>Includes:</h4>
   <ul class="included_items">
     <li>Memory Card Case</li>
