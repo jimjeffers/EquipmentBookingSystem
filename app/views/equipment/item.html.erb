@@ -12,8 +12,12 @@
       <h3>Book This Item</h3>
       <ul class="form">
         <%= render :partial => 'layouts/availability_fields' %>
+        <li class="search_field_quantity search_field_date">
+          <%= label_tag :available_quantity, "Quantity" %>
+          <%= select_tag :available_quantity, (0..4).to_a.map { |i| "<option value=\"#{i}\">#{i}</option>" }.join('') %>
+        </li>
         <li class="search_field_availability_submit">
-           <%= submit_tag "Add To Cart" %>
+          <%= submit_tag "Add To Cart" %>
         </li>
       </ul>
     <% end %>

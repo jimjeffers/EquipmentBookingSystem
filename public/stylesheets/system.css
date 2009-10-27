@@ -747,6 +747,7 @@ General comments/License Statement if any.
    
    #search_module ul > li input[type="text"].datepicker,
    li input[type="text"].datepicker,
+   li.search_field_quantity select,
    .cart_item_module li input[type="text"].datepicker {
       background: #fff url(../images/calendar.png) no-repeat 126px center;
       padding: 8px 40px 8px 2px;
@@ -766,6 +767,7 @@ General comments/License Statement if any.
    
    #search_module ul > li input[type="text"].datepicker,
    li input[type="text"].datepicker,
+   li.search_field_quantity select,
    #search_module ul > li.search_field_availability_submit input[type="submit"],
    li.search_field_availability_submit input[type="submit"] {
       border-radius: 5px;
@@ -1045,15 +1047,12 @@ General comments/License Statement if any.
       margin-bottom: 30px;
    }
    
-   .cart_item_module .search_field_date.until {
-      margin-bottom: 0;
-   }
-   
    .cart_item_module li label {
       top: -22px;
    }
    
-   .cart_item_module li input.datepicker[type="text"] {
+   .cart_item_module li input.datepicker[type="text"],
+   .cart_item_module li select {
       background-position: 120px center;
       width: 110px;
    }
@@ -1079,8 +1078,21 @@ General comments/License Statement if any.
    
    .cart_item_module ul {
       display: block;
-      height: 150px;
    }
+   
+   .cart_item_module .search_field_quantity {
+      margin-bottom: 0;
+   }
+   
+   .cart_item_module li.search_field_quantity select {
+      background: #fff;
+      border: none;
+      font-size: 1em;
+      line-height: 1.25em;
+      padding-right: 4px;
+      width: 150px;
+   }
+   
 
 /* =INLINE_ITEM_LIST
    ------------------------------------------------------ */
