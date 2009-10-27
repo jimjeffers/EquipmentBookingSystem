@@ -1,6 +1,7 @@
 class Item < ActiveRecord::Base
   # Plugins
   acts_as_taggable
+  has_attached_file :image, :styles => { :medium => "280x280", :thumb => "115x115" }
   
   # Relationships
   has_many :instances
