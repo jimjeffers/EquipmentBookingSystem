@@ -197,10 +197,10 @@ General comments/License Statement if any.
    form#primary_login h2 {
       color: #87B314;
       font-size: 12px;
-      margin-left: -90px;
+      margin-left: -120px;
       position: absolute;
       left: 50%;
-      top: 7px;
+      top: 8px;
    }
    
    form#primary_login ul.form {
@@ -545,7 +545,9 @@ General comments/License Statement if any.
    li.search_field_availability_submit,
    .inline_item_list .add_to_cart,
    .admin #content ul.form > li label,
-   .admin #content ul.form > li {
+   .admin #content ul.form > li,
+   #content .standard_form ul.form > li label,
+   #content .standard_form ul.form > li {
       background: #642380;
       border-radius: 5px;
       
@@ -571,14 +573,17 @@ General comments/License Statement if any.
    .cart_item_module li:hover label,
    .cart_item_module .search_field_availability_submit:hover,
    .admin #content ul.form > li:hover label,
-   .admin #content ul.form > li:hover {
+   .admin #content ul.form > li:hover,
+   #content .standard_form ul.form > li:hover label,
+   #content .standard_form ul.form > li:hover {
       background: #2A0E36;
    }
    
    .search_form label,
    #search_module label,
    .cart_item_module label,
-   .admin #content ul.form > li label {
+   .admin #content ul.form > li label,
+   #content .standard_form ul.form > li label {
       border-radius-topleft: 10px;
       border-radius-topright: 10px;
       color: #fff;
@@ -607,7 +612,11 @@ General comments/License Statement if any.
    .cart_item_module ul > li input[type="text"],
    .admin #content ul.form > li input[type="text"],
    .admin #content ul.form > li textarea,
-   .admin #content ul.form > li select {
+   .admin #content ul.form > li select,
+   #content .standard_form ul.form > li input[type="text"],
+   #content .standard_form ul.form > li input[type="password"],
+   #content .standard_form ul.form > li textarea,
+   #content .standard_form ul.form > li select {
       background: #fff url(../images/search_icon.png) no-repeat 6px 4px;
       border: none;
       border-radius-topleft: 5px;
@@ -640,7 +649,8 @@ General comments/License Statement if any.
    .search_form input[type="submit"],
    #search_module ul > li input[type="submit"],
    .cart_item_module ul > li input[type="submit"],
-   .admin #content ul.form > li input[type="submit"] {
+   .admin #content ul.form > li input[type="submit"],
+   #content .standard_form ul.form > li input[type="submit"] {
       background: #88B415;
       border: none;
       border-radius-topleft: 5px;
@@ -775,7 +785,8 @@ General comments/License Statement if any.
    
    #search_module ul li label,
    .cart_item_module li label,
-   .admin #content ul.form > li label {
+   .admin #content ul.form > li label,
+   #content .standard_form ul.form > li label {
       top: -22px;
    }
    
@@ -1156,7 +1167,8 @@ General comments/License Statement if any.
    }
    
    .cart_item_module ul > li input[type="submit"],
-   .admin #content ul.form > li input[type="submit"] {
+   .admin #content ul.form > li input[type="submit"],
+   #content .standard_form ul.form > li input[type="submit"], {
       height: 40px;
       left: auto;
       padding: 10px 0;
@@ -1284,6 +1296,11 @@ General comments/License Statement if any.
       font-size: 0.875em;
       font-weight: normal;
       line-height: 1em;
+   }
+   
+   div#content #error {
+      color: #900;
+      font-weight: bold;
    }
 
 /* =FIND_EQUIPMENT_MAIN
@@ -1719,7 +1736,8 @@ General comments/License Statement if any.
    
 /* =ADMIN_FORMS
    ------------------------------------------------------ */
-   .admin #content ul.form > li {
+   .admin #content ul.form > li,
+   #content .standard_form ul.form > li {
       clear: both;
       float: left;
       margin: 35px 0 5px 0;
@@ -1730,7 +1748,12 @@ General comments/License Statement if any.
    .admin #content ul.form > li input[type="text"],
    .admin #content ul.form > li input[type="submit"],
    .admin #content ul.form > li textarea,
-   .admin #content ul.form > li select {
+   .admin #content ul.form > li select,
+   #content .standard_form ul.form > li input[type="text"],
+   #content .standard_form ul.form > li input[type="password"],
+   #content .standard_form ul.form > li input[type="submit"],
+   #content .standard_form ul.form > li textarea,
+   #content .standard_form ul.form > li select {
       border-radius: 3px;
       padding: 2px 4px;
       
@@ -1743,27 +1766,39 @@ General comments/License Statement if any.
    
    .admin #content ul.form > li input[type="text"],
    .admin #content ul.form > li textarea,
-   .admin #content ul.form > li select {
+   .admin #content ul.form > li select,
+   #content .standard_form ul.form > li input[type="text"],
+   #content .standard_form ul.form > li input[type="password"],
+   #content .standard_form ul.form > li textarea,
+   #content .standard_form ul.form > li select {
       background: #fff;
    }
    
-   .admin #content ul.form > li select {
+   .admin #content ul.form > li select,
+   #content .standard_form ul.form > li select {
       height: 30px;
       padding: 4px 4px;
    }
    
-   .admin #content ul.form > li textarea {
+   .admin #content ul.form > li textarea,
+   #content .standard_form ul.form > li textarea {
       font-size: 1.35em;
       line-height: 1.5em;
       height: 300px;
    }
    
-   .admin #content ul.form > li textarea.short {
+   .admin #content ul.form > li textarea.short,
+   #content .standard_form ul.form > li textarea.short {
       height: 150px;
    }
    
-   .admin #content ul.form > li input[type="submit"] {
+   .admin #content ul.form > li input[type="submit"],
+   #content .standard_form ul.form > li input[type="submit"] {
       width: auto;
+   }
+   
+   #content .standard_form ul.form > li input[type="submit"] {
+      position: relative;
    }
 
 /* =FORM_ERRORS
