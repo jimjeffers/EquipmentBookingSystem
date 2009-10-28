@@ -1,8 +1,8 @@
 <div class="cart_item_module cart_form">
-  <%= render :partial => 'add_item_form.html', :locals => {:prefix => 'inline'} %>
+  <%= render :partial => 'add_item_form.html', :locals => {:prefix => 'inline', :item => @item} %>
 </div>
 <ul id="item_info" class="item_list">
   <li>
-    <%= render :partial => 'item_detail.html' %>
+    <%= render :partial => 'item_detail.html', :locals => {:item => @item} %>
   </li>
 </ul>

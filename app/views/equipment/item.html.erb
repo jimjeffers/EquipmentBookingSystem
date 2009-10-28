@@ -6,7 +6,7 @@
 <div id="item_details">
   <h2><%= @item.name %></h2>
   <div id="add_to_cart" class="cart_item_module">
-    <%= render :partial => 'add_item_form' %>
+    <%= render :partial => 'add_item_form', :locals => {:item => @item} %>
   </div>
   <%= image_tag(@item.image.url(:medium), :alt => @item.name, :class => 'item_image_detail') %>
   
@@ -14,12 +14,7 @@
   <%= RedCloth.new(@item.description).to_html %>
   
   <h3>Includes:</h3>
-  <ul class="included_items">
-    <li>Wall Charger</li>
-    <li>Battery Pack</li>
-    <li>USB Cable</li>
-    <li>Carrying Case</li>
-  </ul>
+  <%= render :partial => 'shared/included_items_list_only', :locals => {:item => @item} %>
   
   <h3>Suggested Complimentary Items:</h3>
   <ul class="inline_item_list">
@@ -30,22 +25,16 @@
         <h5 class="add_to_cart"><a href="#">Add to Cart</a></h5>
         <h5 class="view_details"><a href="item">View Details</a></h5>
       </li>
-
-      <!-- item_2: Tripod -->
-      <li id="item_2" class="item">
-        <h4 class="item_name"><a href="item">Tripod</a></h4>
-        <a href="item#" class="item_photo"><img src="/images/samples/sample_tripod.jpg" width="115" height="115" alt="Tripod"/></a>
-        <h5 class="add_to_cart"><a href="#">Add to Cart</a></h5>
-        <h5 class="view_details"><a href="item">View Details</a></h5>
-      </li>
   </ul>
   
   <% if !@alternative_items.blank? %>
     <h3>Similar Alternative Items:</h3>
     <ul class="inline_item_list">
+      <li>
         <% for item in @alternative_items %>
-          <%= render :partial => 'item_detail_extended', :locals => {:item => item} %>
+          <%= render :partial => 'inline_list_item', :locals => {:item => item} %>
         <% end %>
+      </li>
     </ul>
   <% end %>
 </div>

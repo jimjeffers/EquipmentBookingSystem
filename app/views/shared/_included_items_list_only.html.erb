@@ -1,0 +1,9 @@
+<ul class="included_items">
+  <% if !item.included_items_list.blank? %>
+    <% for included_item in item.included_items_list %>
+      <li><%= included_item %></li>
+    <% end %>
+  <% else %>
+    <li>No items included.</li>
+  <% end %>
+</ul>

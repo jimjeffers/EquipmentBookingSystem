@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091028011435) do
+ActiveRecord::Schema.define(:version => 20091028043733) do
 
   create_table "bookings", :force => true do |t|
     t.integer  "user_id"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20091028011435) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.string   "guid"
+    t.text     "included_items"
   end
 
   create_table "questions", :force => true do |t|

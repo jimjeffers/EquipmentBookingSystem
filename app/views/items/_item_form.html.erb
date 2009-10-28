@@ -15,6 +15,10 @@
   <%= f.text_area :tag_list, :class => "short" %>
 </li>
 <li>
+  <%= f.label :included_items, "Included Items List (separated by commas!)" %>
+  <%= f.text_area :included_items, :class => "short" %>
+</li>
+<li>
   <%= f.label :image, "Item Image" %>
   <%= f.file_field :image %>
 </li>

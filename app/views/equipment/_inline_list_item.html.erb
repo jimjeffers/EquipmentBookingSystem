@@ -1,0 +1,7 @@
+<!-- item_<%= item.id %>: <%= item.name %> -->
+<li id="item_<%= item.id %>" class="item">
+  <h4 class="item_name"><%= link_to item.name, item_detail_path(item.guid) %></h4>
+  <%= link_to image_tag(item.image.url(:thumb), :alt => item.name), item_detail_path(item.guid), :class => 'item_photo' %>
+  <h5 class="add_to_cart"><%= link_to "Add to Cart", item_detail_path(item.guid), :class => "interactive" %></h5>
+  <h5 class="view_details"><%= link_to "View Details", item_detail_path(item.guid) %></h5>
+</li>

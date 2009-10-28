@@ -25,4 +25,9 @@ class Item < ActiveRecord::Base
       return category.items_and_nested_items
     end
   end
+  
+  # Returns an array of the included items for a given item.
+  def included_items_list
+    included_items.split(',') unless included_items.nil?
+  end
 end
