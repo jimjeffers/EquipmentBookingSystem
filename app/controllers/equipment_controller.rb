@@ -6,6 +6,10 @@ class EquipmentController < ApplicationController
     @categories = Category.root_level
   end
   
+  def checkout
+    @items = cookies[:items]
+  end
+  
   # Displays a category.
   def browse
     @page_class = 'search_results browse'
@@ -33,7 +37,10 @@ class EquipmentController < ApplicationController
   
   # Adds submitted item to cart.
   def add_to_cart
+    
     @item = Item.find(params[:item_id])
+    cookies[:items] = cookies[:items] + " " + @item.id.to_s
+    
     respond_to do |format| 
       format.html 
       format.text { render :partial => 'success' }
