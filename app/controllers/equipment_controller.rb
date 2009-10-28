@@ -37,7 +37,7 @@ class EquipmentController < ApplicationController
   
   # Adds submitted item to cart.
   def add_to_cart
-    
+    cookies[:items] = "" if cookies[:items].nil?
     @item = Item.find(params[:item_id])
     cookies[:items] = cookies[:items] + " " + @item.id.to_s
     
