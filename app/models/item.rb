@@ -20,9 +20,9 @@ class Item < ActiveRecord::Base
   # Returns up to 5 other items in similar categories
   def alternatives
     if category.category
-      return category.category.items_and_nested_items(:limit => 3)
+      return category.category.items_and_nested_items()
     else
-      return category.items_and_nested_items(:limit => 3)
+      return category.items_and_nested_items()
     end
   end
   

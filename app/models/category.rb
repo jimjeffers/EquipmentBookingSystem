@@ -37,7 +37,7 @@ class Category < ActiveRecord::Base
   
   # Returns all items in the current category and it's children's items.
   def items_and_nested_items
-    Item.all_in_given_categories([self]+categories)
+    Item.all_in_given_categories([self]+categories, :limit => 3)
   end
   
   # Get all of the root level categories for a set of items. There has to be a better way to do this.
@@ -46,7 +46,7 @@ class Category < ActiveRecord::Base
     if items.length > 0
       item_ids_string = items.map { |i| i.id }.join(',')
       parents = self.find(:all, :conditions => ["id IN (#{item_ids_string}) AND category_id IS ?", nil], :include => :categories)
-      children = self.find(:all, :conditions => ["id IN (#{item_ids_string}) AND category_id NOT ?", nil], :include => :category)
+      children = self.find(:all, :conditions => ["id IN (#{item_ids_string}) AND category_id IS NOT ?", nil], :include => :category)
       if children.length > 0
         for child in children
           parents << child.category unless parents.include?(child.category)

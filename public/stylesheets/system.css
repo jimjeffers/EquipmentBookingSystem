@@ -1065,6 +1065,7 @@ General comments/License Statement if any.
    ------------------------------------------------------ */
    #item_details {
       padding-left: 300px;
+      padding-right: 200px;
       position: relative;
    }
    
@@ -1207,7 +1208,8 @@ General comments/License Statement if any.
    
    .inline_item_list li {
       float: left;
-      margin-right: 20px;
+      margin: 0 20px 10px 0;
+      width: 115px;
    }
    
    .inline_item_list li h4 a,
