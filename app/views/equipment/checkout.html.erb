@@ -1,4 +1,8 @@
 <h1>Your Cart</h1>
+<% if !@items.blank? %>
+<ol class="item_list">
 <% for item in @items %>
-  <%= item.name %>
+  <%= render :partial => 'item_detail_extended', :locals => {:item => item} %>
+<% end %>
+</ol>
 <% end %>

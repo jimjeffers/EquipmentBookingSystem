@@ -7,7 +7,10 @@ class EquipmentController < ApplicationController
   end
   
   def checkout
-    @items = cookies[:items]
+    @items = []
+    cookies[:items].split(" ").each do |id|
+      @items << Item.find(id)
+    end
   end
   
   # Displays a category.
