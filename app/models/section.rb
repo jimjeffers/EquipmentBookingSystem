@@ -1,4 +1,7 @@
 class Section < ActiveRecord::Base
+  # Plugin
+  has_guid :name
+  
   # Relationships
   has_many :questions
   

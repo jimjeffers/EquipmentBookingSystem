@@ -1,4 +1,7 @@
 class Category < ActiveRecord::Base
+  # Plugins
+  has_guid :name
+  
   # Relationships
   has_many :categories
   belongs_to :category

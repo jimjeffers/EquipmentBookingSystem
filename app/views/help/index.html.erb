@@ -1,10 +1,10 @@
 <h1>Help and Guides</h1>
 
 <div id="question_module" class="module">
-  <%= render :partial => 'help_category_nav' %>
+  <%= render :partial => 'help_category_nav', :locals => {:section => @section}  %>
 </div>
 
 <div id="answer_module" class="module">
   <h2>Requesting Items</h2>
-  <%= render :partial => 'question_accordian' %>
+  <%= render :partial => 'question_accordian', :locals => {:section => @section} %>
 </div>

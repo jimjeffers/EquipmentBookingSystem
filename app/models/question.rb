@@ -1,4 +1,7 @@
 class Question < ActiveRecord::Base
+  # Plugin
+  has_guid :name
+  
   # Relationship
   belongs_to :section
   
