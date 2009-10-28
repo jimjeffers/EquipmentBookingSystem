@@ -37,7 +37,7 @@ class Category < ActiveRecord::Base
   
   # Returns all items in the current category and it's children's items.
   def items_and_nested_items
-    Item.all_in_given_categories([self]+categories, :limit => 3)
+    Item.all_in_given_categories([self]+categories)
   end
   
   # Get all of the root level categories for a set of items. There has to be a better way to do this.

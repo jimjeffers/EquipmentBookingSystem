@@ -1113,7 +1113,7 @@ General comments/License Statement if any.
    
    .cart_item_module {
       color: #000;
-      padding: 5px 10px;
+      padding: 5px 10px 20px 10px;
       width: 160px;
    }
    
@@ -1208,7 +1208,7 @@ General comments/License Statement if any.
    
    .inline_item_list li {
       float: left;
-      margin: 0 20px 10px 0;
+      margin: 0 20px 0 0;
       width: 115px;
    }
    
@@ -1220,6 +1220,10 @@ General comments/License Statement if any.
       line-height: 1em;
       text-align: center;
       text-decoration: none;
+   }
+   
+   .inline_item_list li h4 a {
+      min-height: 40px;
    }
    
    .inline_item_list .view_details a {

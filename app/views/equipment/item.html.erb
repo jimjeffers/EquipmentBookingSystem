@@ -31,9 +31,14 @@
     <h3>Similar Alternative Items:</h3>
     <ul class="inline_item_list">
       <li>
-        <% for item in @alternative_items %>
-          <%= render :partial => 'inline_list_item', :locals => {:item => item} %>
-        <% end %>
+        <%  # => Oh god am I really doing something so sloppy...
+            count = 1
+            for item in @alternative_items 
+              if count <= 3 %>
+              <%= render :partial => 'inline_list_item', :locals => {:item => item} %>
+        <%    count += 1
+            end 
+          end %>
       </li>
     </ul>
   <% end %>

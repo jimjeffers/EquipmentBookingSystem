@@ -73,7 +73,6 @@ $(document).ready(function() {
          current.siblings('span.count').html(count);
       });
    }
-   updateCategoryCounts(); // Run on load...
    
    // Build a list of selectors.
    // Hide all list items and only show the items that match the selectors.
@@ -83,7 +82,6 @@ $(document).ready(function() {
       $('.category_checklist :checked').each(function(index) {
          selectors.push(base+"."+$(this).attr('id'));
       });
-      console.log(selectors.join(','));
       
       var total_list = $(base).addClass('inactive').removeClass('active');
       if (selectors.length > 0) {
@@ -92,8 +90,12 @@ $(document).ready(function() {
       }
       var inactive_list = $(base+".inactive").hide();
    }
-   filterSearchResults(); // Run on load...
-   $('.category_checklist input[type="checkbox"]').change(filterSearchResults); // Bind to checkboxes...
+   
+   if($('body').hasClass('search_results') && !$('body').hasClass('browse')) {
+      updateCategoryCounts(); // Run on load...
+      filterSearchResults(); // Run on load...
+      $('.category_checklist input[type="checkbox"]').change(filterSearchResults); // Bind to checkboxes...
+   }
    
    // Lightbox
    function showLightBox() {
