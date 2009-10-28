@@ -1168,7 +1168,7 @@ General comments/License Statement if any.
    
    .cart_item_module ul > li input[type="submit"],
    .admin #content ul.form > li input[type="submit"],
-   #content .standard_form ul.form > li input[type="submit"], {
+   #content .standard_form ul.form > li input[type="submit"] {
       height: 40px;
       left: auto;
       padding: 10px 0;
