@@ -71,6 +71,11 @@ $(document).ready(function() {
          var current = $(this);
          var count = $('ol.item_list li.'+current.attr('id')).length
          current.siblings('span.count').html(count);
+         if (count > 0) {
+            current.parent().show();
+         } else {
+            current.parent().hide();
+         }
       });
    }
    
