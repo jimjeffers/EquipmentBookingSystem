@@ -1,5 +1,5 @@
 <% form_tag('/equipment/search') do %>
-  <%= render :partial => 'layouts/search_field', :locals => {:search_label => search_label} %>
+  <%= render :partial => 'layouts/search_field', :locals => {:search_label => search_label, :value => " "} %>
   <fieldset>
     <legend>Optional</legend>
     <ul class="form">
