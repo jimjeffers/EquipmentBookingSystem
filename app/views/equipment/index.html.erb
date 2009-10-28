@@ -5,7 +5,7 @@
 </div>
 <div id="catalogue_module" class="module">
   <h2>Browse Catalogue:</h2>
-  <%= render :partial => 'layouts/category_list' %>
+  <%= render :partial => 'layouts/category_list', :locals => {:categories => @categories} %>
 </div>
 <div id="quick_tips_module" class="module">
   <h2>Quick Tips &amp; Help:</h2>

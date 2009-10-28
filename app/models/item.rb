@@ -15,4 +15,14 @@ class Item < ActiveRecord::Base
   
   # Scopes
   default_scope :order => 'position ASC, created_at DESC'
+  named_scope :all_in_given_categories, lambda  { |categories| { :conditions => "category_id IN (#{categories.map { |c| c.id}.join(',')})" } }
+  
+  # Returns up to 5 other items in similar categories
+  def alternatives
+    if category.category
+      return category.category.items_and_nested_items
+    else
+      return category.items_and_nested_items
+    end
+  end
 end

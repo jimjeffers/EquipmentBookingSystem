@@ -1,5 +1,7 @@
 # This controller handles the login/logout function of the site.  
 class SessionsController < ApplicationController
+  layout 'main'
+  
   # Be sure to include AuthenticationSystem in Application Controller instead
   include AuthenticatedSystem
 

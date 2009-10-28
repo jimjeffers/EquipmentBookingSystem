@@ -1,31 +1,13 @@
-<ul id="breadcrumb">
-  <li><a href="#">Equipment</a></li>
-  <li><a href="#">Technology</a></li>
-  <li><a href="#">Cameras</a></li>
-</ul>
+<%= render :partial => 'breadcrumb', :locals => {:category => @category} %>
 <% form_tag('/equipment/search') do %>
   <div id="search_module" class="module">
       <fieldset>
-        <legend>Explore Cameras</legend>
+        <legend>Explore <%= @category.name %></legend>
         <ul class="form">
           <%= render :partial => 'layouts/availability_fields' %>
           <li class="category_refinements">
-            <ul class="category_faceting">
-              <li>
-                <span class="count">10</span>
-                <a href="#" class="current">Cameras</a>
-                <ul>
-                  <li>
-                    <span class="count">7</span>
-                    <a href="#">SLRs</a>
-                  </li>
-                  <li>
-                    <span class="count">3</span>
-                    <a href="#">Point &amp; Shoot</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <%= render :partial => 'category_faceting', :locals => {  :current => @category, 
+                                                                      :parent_category => @parent_category || @category } %>
           </li>
           <li class="search_field_availability_submit non_interactive">
              <%= submit_tag "Refine Search Results" %>
@@ -36,6 +18,6 @@
 <% end %>
 
 <div id="search_results">
-  <h2>10 Items in "Cameras" Category</h2>
-  <%= render :partial => 'item_list' %>
+  <h2><%= @items.length %> Items in "<%= @category.name %>" Category</h2>
+  <%= render :partial => 'item_list', :locals => {:items => @items} %>
 </div>

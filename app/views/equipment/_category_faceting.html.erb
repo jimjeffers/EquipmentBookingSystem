@@ -1,0 +1,14 @@
+<ul class="category_faceting">
+  <li>
+    <%= render :partial => 'faceted_category_list_item', :locals => {:category => parent_category, :current => current} %>
+    <% if !parent_category.categories.blank? %>
+      <ul>
+        <% for category in parent_category.categories %>
+          <li>
+            <%= render :partial => 'faceted_category_list_item', :locals => {:category => category, :current => current} %>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+  </li>
+</ul>

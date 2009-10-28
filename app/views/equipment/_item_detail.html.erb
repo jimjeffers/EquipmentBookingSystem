@@ -1,6 +1,9 @@
-<h3 class="item_name"><a href="#">Sandisk 8GB SD Card</a></h3>
-      <a href="#" class="item_photo"><img src="/images/samples/sample_sd2.jpg" width="115" height="115" alt="Cannon EOS 50-D"/></a>
-      <h4>Includes:</h4>
-      <ul class="included_items">
-        <li>Memory Card Case</li>
-      </ul>
+<h3 class="item_name"><a href="item"><%= item.name %></a></h3>
+<%= link_to image_tag(item.image.url(:thumb), :alt => item.name), item_detail_path(item.guid), :class => 'item_photo' %>
+<h4>Includes:</h4>
+<ul class="included_items">
+  <li>Wall Charger</li>
+  <li>Battery Pack</li>
+  <li>USB Cable</li>
+  <li>Carrying Case</li>
+</ul>

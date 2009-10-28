@@ -1,0 +1,4 @@
+<% if category.item_count > 0 %>
+<span class="count"><%= category.item_count %></span>
+<%= link_to category.name, category_browse_path(category.guid), :class => ((category.id == current.id) ? 'current' : '') %>
+<% end %>

@@ -1,6 +1,6 @@
 <% form_tag('/equipment/search') do %>
   <div id="search_results_phrase" class="search_form">
-      <%= render :partial => 'layouts/search_field', :locals => {:search_label => 'You Searched For:'} %>
+      <%= render :partial => 'layouts/search_field', :locals => {:search_label => 'You Searched For:', :value => params[:search]} %>
       <ul class="related_phrases">
         <li class="section_title">You might also want to try... </li>
         <li><a href="#">Powershot 450</a></li>
@@ -24,6 +24,6 @@
 <% end %>
 
 <div id="search_results">
-  <h2>16 Results Found for "Camera"</h2>
-  <%= render :partial => 'item_list' %>
+  <h2>16 Results Found for "<%= params[:search] %>"</h2>
+  <%= render :partial => 'item_list', :locals => {:items => @items} %>
 </div>

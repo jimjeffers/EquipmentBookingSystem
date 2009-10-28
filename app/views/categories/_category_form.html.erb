@@ -4,5 +4,5 @@
 </li>
 <li>
   <%= f.label :category_id, "Parent (optional)" %>
-  <%= f.collection_select :category_id, Category.all, :id, :name, {:prompt => true, :include_blank => true} %>
+  <%= f.collection_select :category_id, Category.root_level, :id, :name, {:prompt => true, :include_blank => true} %>
 </li>

@@ -1,18 +1,18 @@
 <ul id="breadcrumb">
-  <li class="return"><a href="/equipment/search">Return to Search Results</a></li>
-  <li><a href="#">Equipment</a></li>
-  <li><a href="#">Cameras</a></li>
-  <li><a href="#">SLRs</a></li>
-  <li><a href="#">Canon EOS 50-D Digital SLR Camera</a></li>
+  <li class="return"><a href="javascript:history.go(-1)">Return to Search Results</a></li>
+  <%= render :partial => 'breadcrumb_categories', :locals => {:category => @item.category} %>
+  <li><a href="#"><%= @item.name %></a></li>
 </ul>
 <div id="item_details">
-  <h2>Canon EOS 50-D Digital SLR Camera</h2>
+  <h2><%= @item.name %></h2>
   <div id="add_to_cart" class="cart_item_module">
     <%= render :partial => 'add_item_form' %>
   </div>
-  <img src="/images/samples/big_sample_50d.jpg" width="280" height="280" alt="Big Sample 50-d" class="item_image_detail"/>
+  <%= image_tag(@item.image.url(:medium), :alt => @item.name, :class => 'item_image_detail') %>
+  
   <h3>Description:</h3>
-  <p>Canon’s new EOS 50D bridges the gap between the novice and the seasoned pro with a perfect combination of high-speed and quality. It features an APS-C sized 15.1-megapixel CMOS sensor for tremendous images, new DIGIC 4 Image Processor for fine detail and superior color reproduction, and improved ISO capabilities up to 12800 for uncompromised shooting even in the dimmest situations. It features a refined 3.0-inch Clear View LCD (920,000 dots) monitor, supercharged Live View Function with Face Detection Live mode, plus a number of new automatic Image Correction settings and HDMI output for viewing images on an HDTV. Pick up the EOS 50D and you’ll experience true digital inspiration!</p>
+  <%= RedCloth.new(@item.description).to_html %>
+  
   <h3>Includes:</h3>
   <ul class="included_items">
     <li>Wall Charger</li>
@@ -40,30 +40,12 @@
       </li>
   </ul>
   
-  <h3>Similar Alternative Items:</h3>
-  <ul class="inline_item_list">
-      <!-- item_1: EOS 50-D -->
-      <li id="item_1" class="item">
-        <h4 class="item_name"><a href="item">Cannon 50-D</a></h4>
-        <a href="item" class="item_photo"><img src="/images/samples/sample_50d.jpg" width="115" height="115" alt="Cannon EOS 50-D"/></a>
-        <h5 class="add_to_cart"><a href="#">Add to Cart</a></h5>
-        <h5 class="view_details"><a href="item">View Details</a></h5>
-      </li>
-
-      <!-- item_2: EOS 450 xTI -->
-      <li id="item_2" class="item">
-        <h4 class="item_name"><a href="item">Cannon 450 Rebel</a></h4>
-        <a href="item#" class="item_photo"><img src="/images/samples/sample_rebel.jpg" width="115" height="115" alt="Cannon EOS 50-D"/></a>
-        <h5 class="add_to_cart"><a href="#">Add to Cart</a></h5>
-        <h5 class="view_details"><a href="item">View Details</a></h5>
-      </li>
-
-      <!-- item_3: EOS 50-D -->
-      <li id="item_3" class="item">
-        <h4 class="item_name"><a href="item">Cannon 50-D</a></h4>
-        <a href="item" class="item_photo"><img src="/images/samples/sample_powershot.jpg" width="115" height="115" alt="Cannon EOS 50-D"/></a>
-        <h5 class="add_to_cart"><a href="item">Add to Cart</a></h5>
-        <h5 class="view_details"><a href="item">View Details</a></h5>
-      </li>
-  </ul>
+  <% if !@alternative_items.blank? %>
+    <h3>Similar Alternative Items:</h3>
+    <ul class="inline_item_list">
+        <% for item in @alternative_items %>
+          <%= render :partial => 'item_detail_extended', :locals => {:item => item} %>
+        <% end %>
+    </ul>
+  <% end %>
 </div>

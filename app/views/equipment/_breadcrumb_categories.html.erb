@@ -1,0 +1,5 @@
+<li><a href="/equipment">Equipment</a></li>
+  <% category.parents.each do |parent| %>
+    <li><%= link_to parent.name, category_browse_path(parent.guid) %></li>
+  <% end %>
+  <li><%= link_to category.name, category_browse_path(category.guid) %></li>

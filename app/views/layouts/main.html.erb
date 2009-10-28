@@ -34,7 +34,7 @@
             </li>
             <li class="section_title">Browse Equipment</li>
             <li class="categories">
-              <%= render :partial => 'layouts/category_list' %>
+              <%= render :partial => 'layouts/category_list', :locals => {:categories => Category.root_level} %>
             </li>
           </ul>
         </li>
@@ -96,17 +96,17 @@
       </div>
       <div id="inline_sitemap">
         <ul class="find_equipment">
-          <li class="section_title"><h2><a href="#">Find Equipment</a></h2></li>
-          <li><a href="#">Search &amp; Browse</a></li>
+          <li class="section_title"><h2><a href="/equipment">Find Equipment</a></h2></li>
+          <li><a href="/equipment">Search &amp; Browse</a></li>
         </ul>
         <ul class="my_reservations">
-          <li class="section_title"><h2><a href="#">My Reservations</a></h2></li>
+          <li class="section_title"><h2><a href="/reservations">My Reservations</a></h2></li>
           <li><a href="#">Manage My Reserved Items</a></li>
           <li><a href="#">Items I Currently Have Checked Out</a></li>
           <li><a href="#">Report Damaged/Lost Items</a></li>
         </ul>
         <ul class="help_and_guides">
-          <li class="section_title"><h2><a href="#">Help and Guides</a></h2></li>
+          <li class="section_title"><h2><a href="/help">Help and Guides</a></h2></li>
           <% Question.all(:include => :section, :limit => 7).each do |question| %>
             <li><%= link_to question.name, help_section_path(question.section.guid) %></li>
           <% end %>

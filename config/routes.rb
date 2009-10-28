@@ -23,7 +23,7 @@ ActionController::Routing::Routes.draw do |map|
   map.questions_update_order '/questions/update_order', :controller => 'questions', :action => 'update_order'
   
   # Custom front end paths.
-  map.item_detail '/item/:guid', :controller => 'help', :action => 'section'
+  map.item_detail '/item/:guid', :controller => 'equipment', :action => 'item'
   map.category_browse '/browse/:guid', :controller => 'equipment', :action => 'browse'
   map.help_section '/help/:guid', :controller => 'help', :action => 'section'
   map.help_contact '/contact', :controller => 'help', :action => 'contact'

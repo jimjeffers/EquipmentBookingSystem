@@ -107,6 +107,7 @@ $(document).ready(function() {
    // Bind lightbox to cart form.
    function bindCartForm(selector) {
       $(selector).find('#add_to_cart form, .cart_form form').submit(function() {
+         showLightBox();
          var form = $(this);
          $.post(this.action, form.serializeArray(),
             function(data) {
@@ -120,6 +121,7 @@ $(document).ready(function() {
    bindCartForm('body');
    
    $('a.interactive').click(function() {
+      showLightBox();
       $.post(this.href, '',
          function(data) {
             intoLightBox(data);

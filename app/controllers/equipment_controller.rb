@@ -3,20 +3,27 @@ class EquipmentController < ApplicationController
   
   # Displays homepage for the equipment booking system.
   def index
+    @categories = Category.root_level
   end
   
   # Displays a category.
   def browse
     @page_class = 'search_results browse'
+    @category = Category.find_by_guid(params[:guid])
+    @parent_category = @category.parents.last if @category.parents.length > 0
+    @items = @category.items_and_nested_items
   end
   
   # Presents a search result view.
   def search
     @page_class = 'search_results'
+    @items = Item.find_tagged_with(params[:search])
   end
   
   # Displays an instance.
   def item
+    @item = Item.find_by_guid(params[:guid])
+    @alternative_items = @item.alternatives
     respond_to do |format| 
       format.html 
       format.text { render :partial => 'quick_cart.html' }
