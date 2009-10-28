@@ -396,6 +396,10 @@ General comments/License Statement if any.
       padding-right: 20px;
    }
    
+   .equipment .sub_navigation > li {
+      float: none;
+   }
+   
    .sub_navigation > li > ul a,
    .sub_navigation > li > ol a {
       border-radius: 2px;
@@ -475,7 +479,7 @@ General comments/License Statement if any.
    
    .equipment .sub_navigation .category_list > li {
       float: left;
-      width: 140px;
+      width: 150px;
    }
    
    .equipment .sub_navigation .category_list > li li {
