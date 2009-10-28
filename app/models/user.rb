@@ -17,10 +17,11 @@ class User < ActiveRecord::Base
     (@_list.include?(role_in_question.to_s) )
   end
   
-  def has_any_roles(roles_in_question)
+  def has_any_roles?(roles_in_question)
     for role in roles_in_question
       return true if has_role?(role)
     end
+    return false
   end
   # ---------------------------------------
   

@@ -1,5 +1,5 @@
 <!-- item_<%= item.id %>: <%= item.name %> -->
-<li id="item_<%= item.id %>" class="item">
+<li id="item_<%= item.id %>" class="item <%= item.parent_category_tags %>">
   <%= render :partial => 'item_detail', :locals => {:item => item} %>
   <ul class="action_list">
     <li class="primary_action"><%= link_to "Add to Cart", item_detail_path(item.guid), :class => "interactive" %></li>

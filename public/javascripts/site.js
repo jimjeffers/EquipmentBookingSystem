@@ -46,12 +46,15 @@ $(document).ready(function() {
          },
          minDate: new Date(),
          duration: 'slow',
-         numberOfMonths: 2,
+         altFormat: 'dd/mm/yyyy',
+         numberOfMonths: 2
       });
       $('input[name$="available_from"]').val($.cookie("available_from"));
       $('input[name$="available_until"]').val($.cookie("available_until"));
    }
    bindDatePicker('body');
+   
+   // Live search datepicker refinements.
    
    // Setup accordians
    $('.accordian').accordion();
@@ -60,6 +63,34 @@ $(document).ready(function() {
    $('#ui-datepicker-div, .non_interactive').hide();
    
    // Search Refinements
+   function updateCategoryCounts() {
+      $('.category_checklist input[type="checkbox"]').each(function(index) {
+         var current = $(this);
+         var count = $('ol.item_list li.'+current.attr('id')).length
+         current.siblings('span.count').html(count);
+      });
+   }
+   updateCategoryCounts(); // Run on load...
+   
+   // Build a list of selectors.
+   // Hide all list items and only show the items that match the selectors.
+   function filterSearchResults() {
+      var selectors = [];
+      var base = 'ol.item_list .item';
+      $('.category_checklist :checked').each(function(index) {
+         selectors.push(base+"."+$(this).attr('id'));
+      });
+      console.log(selectors.join(','));
+      
+      var total_list = $(base).addClass('inactive').removeClass('active');
+      if (selectors.length > 0) {
+         var active_list = $(selectors.join(',')).addClass('active').removeClass('inactive').show();
+         $('#filtered_count').html("Viewing "+active_list.length+" out of ");
+      }
+      var inactive_list = $(base+".inactive").hide();
+   }
+   filterSearchResults(); // Run on load...
+   $('.category_checklist input[type="checkbox"]').change(filterSearchResults); // Bind to checkboxes...
    
    // Lightbox
    function showLightBox() {

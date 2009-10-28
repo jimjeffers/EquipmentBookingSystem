@@ -18,14 +18,15 @@ class EquipmentController < ApplicationController
   def search
     @page_class = 'search_results'
     @items = Item.find_tagged_with(params[:search])
+    @categories = Category.top_level_categories_for_items(@items)
   end
   
   # Displays an instance.
   def item
     @item = Item.find_by_guid(params[:guid])
     @alternative_items = @item.alternatives
-    respond_to do |format| 
-      format.html 
+    respond_to do |format|
+      format.html
       format.text { render :partial => 'quick_cart.html' }
     end
   end

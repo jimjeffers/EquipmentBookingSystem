@@ -20,14 +20,19 @@ class Item < ActiveRecord::Base
   # Returns up to 5 other items in similar categories
   def alternatives
     if category.category
-      return category.category.items_and_nested_items
+      return category.category.items_and_nested_items(:limit => 3)
     else
-      return category.items_and_nested_items
+      return category.items_and_nested_items(:limit => 3)
     end
   end
   
   # Returns an array of the included items for a given item.
   def included_items_list
     included_items.split(',') unless included_items.nil?
+  end
+  
+  # Item parent category tags.
+  def parent_category_tags
+    ([category]+category.parents).map { |c| "category_#{c.id}" }.join(" ")
   end
 end

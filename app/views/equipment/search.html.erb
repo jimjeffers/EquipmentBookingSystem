@@ -24,6 +24,6 @@
 <% end %>
 
 <div id="search_results">
-  <h2><%= @items.length %> Results Found for "<%= params[:search] %>"</h2>
+  <h2><span id="filtered_count"></span><span class="count"><%= @items.length %></span> Results Found for "<%= params[:search] %>"</h2>
   <%= render :partial => 'item_list', :locals => {:items => @items} %>
 </div>
