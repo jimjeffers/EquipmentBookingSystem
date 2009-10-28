@@ -1512,6 +1512,7 @@ General comments/License Statement if any.
    
    div#additional_content #inline_sitemap ul:last-child {
       padding-right: 0;
+      width: 300px;
    }
    
    div#additional_content #inline_sitemap ul.find_equipment {

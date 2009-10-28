@@ -18,9 +18,12 @@
     </div>
     <div id="navigation_container">
       <ul id="primary_navigation" class="navigation">
+        <% if current_user.has_role?(:kiosk) %>
         <li class="bookings">
           <a href="/bookings">Check In/Out <span class="reservation_count">2</span></a>
         </li>
+        <% end %>
+        <% if current_user.has_role?(:admin) %>
         <li class="items">
           <a href="/items">Items</a>
           <ul class="sub_navigation">
@@ -44,6 +47,7 @@
             </li>
           </ul>
         </li>
+        <% end %>
       </ul>
     </div>
     <% if flash[:notice] %>
@@ -64,24 +68,25 @@
         <%= render :partial => 'layouts/search_form', :locals => {:search_label => "Couldn’t find what you were looking for on this page?"} %>
       </div>
       <div id="inline_sitemap">
-        <ul class="find_equipment">
-          <li class="section_title"><h2><a href="#">Find Equipment</a></h2></li>
-          <li><a href="#">Search &amp; Browse</a></li>
+        <% if current_user.has_role?(:kiosk) %>
+        <ul class="bookings">
+          <li class="section_title"><h2><a href="/bookings">Check In/Out <span class="reservation_count">2</span></a></h2></li>
+          <li><a href="/bookings/overdue">Overdue</a></li>
         </ul>
-        <ul class="my_reservations">
-          <li class="section_title"><h2><a href="#">My Reservations</a></h2></li>
-          <li><a href="#">Manage My Reserved Items</a></li>
-          <li><a href="#">Items I Currently Have Checked Out</a></li>
-          <li><a href="#">Report Damaged/Lost Items</a></li>
+        <% end %>
+        <% if current_user.has_role?(:admin) %>
+        <ul class="items">
+          <li class="section_title"><h2><a href="/items">Items</a></h2></li>
+          <li><a href="/categories">Categories</a></li>
         </ul>
-        <ul class="help_and_guides">
-          <li class="section_title"><h2><a href="#">Help and Guides</a></h2></li>
-          <li><a href="#">How do I file a damage report?</a></li>
-          <li><a href="#">Where can I pick up my items?</a></li>
-          <li><a href="#">How many items am I allowed to checkout?</a></li>
-          <li><a href="#">How do I pay my overdue fees?</a></li>
-          <li><a href="#">Why does it say my account is pending approval?</a></li>
-          <li class="more"><a href="#">See more questions and answers...</a></li>
+        <ul class="users">
+          <li class="section_title"><h2><a href="/users">Users</a></h2></li>
+        </ul>
+        <ul class="questions">
+          <li class="section_title"><h2><a href="/questions">Questions</a></h2></li>
+          <li><a href="/sections">Sections</a></li>
+        </ul>
+        <% end %>
       </div>
       <ul id="contact_information">
         <li class="logo"><a href="/"><img src="/images/uq_logo.gif" width="132" height="38" alt="UQ Logo"/></a></li>
@@ -95,31 +100,31 @@
       </ul>
     </div>
     <!-- Delete this grid for production -->
-    <ul id="grid">
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
+    <!-- <ul id="grid">
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
 
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
 
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
 
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
-       <li>&nbsp;</li>
-    </ul>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
+           <li>&nbsp;</li>
+        </ul> -->
     <script src="/javascripts/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascripts/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascripts/jquery-ui-1.7.2.custom.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascripts/site.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/javascripts/dev.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="/javascripts/dev.js" type="text/javascript" charset="utf-8"></script> -->
   </body>
 </html>

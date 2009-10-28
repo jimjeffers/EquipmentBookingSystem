@@ -33,6 +33,7 @@ class EquipmentController < ApplicationController
   
   # Adds submitted item to cart.
   def add_to_cart
+    @item = Item.find(params[:item_id])
     respond_to do |format| 
       format.html 
       format.text { render :partial => 'success' }

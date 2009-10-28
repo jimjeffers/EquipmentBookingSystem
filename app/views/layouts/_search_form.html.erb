@@ -1,3 +1,4 @@
+<% value = "" unless defined?(value) %>
 <% form_tag('/equipment/search') do %>
-  <%= render :partial => 'layouts/search_field', :locals => {:search_label => search_label} %>
+  <%= render :partial => 'layouts/search_field', :locals => {:search_label => search_label, :value => value} %>
 <% end %>

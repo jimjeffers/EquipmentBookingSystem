@@ -1,6 +1,6 @@
 <li class="category_refinements">
   <ul class="category_checklist">
-    <% for category in @categories %>
+    <% for category in categories %>
       <li class="<%= "category_#{category.id}" %>">
         <span class="count">0</span>
         <%= label_tag "category_#{category.id}".to_sym, category.name %>
