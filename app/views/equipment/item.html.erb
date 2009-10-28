@@ -7,6 +7,7 @@
   <h2><%= @item.name %></h2>
   <div id="add_to_cart" class="cart_item_module">
     <%= render :partial => 'add_item_form', :locals => {:item => @item} %>
+    <% if current_user && current_user.has_role?(:teacher) %><a href="#" class="pull_request">Pull Request</a><% end %>
   </div>
   <%= image_tag(@item.image.url(:medium), :alt => @item.name, :class => 'item_image_detail') %>
   
