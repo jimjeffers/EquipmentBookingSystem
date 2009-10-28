@@ -7,10 +7,13 @@ class HelpController < ApplicationController
   end
   
   # Displays a specific solution to a help question.
-  def answer
+  def section
+    @section = Section.find_by_guid(params[:guid])
+    render :action => 'index'
   end
   
   # Temporary and can be removed once content becomes truly dynamic.
   def contact
+    @section = Section.new
   end
 end

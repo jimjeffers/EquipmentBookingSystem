@@ -6,6 +6,15 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :bookings
   map.resources :instances
   map.resources :items
+  map.resource :session
+  map.resources :users do |user|
+    user.resources :booking
+  end
+  map.resources :categories do |category|
+    category.resources :items do |item|
+      item.resources :instances
+    end
+  end
   
   # Sorting paths.
   map.categories_update_order '/categories/update_order', :controller => 'categories', :action => 'update_order'
@@ -17,25 +26,13 @@ ActionController::Routing::Routes.draw do |map|
   map.item_detail '/item/:guid', :controller => 'help', :action => 'section'
   map.category_browse '/browse/:guid', :controller => 'equipment', :action => 'browse'
   map.help_section '/help/:guid', :controller => 'help', :action => 'section'
-  
+  map.help_contact '/contact', :controller => 'help', :action => 'contact'
   
   # Authentication routing.
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
-  
-  map.resources :users do |user|
-    user.resources :booking
-  end
-  
-  map.resource :session
-  
-  map.resources :categories do |category|
-    category.resources :items do |item|
-      item.resources :instances
-    end
-  end
 
   # Default routing.
   map.connect ':controller/:action/:id'

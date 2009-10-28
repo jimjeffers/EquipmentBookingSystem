@@ -54,9 +54,9 @@
             <li class="help_categories">
               <ul>
                 <li class="section_title">Help Categories</li>
-                <li><a href="#">Requesting Items</a></li>
-                <li><a href="#">Returning Items</a></li>
-                <li><a href="#">Account Management</a></li>
+                <% Section.all.each do |section| %>
+                  <li><%= link_to section.name, help_section_path(section.guid) %></li>
+                <% end %>
               </ul>
             </li>
             <li class="most_asked_questions">
@@ -64,14 +64,12 @@
                 <li class="section_title">Most Asked Questions</li>
                 <li>
                   <ol>
-                    <li><a href="#">How do I file a damage report?</a></li>
-                    <li><a href="#">Where can I pick up my items?</a></li>
-                    <li><a href="#">How many items am I allowed to checkout?</a></li>
-                    <li><a href="#">How do I pay my overdue fees?</a></li>
-                    <li><a href="#">Why does it say my account is pending approval?</a></li>
+                    <% Question.all(:include => :section, :limit => 5).each do |question| %>
+                      <li><%= link_to question.name, help_section_path(question.section.guid) %></li>
+                    <% end %>
                   </ol>
                 </li>
-                <li class="more"><a href="#">See more questions and answers...</a></li>
+                <li class="more"><%= link_to "See more questions and answers...", '/help' %></li>
               </ul>
             </li>
           </ul>
@@ -109,12 +107,10 @@
         </ul>
         <ul class="help_and_guides">
           <li class="section_title"><h2><a href="#">Help and Guides</a></h2></li>
-          <li><a href="#">How do I file a damage report?</a></li>
-          <li><a href="#">Where can I pick up my items?</a></li>
-          <li><a href="#">How many items am I allowed to checkout?</a></li>
-          <li><a href="#">How do I pay my overdue fees?</a></li>
-          <li><a href="#">Why does it say my account is pending approval?</a></li>
-          <li class="more"><a href="#">See more questions and answers...</a></li>
+          <% Question.all(:include => :section, :limit => 7).each do |question| %>
+            <li><%= link_to question.name, help_section_path(question.section.guid) %></li>
+          <% end %>
+          <li class="more"><%= link_to "See more questions and answers...", '/help' %></li>
       </div>
       <ul id="contact_information">
         <li class="logo"><a href="/"><img src="/images/uq_logo.gif" width="132" height="38" alt="UQ Logo"/></a></li>

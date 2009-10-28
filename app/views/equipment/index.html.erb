@@ -9,13 +9,11 @@
 </div>
 <div id="quick_tips_module" class="module">
   <h2>Quick Tips &amp; Help:</h2>
-  <ol>
-    <li><a href="#">How do I file a damage report?</a></li>
-    <li><a href="#">Where can I pick up my items?</a></li>
-    <li><a href="#">How many items am I allowed to checkout?</a></li>
-    <li><a href="#">How do I pay my overdue fees?</a></li>
-    <li><a href="#">Why does it say my account is pending approval?</a></li>
-    <li><a href="#">Why do you need it that way?</a></li>
-  </ol>
-  <a href="#" class="more">See more questions...</a>
+    <ol>
+      <% Question.all(:include => :section, :limit => 7).each do |question| %>
+        <li><%= link_to question.name, help_section_path(question.section.guid) %></li>
+      <% end %>
+    </ol>
+  </li>
+  <%= link_to "See more questions...", '/help', :class => 'more' %>
 </div>

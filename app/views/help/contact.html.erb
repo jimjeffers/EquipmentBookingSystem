@@ -1,37 +1,37 @@
 <h1>Help and Guides</h1>
 
 <div id="question_module" class="module">
-  <%= render :partial => 'help_category_nav' %>
+  <%= render :partial => 'help_category_nav', :locals => {:section => @section} %>
 </div>
 
 <div id="answer_module" class="module">
-	<h2>Contact Information and Directions</h2>
-	
-	<h3>Location</h3>
-	
-	<div id="map">
-		<img src="/images/uqmap.png" width="402" height="261" alt="Equipment Booking Office Map"/>
-	</div>
-	
-	<div id="contact_information">
-		<p> 
-			The ITEE Equipment Booking Office is located to the left of the entrance on the second floor of GP South (Building 78). All equipment should be collected and returned here. 
-		</p>
+  <h2>Contact Information and Directions</h2>
+  
+  <h3>Location</h3>
+  
+  <div id="map">
+    <img src="/images/uqmap.png" width="402" height="261" alt="Equipment Booking Office Map"/>
+  </div>
+  
+  <div id="contact_information">
+    <p> 
+      The ITEE Equipment Booking Office is located to the left of the entrance on the second floor of GP South (Building 78). All equipment should be collected and returned here. 
+    </p>
 
-		<h3>Opening Hours</h3>
-		<p>	
-			Our office is open 8:30am - 4:30pm from Monday to Friday. 
-		</p>
+    <h3>Opening Hours</h3>
+    <p> 
+      Our office is open 8:30am - 4:30pm from Monday to Friday. 
+    </p>
 
-		<h3>Postal Address</h3>
-		<p>
-			Equipment Booking Office<br/>
-			School of Information Technology and Electrical Engineering<br/>
-			The University of Queensland <br/>
-			Brisbane, QLD 4072.<br/>
-			Australia
-		</p>
-	</div>	
+    <h3>Postal Address</h3>
+    <p>
+      Equipment Booking Office<br/>
+      School of Information Technology and Electrical Engineering<br/>
+      The University of Queensland <br/>
+      Brisbane, QLD 4072.<br/>
+      Australia
+    </p>
+  </div>  
 </div>
 
 

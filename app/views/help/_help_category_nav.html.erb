@@ -1,11 +1,8 @@
 <h2>Help Categories</h2>
 <ul class="category_list category_faceting">
-  <li><a href="/help" class="current">Requesting Items</a></li>
-  <li><a href="/help/returning">Returning Items</a></li>
-  <li><a href="/help/account">Account Management</a></li>
+  <% Section.all.each do |s| %>
+  <li><%= link_to s.name, help_section_path(s.guid), :class => ((s.id == section.id) ? 'current' : '') %></li>
+  <% end %>
 </ul>
 
-<a href="contact" class="more">Still have questions? Contact Us.</a>
-
-<input type="button" value="Email" onClick="parent.location='mailto:help@equipmentbooking.uq.edu.au?subject=Help%20Question'"/>
-<button type="button"> Message </button>
+<%= link_to "Still have questions? Contact Us.", help_contact_path, :class => 'more' %>
