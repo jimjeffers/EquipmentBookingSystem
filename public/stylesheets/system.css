@@ -1477,6 +1477,21 @@ General comments/License Statement if any.
       padding: 10px 0;
    }
 
+   .suggest_item {
+      background: #ddd;
+      border-radius: 5px;
+      display: inline-block;
+      font-weight: bold;
+      margin: 10px 0;
+      padding: 4px 10px;
+      
+      -o-border-radius:5px;
+      -icab-border-radius:5px;
+      -khtml-border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+   }
+   
 /* =BREADCRUMBS
    ------------------------------------------------------ */
    #breadcrumb {

@@ -163,5 +163,8 @@ General comments/License Statement if any.
       line-height: 1.05em;
    }
    
-
+   #help_menu {
+      font-size: 0.675em;
+      line-height: 1.25em;
+   }
    

@@ -67,11 +67,6 @@ $(document).ready(function() {
    }
    bindDatePicker('body');
    
-   // Live search datepicker refinements.
-   if($('#search_results').length){
-      
-   }
-   
    // Setup accordians
    $('.accordian').accordion();
    
