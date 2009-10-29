@@ -1126,7 +1126,7 @@ General comments/License Statement if any.
       top: 15px;
    }
    
-   #add_to_cart.cart_item_module .pull_request {
+   .cart_item_module .pull_request {
       background: #900;
       border-radius: 10px;
       bottom: -60px;
@@ -1146,6 +1146,23 @@ General comments/License Statement if any.
       -khtml-border-radius:10px;
       -moz-border-radius:10px;
       -webkit-border-radius:10px;
+   }
+   
+   #add_to_cart.cart_item_module .pull_request {
+      bottom: -60px;
+      left: 50%;
+      margin-left: -60px;
+      position: absolute;
+   }
+   
+   #lightbox-content .cart_item_module .pull_request {
+      position: relative;
+      top: 20px;
+   }
+   
+   .cart_item_module .pull_request,
+   #add_to_cart.cart_item_module .pull_request {
+      display: none;
    }
    
    .cart_item_module {
@@ -1235,6 +1252,20 @@ General comments/License Statement if any.
    
    #lightbox-content .cart_item_module {
       padding: 30px 0;
+   }
+   
+   .unavailable,
+   .unavailable p,
+   #item_details .unavailable p {
+      display: block;
+      font-weight: bold;
+      padding: 10px 0 0 0;
+      text-align: center;
+      width: 150px;
+   }
+   
+   .unavailable {
+      display: none;
    }
 
 /* =INLINE_ITEM_LIST

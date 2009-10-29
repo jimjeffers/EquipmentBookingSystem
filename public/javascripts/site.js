@@ -40,6 +40,19 @@ $(document).ready(function() {
             var current = $(inst);
             if(current.attr('id').match(/from/)) {
                $.cookie("available_from", dateText);
+               if($('.cart_item_module').length > 0) {
+                  if($('.unavailable').is(':visible')) {
+                     $('.unavailable').hide();
+                     $('.pull_request').hide();
+                     $('.search_field_quantity').show();
+                     $('.cart_item_module .search_field_availability_submit').show();
+                  } else {
+                     $('.unavailable').show();
+                     $('.pull_request').show();
+                     $('.search_field_quantity').hide();
+                     $('.cart_item_module .search_field_availability_submit').hide();
+                  }
+               }
             } else if(current.attr('id').match(/until/)) {
                $.cookie("available_until", dateText);
             }

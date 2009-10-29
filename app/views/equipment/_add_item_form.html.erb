@@ -8,6 +8,10 @@
       <%= label_tag :available_quantity, "Quantity" %>
       <%= select_tag :available_quantity, (0..4).to_a.map { |i| "<option value=\"#{i}\">#{i}</option>" }.join('') %>
     </li>
+    <li class="unavailable">
+      <p>We're sorry this item is not available during this time.</p>
+    </li>
+    <% if current_user && current_user.has_role?(:teacher) %><a href="#" class="pull_request">Pull Request</a><% end %>
     <li class="search_field_availability_submit">
       <%= submit_tag "Add To Cart" %>
     </li>
