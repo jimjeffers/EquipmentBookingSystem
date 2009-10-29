@@ -22,6 +22,11 @@ ActionController::Routing::Routes.draw do |map|
   map.items_update_order '/items/update_order', :controller => 'items', :action => 'update_order'
   map.questions_update_order '/questions/update_order', :controller => 'questions', :action => 'update_order'
   
+  # Cart management paths.
+  map.reserve_cart '/cart/reserve', :controller => 'equipment', :action => 'reserve'
+  map.remove_from_cart '/cart/remove/:id', :controller => 'equipment', :action => 'remove_from_cart'
+  map.empty_cart '/cart/empty', :controller => 'equipment', :action => 'empty_cart'
+  
   # Custom front end paths.
   map.item_detail '/item/:guid', :controller => 'equipment', :action => 'item'
   map.category_browse '/browse/:guid', :controller => 'equipment', :action => 'browse'

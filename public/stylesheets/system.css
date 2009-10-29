@@ -1113,6 +1113,21 @@ General comments/License Statement if any.
       float: left;
       margin-right: 5px;
    }
+   
+   .equipment_checkout ul.action_list {
+      position: absolute;
+      top: 10px;
+      right: 0;
+   }
+   
+   .equipment_checkout .item_list > li {
+      min-height: 80px;
+   }
+   
+   .equipment_checkout .item_list li a.item_photo img {
+      height: 90px;
+      width: 90px;
+   }
 
 /* =CART_ITEM_MODULE
    ------------------------------------------------------ */
@@ -1354,6 +1369,10 @@ General comments/License Statement if any.
    div#content #error {
       color: #900;
       font-weight: bold;
+   }
+   
+   div#warning p {
+      width: 600px;
    }
 
 /* =FIND_EQUIPMENT_MAIN

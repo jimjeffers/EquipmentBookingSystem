@@ -6,7 +6,7 @@
     <%=  hidden_field_tag :item_id, item.id %>
     <li class="search_field_quantity search_field_date">
       <%= label_tag :available_quantity, "Quantity" %>
-      <%= select_tag :available_quantity, (0..4).to_a.map { |i| "<option value=\"#{i}\">#{i}</option>" }.join('') %>
+      <%= select_tag :available_quantity, (1..4).to_a.map { |i| "<option value=\"#{i}\">#{i}</option>" }.join('') %>
     </li>
     <li class="unavailable">
       <p>We're sorry this item is not available during this time.</p>

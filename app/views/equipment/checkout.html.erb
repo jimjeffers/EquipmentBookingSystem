@@ -2,7 +2,8 @@
 <% if !@items.blank? %>
 <ol class="item_list">
 <% for item in @items %>
-  <%= render :partial => 'item_detail_extended', :locals => {:item => item} %>
+  <%= render :partial => 'item_detail_in_cart', :locals => {:item => item} %>
 <% end %>
 </ol>
+<h4 class="primary_action guided"><%= link_to "Complete Reservation", reserve_cart_path %></h4>
 <% end %>

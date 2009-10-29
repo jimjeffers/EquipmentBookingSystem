@@ -6,6 +6,7 @@ class EquipmentController < ApplicationController
     @categories = Category.root_level
   end
   
+  # Displays checkout form.
   def checkout
     @items = []
     cookies[:items].split(" ").each do |id|
@@ -48,5 +49,25 @@ class EquipmentController < ApplicationController
       format.html 
       format.text { render :partial => 'success' }
     end
+  end
+  
+  # Removes item from cart.
+  def remove_from_cart 
+    items = cookies[:items].split(" ")
+    items.delete(params[:id])
+    cookies[:items] = items.join(" ")
+    redirect_to :action => 'checkout'
+  end
+  
+  # Purges cart.
+  def empty_cart
+    cookies[:items] = ""
+    redirect_to :action => 'checkout'
+  end
+  
+  # Creates a reservation from the cart.
+  def reserve
+    cookies[:items] = ""
+    redirect_to :controller => "reservations"
   end
 end
