@@ -1,0 +1,12 @@
+<h4 class="primary_action guided"><%= link_to 'Or Return to User Index', users_path %></h4>
+<h1>Editing User: <span class="item_name"><%= @user.name %></span></h1>
+
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+  <ul class="form">
+    <%= render :partial => 'user_form', :locals => {:f => f} %>
+    <li>
+      <%= f.submit 'Update' %>
+    </li>
+  </ul>
+<% end %>
