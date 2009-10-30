@@ -1,0 +1,32 @@
+<div id="content">
+	
+	<h4 class="primary_action guided"><%= link_to 'Or Return to User Index', users_path %></h4>
+
+	<h1>Add New User</h1>
+
+	<form id="new_user" class="new_user" method="post" action="/users">	
+		<ul class="form">
+			<li>
+				<label for="user_first">First Name</label>
+				<input id="user_first" type="text" size="20" name="user[first]"/>
+			</li>
+			<li>
+				<label for="user_last">Last Name</label>
+				<input id="user_last" type="text" size="20" name="user[last]"/>
+			</li>
+			<li>
+				<label for="user_id">ID Number</label>
+				<input id="user_id" type="text" size="20" name="user[id]"/>
+			</li>
+
+			<li>
+				<label for="permission_id">Permission</label>
+				<select id="#" name="#">
+				</select>
+			</li>
+			<li>
+				<input id="user_submit" type="submit" value="Add New Question" name="commit"/>
+			</li>
+		</ul>
+	</form>
+</div>
