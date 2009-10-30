@@ -1,4 +1,6 @@
-<h1>Sign up as a new user</h1>
+<h4 class="primary_action guided"><%= link_to 'Or Return to User Index', users_path %></h4>
+<h1>Add New User</h1>
+
 <% @user.password = @user.password_confirmation = nil %>
 
 <%= error_messages_for :user %>
@@ -15,5 +17,6 @@
 <p><%= label_tag 'password_confirmation', 'Confirm Password' %><br/>
 <%= f.password_field :password_confirmation %></p>
 
-<p><%= submit_tag 'Sign up' %></p>
+<p><%= submit_tag 'Add' %></p>
 <% end -%>
+
