@@ -1667,6 +1667,7 @@ General comments/License Statement if any.
       background: #8432A4;
       border-radius: 10px;
       padding: 4px;
+      
       -o-border-radius:10px;
       -icab-border-radius:10px;
       -khtml-border-radius:10px;
@@ -1960,6 +1961,102 @@ General comments/License Statement if any.
    
    .sorted_list .ui-icon {
       float: left;
+   }
+
+/* =REFINEABLE_SEARCH
+   ------------------------------------------------------ */
+   .refineable_search {
+      margin-right: -480px;
+      padding: 4px;
+      position: fixed;
+      right: 50%;
+      top: 156px;
+      z-index: 99;
+   }
+   
+   .refineable_search,
+   .refineable_search form li,
+   .refineable_search form li.search label {
+      background: #88B415;
+      border-radius: 5px;
+      
+      -o-border-radius:5px;
+      -icab-border-radius:5px;
+      -khtml-border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+   }
+   
+   .refineable_search form,
+   .refineable_search form li,
+   .refineable_search form input[type="text"],
+   .refineable_search form select,
+   .refineable_search form input[type="submit"] {
+      background: #fff;
+      border: none;
+      border-radius: 3px;
+      display: block;
+      padding: 1px 5px;
+      width: 394px;
+      
+      -o-border-radius:3px;
+      -icab-border-radius:3px;
+      -khtml-border-radius:3px;
+      -moz-border-radius:3px;
+      -webkit-border-radius:3px;
+   }
+   
+   .refineable_search form input[type="text"],
+   .refineable_search form li {
+      border: 0;
+      padding: 4px;
+      height: auto;
+   }
+   
+   .refineable_search form li {
+      width: 386px;
+   }
+   
+   .refineable_search form input[type="text"],
+   .refineable_search form input[type="submit"],
+   .refineable_search form select {
+      background: #fff;
+      font-size: 1em;
+      line-height: 1.25em;
+      width: 377px;
+   }
+   
+   .refineable_search form input[type="text"] {
+      background: #fff url(../images/search_icon.png) no-repeat 4px 4px;
+      padding-left: 25px;
+      width: 356px;
+   }
+   
+   .refineable_search form input[type="submit"],
+   .refineable_search form select {
+      width: 384px;
+   }
+   
+   .refineable_search form input[type="submit"] {
+      background: #88B415;
+   }
+   
+   .refineable_search form label {
+      display: none;
+   }
+   
+   .refineable_search form li.search label {
+      display: block;
+      left: 10px;
+      font-weight: bold;
+      padding: 4px 10px;
+      position: absolute;
+      top: -28px;
+   }
+   
+   .refineable_search form li {
+      background: #642380;
+      margin: 4px 0;
    }
    
 /* =JQUERY_UI (date_picker)

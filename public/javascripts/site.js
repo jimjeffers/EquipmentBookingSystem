@@ -133,14 +133,15 @@ $(document).ready(function() {
    }
    
    function hideLightBox() {
-      $('#lightbox, #lightbox-background').hide('fast');
+      $('#lightbox').hide("drop", { direction: "down" }, 500);
+      $('#lightbox-background').hide("slide", { direction: "up" }, 500);
       return false;
    }
    
    function intoLightBox(content) {
       showLightBox();
       setTimeout(function(){
-         $('#lightbox-load').hide('fast');
+         $('#lightbox-load').hide("drop", { direction: "down" }, 500);
          $('#lightbox-content').html(content);
          $('#lightbox-content .lightbox-close').click(hideLightBox);
          bindDatePicker('#lightbox-content');
@@ -230,4 +231,22 @@ $(document).ready(function() {
       }
    });
    $(".sorted_list").disableSelection();
+   
+   // Perform live search
+   $("#item_search input[type='submit']").parent().hide();
+   $("#item_search input, #item_search select").change(itemSearch);
+   $("#item_search input[type='text']").keyup(itemSearch);
+   
+   function itemSearch() {
+      var current_form = $('#item_search form');
+      $('#search_results').css('opacity',0.75);
+      setTimeout(function(){
+         $('#search_results').css('opacity',0.25);
+         $.post(current_form.attr('action'), current_form.serialize(),
+            function(data) {
+               $('#search_results').html(data).css('opacity',1);
+            },
+         "text");
+         }, 350);
+   }
 });

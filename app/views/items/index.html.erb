@@ -1,9 +1,30 @@
 <h4 class="primary_action guided"><%= link_to 'Or Just Manage Categories', categories_path %></h4>
 <h4 class="primary_action"><%= link_to 'Create a New Item', new_item_path %></h4>
+<div id="item_search" class="refineable_search">
+  <% form_tag('/items/search') do %>
+    <ul>
+      <li class="search">
+        <%= label_tag :search, "Refine Results by Search or Category" %>
+        <%= text_field_tag :search, params[:search] %>
+      </li>
+      <li>
+        <%= label_tag :category_id, "Category" %>
+        <%= select_tag :category_id, "<option value="">Search within a category...</option>"+
+            option_groups_from_collection_for_select(@categories, :categories, :name, :id, :name) %>
+      </li>
+      <li>
+        <%= submit_tag "Search Refined Items" %>
+      </li>
+    </ul>
+  <% end %>
+</div>
+
 <h1>Listing Items</h1>
 
-<ol class="item_list">
+<% if !@items.blank? %>
+<ol id="search_results" class="item_list">
   <% @items.each do |item| %>
     <%= render :partial => 'item_detail', :locals => {:item => item} %>
   <% end %>
 </ol>
+<% end %>

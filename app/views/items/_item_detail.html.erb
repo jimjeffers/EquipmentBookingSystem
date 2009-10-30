@@ -4,7 +4,7 @@
   <a href="#" class="item_photo">
     <%= image_tag item.image.url(:thumb), :alt => item.name %>
   </a>
-  <%= render :partial => 'shared/included_items_list', :locals => {:item => item} %>
+  <%= render :partial => 'shared/included_items_list.html', :locals => {:item => item} %>
   <ul class="action_list">
     <li class="primary_action"><%= link_to 'Edit', edit_item_path(item) %></li>
     <li class="primary_action delete guided"><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></li>

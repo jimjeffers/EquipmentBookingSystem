@@ -33,6 +33,9 @@ ActionController::Routing::Routes.draw do |map|
   map.help_section '/help/:guid', :controller => 'help', :action => 'section'
   map.help_contact '/contact', :controller => 'help', :action => 'contact'
   
+  # Admin Search
+  map.items_search '/items/search', :controller => 'items', :action => 'search'
+  
   # Authentication routing.
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'

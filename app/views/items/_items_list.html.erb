@@ -1,0 +1,8 @@
+<% if !@items.blank? %>
+  <% @items.each do |item| %>
+    <%= render :partial => 'item_detail.html', :locals => {:item => item} %>
+  <% end %>
+<% else %>
+<h3>No items found!</h3>
+<h4>Sorry we couldn't find any items that matched your search!</h4>
+<% end %>
