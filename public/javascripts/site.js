@@ -233,9 +233,18 @@ $(document).ready(function() {
    $(".sorted_list").disableSelection();
    
    // Perform live search
+   var item_search_timeout = false;
    $("#item_search input[type='submit']").parent().hide();
-   $("#item_search input, #item_search select").change(itemSearch);
-   $("#item_search input[type='text']").keyup(itemSearch);
+   $("#item_search input, #item_search select").change( itemSearch);
+   $("#item_search input[type='text']").keyup(function(){
+      $('#search_results').css('opacity',0.95);
+      if(item_search_timeout) {
+         clearTimeout(item_search_timeout);
+      }
+      item_search_timeout = setTimeout(function(){
+         itemSearch();
+      }, 350);
+   });
    
    function itemSearch() {
       var current_form = $('#item_search form');

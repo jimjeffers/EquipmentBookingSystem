@@ -35,4 +35,19 @@ class Item < ActiveRecord::Base
   def parent_category_tags
     ([category]+category.parents).map { |c| "category_#{c.id}" }.join(" ")
   end
+  
+  # Searches items by category id or search term.
+  def self.search(term,category_id)
+    if !term.blank?
+      if category_id.blank?
+        return self.find_tagged_with(term+"%")
+      else
+        return self.find_tagged_with(term+"%", :conditions => ["category_id=?",category_id])
+      end
+    elsif !category_id.blank?
+      return self.find_all_by_category_id(category_id)
+    else
+      return self.all
+    end
+  end
 end

@@ -9,7 +9,7 @@
       </li>
       <li>
         <%= label_tag :category_id, "Category" %>
-        <%= select_tag :category_id, "<option value="">Search within a category...</option>"+
+        <%= select_tag :category_id, "<option value="">Any Category</option>"+
             option_groups_from_collection_for_select(@categories, :categories, :name, :id, :name) %>
       </li>
       <li>

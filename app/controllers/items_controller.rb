@@ -89,17 +89,7 @@ class ItemsController < ApplicationController
   
   # POST /items/search
   def search
-    if !params[:search].blank?
-      if !params[:category_id].blank?
-        @items = Item.find_tagged_with(params[:search])
-      else
-        @items = Item.find_tagged_with(params[:search], :conditions => ["category_id=?",params[:category_id]])
-      end
-    elsif !params[:category_id].blank?
-      @items = Item.find_all_by_category_id(params[:category_id])
-    else
-      @items = Item.all
-    end
+    @items = Item.search(params[:search],params[:category_id])
     respond_to do |format|
       format.html { render :action => 'index' }
       format.text  { render :partial => 'items_list.html' }

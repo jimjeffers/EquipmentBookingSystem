@@ -8,7 +8,8 @@
 </li>
 <li>
   <%= f.label :category_id, "Primary Category" %>
-  <%= f.collection_select :category_id, Category.all, :id, :name, {:prompt => true} %>
+  <%= select_tag :category_id, "<option value="">Search within a category...</option>"+
+      option_groups_from_collection_for_select(@categories, :categories, :name, :id, :name) %>
 </li>
 <li>
   <%= f.label :tag_list, "Tags (separated by commas!)" %>
